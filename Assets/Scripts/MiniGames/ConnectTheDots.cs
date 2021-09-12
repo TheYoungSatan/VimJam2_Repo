@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+
+namespace MiniGame
+{
+    public class ConnectTheDots : Minigame
+    {
+        [SerializeField] private Dot _dotObject;
+        [SerializeField] private RectTransform _spawnSpace;
+        [Space]
+        [SerializeField] private int _dotAmount = 6;
+        [SerializeField] private float _displayTime = 3f;
+        [SerializeField] private float _screenSpaceReduction = 5f;
+
+        private bool _runGame;
+        private int _current = 0;
+        private LineRenderer _line;
+        private List<Vector3> _lineSegments = new List<Vector3>();
+        private List<Dot> _dotList = new List<Dot>();
+
+        public override void RunGame()
+        {
+            for (int i = 1; i <= _dotAmount; i++)
+            {
+                Dot d = Instantiate(_dotObject.gameObject, FindSpawnPoint(), Quaternion.identity).GetComponent<Dot>();
+                d.transform.SetParent(_spawnSpace.transform);
+                d.Number = i;
+                d.SetText();
+
+                _dotList.Add(d);
+
+                d.OnClicked += CheckClicked;
+            }
+
+            if (TryGetComponent(out LineRenderer line))
+                _line = line;
+            else
+                _line = gameObject.AddComponent<LineRenderer>();
+
+            _line.enabled = false;
+
+            if (!FindObjectOfType<EventSystem>())
+                new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
+
+            StartCoroutine(DelayTime());
+        }
+
+        public override void UpdateGame()
+        {
+            Vector3 mp = Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0));
+            mp.z = 0;
+            _line.SetPosition(_current, mp);
+        }
+
+        private void CheckClicked(Dot d)
+        {
+            if (!_runGame) return;
+
+            if (d.Number == _current + 1)
+            {
+                _current = d.Number;
+                Vector3 pos = Camera.main.ScreenToWorldPoint(d.Position);
+                pos.z = 0;
+                _lineSegments.Add(pos);
+                _line.enabled = true;
+                _line.positionCount = _lineSegments.Count + 1;
+            }
+            else
+            {
+                Hub.OnGameOver();
+                _line.positionCount = _lineSegments.Count;
+            }
+
+            if (_current == _dotAmount)
+            {
+                Hub.OnGameSucces();
+                _line.positionCount = _lineSegments.Count;
+            }
+
+            _line.SetPositions(_lineSegments.ToArray());
+        }
+
+        private Vector3 FindSpawnPoint()
+        {
+            _screenSpaceReduction = Mathf.Abs(_screenSpaceReduction);
+            Vector3 screenPosition = new Vector3(
+                UnityEngine.Random.Range(_screenSpaceReduction, Screen.width - _screenSpaceReduction), 
+                UnityEngine.Random.Range(_screenSpaceReduction, Screen.height - _screenSpaceReduction), 
+                0);
+            return screenPosition;
+        }
+
+        IEnumerator DelayTime()
+        {
+            yield return new WaitForSeconds(_displayTime);
+            _runGame = true;
+
+            foreach (var item in _dotList)
+                item.SetText(false);
+        }
+    }
+}
