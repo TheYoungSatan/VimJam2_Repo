@@ -1,64 +1,55 @@
 fileFormatVersion: 2
-guid: 5c335e90298844243b783a6daccb7796
+guid: ca024ab84c76240449e7411096b3b0c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6994111720309722666
-    second: GameSheet_0
+      213: 1417297664493614832
+    second: Character1_walk_0
   - first:
-      213: 4988286562539615388
-    second: GameSheet_1
+      213: 3325797941870083033
+    second: Character1_walk_1
   - first:
-      213: -8693281611674993084
-    second: GameSheet_2
+      213: 3790246164841218119
+    second: Character1_walk_2
   - first:
-      213: 4170510071181775271
-    second: GameSheet_3
+      213: -7042481770203414736
+    second: Character1_walk_3
   - first:
-      213: 2960531757538740414
-    second: GameSheet_4
+      213: 1133916568744934048
+    second: Character1_walk_4
   - first:
-      213: 4116676898599987755
-    second: GameSheet_5
+      213: 3851685649773077595
+    second: Character1_walk_5
   - first:
-      213: -931894581308438900
-    second: GameSheet_6
+      213: -3513801254173529478
+    second: Character1_walk_6
   - first:
-      213: 1108601735119679340
-    second: GameSheet_7
+      213: 3377615376553234847
+    second: Character1_walk_7
   - first:
-      213: -7083281444346146751
-    second: GameSheet_8
+      213: -4529770355905112943
+    second: Character1_Idle_0
   - first:
-      213: 2443441050649736923
-    second: GameSheet_9
+      213: 380725472764288387
+    second: Character1_Idle_1
   - first:
-      213: 6639244630085798308
-    second: GameSheet_10
+      213: 8781310278178699412
+    second: Character1_Idle_2
   - first:
-      213: -776932572930176669
-    second: GameSheet_11
+      213: -5831607497344431659
+    second: Character1_Idle_3
   - first:
-      213: 3023008990712510537
-    second: GameSheet_12
+      213: -5470758290323563476
+    second: Character1_Idle_4
   - first:
-      213: 2084394071896863554
-    second: GameSheet_13
+      213: -7493334466591291234
+    second: Character1_Idle_5
   - first:
-      213: 7907841290410809348
-    second: GameSheet_7
+      213: 8116311551674113928
+    second: Character1_Idle_6
   - first:
-      213: 8106863858142379249
-    second: GameSheet_14
-  - first:
-      213: -9086112206283014075
-    second: GameSheet_15
-  - first:
-      213: -4226235885536701136
-    second: GameSheet_16
-  - first:
-      213: 6333419837366660144
-    second: GameSheet_17
+      213: 7501613241396468209
+    second: Character1_Idle_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,159 +135,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameSheet_0
+      name: Character1_walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2e0570ad83101160800000000000000
-      internalID: 6994111720309722666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9437061334f93540800000000000000
-      internalID: 4988286562539615388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44e3da3ee624b5780800000000000000
-      internalID: -8693281611674993084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a19afc30d0a0e930800000000000000
-      internalID: 4170510071181775271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb80c5aa2fbe51920800000000000000
-      internalID: 2960531757538740414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2aeb1404df512930800000000000000
-      internalID: 4116676898599987755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c86cff0d0de3113f0800000000000000
-      internalID: -931894581308438900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_8
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 1
         y: 32
-        width: 32
+        width: 11
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -305,19 +149,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140d1a12e0123bd90800000000000000
-      internalID: -7083281444346146751
+      spriteID: 0f6f12977b04ba310800000000000000
+      internalID: 1417297664493614832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_9
+      name: Character1_walk_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 32
-        width: 32
+        width: 11
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -326,19 +170,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd6b59d80b8d8e120800000000000000
-      internalID: 2443441050649736923
+      spriteID: 9db34e77b9b972e20800000000000000
+      internalID: 3325797941870083033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_10
+      name: Character1_walk_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 32
-        width: 32
+        width: 11
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -347,19 +191,124 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a90f2990d5532c50800000000000000
-      internalID: 6639244630085798308
+      spriteID: 740c5aa2ec8a99430800000000000000
+      internalID: 3790246164841218119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_11
+      name: Character1_walk_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 97
+        y: 32
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f7cd58424144e90800000000000000
+      internalID: -7042481770203414736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_walk_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aab8fc8c1b7cbf00800000000000000
+      internalID: 1133916568744934048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_walk_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 32
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54a13df0bfe37530800000000000000
+      internalID: 3851685649773077595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_walk_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 32
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a2aa150687c3fc0800000000000000
+      internalID: -3513801254173529478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_walk_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 32
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f915a532a43bfde20800000000000000
+      internalID: 3377615376553234847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
         y: 0
-        width: 32
+        width: 11
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -368,62 +317,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3690118f0f7c735f0800000000000000
-      internalID: -776932572930176669
+      spriteID: 1945e2e6cd50321c0800000000000000
+      internalID: -4529770355905112943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_12
+      name: Character1_Idle_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 0
-        width: 32
+        width: 11
         height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.875}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9483b3419a2e3f920800000000000000
-      internalID: 3023008990712510537
+      spriteID: 38dde01eccb984500800000000000000
+      internalID: 380725472764288387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_13
+      name: Character1_Idle_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 0
-        width: 32
+        width: 11
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 243b7536d514dec10800000000000000
-      internalID: 2084394071896863554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_7
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 80
-        width: 12
-        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,62 +359,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4085a1f81cb4ebd60800000000000000
-      internalID: 7907841290410809348
+      spriteID: 498f3513c2b7dd970800000000000000
+      internalID: 8781310278178699412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_14
+      name: Character1_Idle_3
       rect:
         serializedVersion: 2
-        x: 109
-        y: 90
-        width: 9
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fc770b1abd518070800000000000000
-      internalID: 8106863858142379249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_15
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 89
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5400923b615a7e180800000000000000
-      internalID: -9086112206283014075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameSheet_16
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 86
-        width: 3
-        height: 2
+        x: 97
+        y: 0
+        width: 11
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,29 +380,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03593998ad46955c0800000000000000
-      internalID: -4226235885536701136
+      spriteID: 5d9c74bd0e7f11fa0800000000000000
+      internalID: -5831607497344431659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameSheet_17
+      name: Character1_Idle_4
       rect:
         serializedVersion: 2
-        x: 105
-        y: 86
-        width: 1
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 129
+        y: 0
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ce6a349c3d4e750800000000000000
-      internalID: 6333419837366660144
+      spriteID: c2c9d3df156f314b0800000000000000
+      internalID: -5470758290323563476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9882a70104520890800000000000000
+      internalID: -7493334466591291234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f5febaa5ee2a070800000000000000
+      internalID: 8116311551674113928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 11
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f99dcf6f751b1860800000000000000
+      internalID: 7501613241396468209
       vertices: []
       indices: 
       edges: []
