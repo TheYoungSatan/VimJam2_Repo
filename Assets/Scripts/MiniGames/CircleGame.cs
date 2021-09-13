@@ -11,19 +11,18 @@ namespace MiniGame
     public class CircleGame : Minigame
     {
         private Vector2 _mousePos;
+        private float _circleRadius;
 
-        private float _circleRadius = 3;
-        private float _maxDist = 30f;
-
-        //private BoxCollider2D[] _boxes;
-        private CircleCollider2D[] _circles;
+        [SerializeField]
+        private float _maxDist = 5f;
 
         [SerializeField]
         private LineRenderer _lineRenderer;
 
+        private CircleCollider2D[] _circles;
+
         public override void RunGame()
         {
-            //_boxes = FindObjectsOfType<BoxCollider2D>();
             _circles = FindObjectsOfType<CircleCollider2D>();
         }
 
@@ -62,26 +61,9 @@ namespace MiniGame
             return Length(centre - p) - radius;
         }
 
-        //private float DistToBox(float2 p, float2 centre, float2 size)
-        //{
-        //    float2 offset = math.abs(p - centre) - size;
-
-        //    float unsignedDist = Length(math.max(offset, 0));
-
-        //    float distInsideBox = math.max(math.min(offset, 0));
-
-        //    return unsignedDist + distInsideBox;
-        //}
-
-        private float DistanceFromClosestBox(float2 mousePos)
+        private float ClosestDistToCircle(float2 mousePos)
         {
             float distToScene = _maxDist;
-
-            //for (int i = 0; i < _boxes.Length; i++)
-            //{
-            //    float currentDistToBox = DistToBox(mousePos, new float2(_boxes[i].transform.position.x, _boxes[i].transform.position.y), _boxes[i].size);
-            //    distToBox = math.min(currentDistToBox, distToBox);
-            //}
 
             for (int i = 0; i < _circles.Length; i++)
             {
@@ -94,13 +76,25 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
+            //gets the mousepos in a Vector2 for the circle and a float2 for the calculations on distance
             var scaledMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
             var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
-
             var float2MousePos = new float2(correctMousePos.x, correctMousePos.y);
-            _circleRadius = DistanceFromClosestBox(float2MousePos);
 
+            //assigns the radius of the circle to the closests distance to a circle
+            _circleRadius = ClosestDistToCircle(float2MousePos);
+
+            //normalize the radius so it can be used to display the color from green to red
+            var normalizedRadius = _circleRadius / _maxDist;
+
+            _lineRenderer.startColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
+            _lineRenderer.endColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
+
+            //draws a shape with the given amount of points, more points = rounder
             DrawPolygon(48, _circleRadius, correctMousePos, 0.1f, 0.1f);
+
+            //if the circle is too big, its game over
+            if (_circleRadius >= _maxDist) Hub.OnGameOver();
         }
     }
 }
