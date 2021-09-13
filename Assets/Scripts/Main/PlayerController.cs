@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using Interacting;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class PlayerController : MonoBehaviour
 {
     public static class Directions
@@ -25,7 +27,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("Visuals")]
     [SerializeField] private SpriteRenderer _model;
+
     private Vector2 _input;
+    private Rigidbody2D _rigid;
 
     #region Input
 
@@ -49,6 +53,8 @@ public class PlayerController : MonoBehaviour
             {
                 var closest = colls.Aggregate((p, n) => Vector3.Distance(p.transform.position, checkPos) < Vector3.Distance(n.transform.position, checkPos) ? p : n);
                 GameObject closestObj = closest.gameObject;
+                IInteractable i = closestObj.GetComponent<IInteractable>();
+                i?.OnInteract();
             }
         }
     }
@@ -58,6 +64,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _playerInput = FindObjectOfType<PlayerInput>();
+        _rigid = GetComponent<Rigidbody2D>();
 
         _moveAction = _playerInput?.currentActionMap.FindAction("Move");
         _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
@@ -68,7 +75,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        transform.position += (Vector3)_input * Time.deltaTime * _moveSpeed;
+        _rigid.position += _input * Time.deltaTime * _moveSpeed;
     }
 
     private void OnDrawGizmos()
