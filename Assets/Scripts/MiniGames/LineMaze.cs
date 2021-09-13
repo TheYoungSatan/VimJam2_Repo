@@ -79,7 +79,7 @@ namespace MiniGame
         private float _timer;
         private string _inputDir;
 
-        public override void RunGame() //was public override void RunGame()
+        public override void RunGame() 
         {
             _playerInput = FindObjectOfType<PlayerInput>();
 
@@ -104,7 +104,7 @@ namespace MiniGame
             _line.endWidth = _lineThickness;
         }
 
-        public override void UpdateGame()   //was public override void UpdateGame()
+        public override void UpdateGame()   
         {
             _timer += Time.deltaTime;
 

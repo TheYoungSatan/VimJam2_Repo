@@ -17,7 +17,6 @@ namespace MiniGame
         private float _maxDist = 3f;
         [SerializeField, Range(4, 96)]
         private float _circlePoints = 48;
-
         [SerializeField]
         private LineRenderer _lineRenderer;
 
