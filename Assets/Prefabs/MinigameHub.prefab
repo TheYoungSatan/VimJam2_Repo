@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5324833214310321453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5324833214310321455}
+  - component: {fileID: 5324833214310321454}
+  m_Layer: 0
+  m_Name: MinigameHub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5324833214310321455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5324833214310321453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5324833214310321454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5324833214310321453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcb8d64afd94b74a9de340db425b484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameCollections:
+  - _gameChunck: 0
+    _minigames:
+    - {fileID: 1703996764377674639, guid: d8b30cb069fcd124099a4a98fa9b7268, type: 3}
+    - {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db, type: 3}
+  - _gameChunck: 1
+    _minigames:
+    - {fileID: 7367757098291703351, guid: af89f021a544e284287794b48a75fc43, type: 3}
+  - _gameChunck: 2
+    _minigames: []
+  - _gameChunck: 3
+    _minigames:
+    - {fileID: 6069109084894317787, guid: 311e171fedb48774693a5a6e7fd1b664, type: 3}
+    - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
+  _currentGameChunck: 0
+  _testmode: 0
+  _currentMiniGame: {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db,
+    type: 3}

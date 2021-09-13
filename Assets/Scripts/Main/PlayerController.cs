@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private PlayerInput _playerInput;
+    private Animator _animator;
     private InputAction _moveAction;
     private InputAction _interactAction;
 
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
     {
         _playerInput = FindObjectOfType<PlayerInput>();
         _rigid = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
 
         _moveAction = _playerInput?.currentActionMap.FindAction("Move");
         _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
@@ -76,6 +78,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _rigid.position += _input * Time.deltaTime * _moveSpeed;
+        _animator.SetFloat("Speed", Mathf.Abs(_input.magnitude));
     }
 
     private void OnDrawGizmos()
