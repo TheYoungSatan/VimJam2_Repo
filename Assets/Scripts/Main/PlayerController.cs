@@ -1,4 +1,5 @@
 ﻿using Interacting;
+using Sound;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
                 GameObject closestObj = closest.gameObject;
                 IInteractable i = closestObj.GetComponent<IInteractable>();
                 i?.OnInteract();
+                AudioHub.PlaySound(AudioHub.Interact);
             }
         }
     }

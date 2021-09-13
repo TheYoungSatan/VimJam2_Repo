@@ -48,6 +48,7 @@ MonoBehaviour:
     _minigames:
     - {fileID: 1703996764377674639, guid: d8b30cb069fcd124099a4a98fa9b7268, type: 3}
     - {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db, type: 3}
+    - {fileID: 4542806012395002468, guid: b9f3ee3abe0d30248a43daaf0ffbca4d, type: 3}
   - _gameChunck: 1
     _minigames:
     - {fileID: 7367757098291703351, guid: af89f021a544e284287794b48a75fc43, type: 3}
@@ -58,6 +59,6 @@ MonoBehaviour:
     - {fileID: 6069109084894317787, guid: 311e171fedb48774693a5a6e7fd1b664, type: 3}
     - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
   _currentGameChunck: 0
-  _testmode: 0
-  _currentMiniGame: {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db,
+  _testmode: 1
+  _currentMiniGame: {fileID: 4542806012395002468, guid: b9f3ee3abe0d30248a43daaf0ffbca4d,
     type: 3}
