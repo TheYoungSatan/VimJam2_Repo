@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MinigameHub : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class MinigameHub : MonoBehaviour
     [SerializeField] private GameChunck _currentGameChunck;
     [SerializeField] private bool _testmode = true;
     [SerializeField] private Minigame _currentMiniGame;
+
+    [Header("Scene loading")]
+    [SerializeField] private string _returnScene;
 
     private Minigame _playedGame;
     private GameStates _currentState = GameStates.Running;
@@ -73,5 +77,10 @@ public class MinigameHub : MonoBehaviour
     {
         _currentState = GameStates.GameSucces;
         Debug.Log("Succes");
+    }
+
+    public void OnReturn()
+    {
+        SceneManager.LoadScene(_returnScene);
     }
 }

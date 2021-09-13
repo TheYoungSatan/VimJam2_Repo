@@ -10,6 +10,5 @@ namespace MiniGame
         public virtual void RunGame() { }
         public virtual void CheckInput() { }
         public virtual void UpdateGame() { }
-
     }
 }

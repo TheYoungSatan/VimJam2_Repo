@@ -30,6 +30,8 @@ namespace MiniGame
             StartCoroutine(DisplayTime());
         }
 
+        public void ReturnButton() => Hub.OnReturn();
+
         private void ReadInput(char obj)
         {
             if (!_runGame) return;
@@ -42,6 +44,7 @@ namespace MiniGame
                 if (_input != _task.Substring(0, _input.Length))
                 {
                     Hub.OnGameOver();
+                    _runGame = false;
                     _taskText.text = _task;
                 }
                 else if (_input.Length == _task.Length && _input == _task)
