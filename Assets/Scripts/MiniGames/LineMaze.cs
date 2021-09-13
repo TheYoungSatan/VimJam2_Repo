@@ -54,9 +54,19 @@ namespace MiniGame
         }
         #endregion
 
+        [Header("LineSettings")]
+        [SerializeField]
+        private Transform _startPoint;
+        [SerializeField, Range(0.05f, 0.5f)]
+        private float _stepValue = 0.1f;
+        [SerializeField, Range(0.05f, 0.2f)]
+        private float _lineThickness = 0.1f;
+        [SerializeField, Range(0.02f, 0.2f)]
+        private float _lineSpeed = 0.1f;
+
+        [Header("Other Settings")]
         [SerializeField]
         private LineRenderer _line;
-
         [SerializeField]
         private LayerMask _borderMask;
 
@@ -83,23 +93,45 @@ namespace MiniGame
             _leftAction.performed += LeftInput;
             _rightAction.performed += RightInput;
 
-            _timer = 0;
             _inputDir = Directions.Right;
-            var startPoint = new Vector3(-8.89f, 3.06f, 0);
 
+            _timer = 0;
+            
             _line.positionCount = 2;
-            _line.SetPosition(0, startPoint);
-            _line.SetPosition(1, startPoint);
+            _line.SetPosition(0, _startPoint.position);
+            _line.SetPosition(1, _startPoint.position);
+            _line.startWidth = _lineThickness;
+            _line.endWidth = _lineThickness;
         }
 
         public override void UpdateGame()   //was public override void UpdateGame()
         {
             _timer += Time.deltaTime;
 
-            if (_timer >= 0.1f)
+            if (_timer >= _lineSpeed)
             {
                 LineCreateInterval();
                 _timer = 0;
+            }
+        }
+
+        private void CheckHit(string direction, Vector2 directionvalue, float xOffset, float yOffset)
+        {
+            if (_inputDir.Equals(direction))
+            {
+                var hit = Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), directionvalue, _stepValue, _borderMask);
+                if (hit)
+                {
+                    if (hit.collider.CompareTag("Goal")) Hub.OnGameSucces();
+                    else Hub.OnGameOver();
+                }
+                else
+                {
+                    var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x + xOffset,
+                                        _line.GetPosition(_line.positionCount - 1).y + yOffset, 0);
+
+                    _line.SetPosition(_line.positionCount - 1, pointOffset);
+                }
             }
         }
 
@@ -107,65 +139,11 @@ namespace MiniGame
         {
             if (_inputDir != null)
             {
-                RaycastHit2D hit;
-
-                if (_inputDir.Equals(Directions.Right))
-                {
-                    if (Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), transform.right, 0.1f, _borderMask))
-                    {
-                        Hub.OnGameOver();
-                        Debug.Log("Game over");
-                    }
-                    else
-                    {
-                        var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x + 0.1f, _line.GetPosition(_line.positionCount - 1).y, 0);
-
-                        _line.SetPosition(_line.positionCount - 1, pointOffset);
-                    }
-                }
-                else if (_inputDir.Equals(Directions.Left))
-                {
-                    if (Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), -transform.right, 0.1f, _borderMask))
-                    {
-                        Hub.OnGameOver();
-                        Debug.Log("Game over");
-                    }
-                    else
-                    {
-                        var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x - 0.1f, _line.GetPosition(_line.positionCount - 1).y, 0);
-
-                        _line.SetPosition(_line.positionCount - 1, pointOffset);
-
-                    }
-                }
-                else if (_inputDir.Equals(Directions.Up))
-                {
-                    if (Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), transform.up, 0.1f, _borderMask))
-                    {
-                        Hub.OnGameOver();
-                        Debug.Log("Game over");
-                    }
-                    else
-                    {
-                        var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x, _line.GetPosition(_line.positionCount - 1).y + 0.1f, 0);
-
-                        _line.SetPosition(_line.positionCount - 1, pointOffset);
-                    }
-                }
-                else if (_inputDir.Equals(Directions.Down))
-                {
-                    if (Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), -transform.up, 0.1f, _borderMask))
-                    {
-                        Hub.OnGameOver();
-                        Debug.Log("Game over");
-                    }
-                    else
-                    {
-                        var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x, _line.GetPosition(_line.positionCount - 1).y - 0.1f, 0);
-                        _line.SetPosition(_line.positionCount - 1, pointOffset);
-                    }
-                }
-                else return;
+                //Checks for hits in any direction
+                CheckHit(Directions.Right, transform.right, _stepValue, 0);
+                CheckHit(Directions.Left, -transform.right, -_stepValue, 0);
+                CheckHit(Directions.Up, transform.up, 0, _stepValue);
+                CheckHit(Directions.Down, -transform.up, 0, -_stepValue);
             }
         }
     }

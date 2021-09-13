@@ -14,7 +14,9 @@ namespace MiniGame
         private float _circleRadius;
 
         [SerializeField]
-        private float _maxDist = 5f;
+        private float _maxDist = 3f;
+        [SerializeField, Range(4, 96)]
+        private float _circlePoints = 48;
 
         [SerializeField]
         private LineRenderer _lineRenderer;
@@ -31,13 +33,36 @@ namespace MiniGame
             _mousePos = Mouse.current.position.ReadValue();
         }
 
-        private void DrawPolygon(int vertexNumber, float radius, Vector3 centerPos, float startWidth, float endWidth)
+        public override void UpdateGame()
+        {
+            //gets the mousepos in a Vector2 for the circle and a float2 for the calculations on distance
+            var scaledMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
+            var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
+            var float2MousePos = new float2(correctMousePos.x, correctMousePos.y);
+
+            //assigns the radius of the circle to the closests distance to a circle
+            _circleRadius = ClosestDistToCircle(float2MousePos);
+
+            //normalize the radius so it can be used to display the color from green to red
+            var normalizedRadius = _circleRadius / _maxDist;
+
+            _lineRenderer.startColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
+            _lineRenderer.endColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
+
+            //draws a shape with the given amount of points, more points = rounder
+            DrawPolygon(_circlePoints, _circleRadius, correctMousePos, 0.1f, 0.1f);
+
+            //if the circle is too big, its game over
+            if (_circleRadius >= _maxDist) Hub.OnGameOver();
+        }
+
+        private void DrawPolygon(float vertexNumber, float radius, Vector3 centerPos, float startWidth, float endWidth)
         {
             _lineRenderer.startWidth = startWidth;
             _lineRenderer.endWidth = endWidth;
             _lineRenderer.loop = true;
             float angle = 2 * Mathf.PI / vertexNumber;
-            _lineRenderer.positionCount = vertexNumber;
+            _lineRenderer.positionCount = (int)vertexNumber;
 
             for (int i = 0; i < vertexNumber; i++)
             {
@@ -72,29 +97,6 @@ namespace MiniGame
             }
 
             return distToScene;
-        }
-
-        public override void UpdateGame()
-        {
-            //gets the mousepos in a Vector2 for the circle and a float2 for the calculations on distance
-            var scaledMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
-            var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
-            var float2MousePos = new float2(correctMousePos.x, correctMousePos.y);
-
-            //assigns the radius of the circle to the closests distance to a circle
-            _circleRadius = ClosestDistToCircle(float2MousePos);
-
-            //normalize the radius so it can be used to display the color from green to red
-            var normalizedRadius = _circleRadius / _maxDist;
-
-            _lineRenderer.startColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
-            _lineRenderer.endColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
-
-            //draws a shape with the given amount of points, more points = rounder
-            DrawPolygon(48, _circleRadius, correctMousePos, 0.1f, 0.1f);
-
-            //if the circle is too big, its game over
-            if (_circleRadius >= _maxDist) Hub.OnGameOver();
         }
     }
 }
