@@ -50,6 +50,9 @@ TagManager:
   - name: Objects
     uniqueID: 456433127
     locked: 0
+  - name: DeskDecorations
+    uniqueID: 954430737
+    locked: 0
   - name: SideWalls
     uniqueID: 2422734087
     locked: 0

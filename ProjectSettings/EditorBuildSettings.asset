@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Yoni_MinigameTesting.unity
     guid: 98fa125b18c9203449d440a733339b1a
+  - enabled: 1
+    path: Assets/Scenes/BureauScene.unity
+    guid: 9cb45278756fed64189d46f47375ec4a
   m_configObjects: {}
