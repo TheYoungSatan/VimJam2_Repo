@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using System;
 
 namespace MiniGame
 {
@@ -20,18 +22,18 @@ namespace MiniGame
         public override void RunGame()
         {
             for (int i = 0; i < _numberAmount; i++)
-                _task += Random.Range(0, 10);
+                _task += UnityEngine.Random.Range(0, 10);
 
             _taskText.text = _task;
+            Keyboard.current.onTextInput += ReadInput;
 
             StartCoroutine(DisplayTime());
         }
 
-        public override void CheckInput()
+        private void ReadInput(char obj)
         {
             if (!_runGame) return;
-
-            if (int.TryParse(Input.inputString, out int n) && _input.Length < _numberAmount)
+            if (int.TryParse(obj.ToString(), out int n) && _input.Length < _numberAmount)
             {
                 _input += n.ToString();
 
