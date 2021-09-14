@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+State	ID	Name	State Group			Notes
+	28587383	LivingRoom	Footsteps			
+	748895195	None	Footsteps			
+	1586158131	Kitchen	Footsteps			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	

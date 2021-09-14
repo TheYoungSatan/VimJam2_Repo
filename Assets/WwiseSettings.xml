@@ -9,6 +9,6 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>E:\Wwise 2019.2.1.7250</WwiseInstallationPathWindows>
+  <WwiseInstallationPathWindows>E:\Wwise 2019.2.1.7250\SDK</WwiseInstallationPathWindows>
   <WwiseProjectPath>../../VimJam2_Repo/VimJam2_Wwise/VimJam2.wproj</WwiseProjectPath>
 </WwiseSettings>
