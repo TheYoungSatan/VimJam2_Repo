@@ -56,8 +56,43 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1466384055" Name="Interact" ObjectPath="\Events\Default Work Unit\Interact" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.258112">
+					<IncludedMemoryFiles>
+						<File Id="249965108" Language="SFX">
+							<ShortName>Fridge_Open_2.wav</ShortName>
+							<Path>SFX\Fridge_Open_2_10C4C929.wem</Path>
+						</File>
+						<File Id="261048632" Language="SFX">
+							<ShortName>Fridge_Open_3.wav</ShortName>
+							<Path>SFX\Fridge_Open_3_10C4C929.wem</Path>
+						</File>
+						<File Id="481425321" Language="SFX">
+							<ShortName>Fridge_Open_1.wav</ShortName>
+							<Path>SFX\Fridge_Open_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{1462A149-2E02-422B-A25A-7C5DF8510638}">
+							<Media>
+								<File Id="481425321"/>
+								<File Id="249965108"/>
+								<File Id="261048632"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
+				<StateGroup Id="1466384055" Name="Interact" ObjectPath="\States\Default Work Unit\Interact">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interact\None"/>
+						<State Id="446279778" Name="Bed" ObjectPath="\States\Default Work Unit\Interact\Bed"/>
+						<State Id="2376682602" Name="Computer" ObjectPath="\States\Default Work Unit\Interact\Computer"/>
+						<State Id="2337612214" Name="Fridge" ObjectPath="\States\Default Work Unit\Interact\Fridge"/>
+						<State Id="805220752" Name="Sink" ObjectPath="\States\Default Work Unit\Interact\Sink"/>
+						<State Id="1877847629" Name="Door" ObjectPath="\States\Default Work Unit\Interact\Door"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="2385628198" Name="Footsteps" ObjectPath="\States\Default Work Unit\Footsteps">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Footsteps\None"/>

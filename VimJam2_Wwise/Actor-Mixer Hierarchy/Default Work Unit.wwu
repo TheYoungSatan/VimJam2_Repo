@@ -336,7 +336,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}" ShortID="1002532484">
+								<RandomSequenceContainer Name="Interact_Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}" ShortID="1002532484">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -346,7 +346,7 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}" ShortID="999922629">
+								<RandomSequenceContainer Name="Interact_Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}" ShortID="999922629">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -356,8 +356,29 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}" ShortID="73877997">
+								<RandomSequenceContainer Name="Interact_Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}" ShortID="1026623930">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Interact_Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}" ShortID="31125308">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Interact_Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}" ShortID="73877997">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>25</Value>
@@ -391,28 +412,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Fridge_Open_1" ID="{66CFA688-C0AC-4225-A519-4F222725E7C4}" ShortID="857678006">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{815ECEE2-6E34-4455-AA12-A9D712693C37}"/>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{27982CE4-2CB3-4DBE-852D-469AEF145572}">
-																<PropertyList>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-50"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
+										<Sound Name="Fridge_Open_1" ID="{BB938A7C-C6B6-4AB2-BDC2-114A5C4F478F}" ShortID="165330826">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -422,12 +422,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Fridge_Open_1" ID="{33459C35-A49A-41B6-B760-2EF43C6B229A}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.922410102739725"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.995184075342467"/>
-													</PropertyList>
+												<AudioFileSource Name="Fridge_Open_1" ID="{AC4B085C-973C-4246-BA8D-A0A36D416C85}">
 													<Language>SFX</Language>
 													<AudioFile>Fridge_Open_1.wav</AudioFile>
 													<MediaIDList>
@@ -436,10 +431,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Fridge_Open_1" ID="{33459C35-A49A-41B6-B760-2EF43C6B229A}" Platform="Linked"/>
+												<ActiveSource Name="Fridge_Open_1" ID="{AC4B085C-973C-4246-BA8D-A0A36D416C85}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Fridge_Open_2" ID="{F1733AA1-EB72-4902-BEDA-6C0FA4C29A39}" ShortID="439232177">
+										<Sound Name="Fridge_Open_2" ID="{8D4F5DFD-E200-43E2-95A6-9549BC371EB7}" ShortID="302207321">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -449,12 +444,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Fridge_Open_2" ID="{27990252-DEC6-44AF-A022-631F1BDE56B8}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.994327910958902"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.11429794520548"/>
-													</PropertyList>
+												<AudioFileSource Name="Fridge_Open_2" ID="{463D7C82-BCB5-412C-9C88-CC9D773CC6A9}">
 													<Language>SFX</Language>
 													<AudioFile>Fridge_Open_2.wav</AudioFile>
 													<MediaIDList>
@@ -463,10 +453,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Fridge_Open_2" ID="{27990252-DEC6-44AF-A022-631F1BDE56B8}" Platform="Linked"/>
+												<ActiveSource Name="Fridge_Open_2" ID="{463D7C82-BCB5-412C-9C88-CC9D773CC6A9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Fridge_Open_3" ID="{80E74CB6-98B9-414D-A40E-494C559A0BC3}" ShortID="732336446">
+										<Sound Name="Fridge_Open_3" ID="{0FD8DB24-4B0A-4E2B-96FA-690EC8A74690}" ShortID="800117819">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -476,12 +466,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Fridge_Open_3" ID="{9898B9B2-D45D-495F-BFD9-79E7541ADA37}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.734589041095891"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.928082191780822"/>
-													</PropertyList>
+												<AudioFileSource Name="Fridge_Open_3" ID="{28CF202E-0CD9-4EA3-BCD9-4E9FA71137C7}">
 													<Language>SFX</Language>
 													<AudioFile>Fridge_Open_3.wav</AudioFile>
 													<MediaIDList>
@@ -490,30 +475,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Fridge_Open_3" ID="{9898B9B2-D45D-495F-BFD9-79E7541ADA37}" Platform="Linked"/>
+												<ActiveSource Name="Fridge_Open_3" ID="{28CF202E-0CD9-4EA3-BCD9-4E9FA71137C7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}" ShortID="1026623930">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}" ShortID="31125308">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-										</Reference>
-									</ReferenceList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<StateInfo>
@@ -548,50 +513,50 @@
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}"/>
+										<ItemRef Name="Interact_Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}"/>
+										<ItemRef Name="Interact_Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}"/>
+										<ItemRef Name="Interact_Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}"/>
+										<ItemRef Name="Interact_Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}"/>
+										<ItemRef Name="Interact_Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Bed" ID="{214FEE0F-E129-4A3B-A265-77BB0527B74D}"/>
 										<ItemList>
-											<ItemRef Name="Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}"/>
+											<ItemRef Name="Interact_Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Fridge" ID="{1462A149-2E02-422B-A25A-7C5DF8510638}"/>
 										<ItemList>
-											<ItemRef Name="Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}"/>
+											<ItemRef Name="Interact_Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Door" ID="{9C66007B-7701-404E-B586-6AFB1054CC23}"/>
 										<ItemList>
-											<ItemRef Name="Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}"/>
+											<ItemRef Name="Interact_Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Computer" ID="{CC25EE7C-D2B0-410B-9177-4EAE38BAD4FE}"/>
 										<ItemList>
-											<ItemRef Name="Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}"/>
+											<ItemRef Name="Interact_Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Sink" ID="{E2FF6CB6-B256-4415-B802-C37AE947CF89}"/>
 										<ItemList>
-											<ItemRef Name="Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}"/>
+											<ItemRef Name="Interact_Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
