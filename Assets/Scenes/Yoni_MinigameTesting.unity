@@ -525,8 +525,9 @@ MonoBehaviour:
     - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
   _currentGameChunck: 0
   _testmode: 1
-  _currentMiniGame: {fileID: 8521159032982600635, guid: 3311b1e6f224d384baa187299f99d665,
+  _currentMiniGame: {fileID: 3671662515955418513, guid: 3f13d87a8633a0140b96b7e7b257c8ba,
     type: 3}
+  _returnScene: 
 --- !u!4 &1570460119
 Transform:
   m_ObjectHideFlags: 0

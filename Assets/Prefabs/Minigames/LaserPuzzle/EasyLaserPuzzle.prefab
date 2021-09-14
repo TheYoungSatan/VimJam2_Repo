@@ -1953,9 +1953,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8521159032982600634}
-  - component: {fileID: 8521159032982600635}
+  - component: {fileID: 8371898863826175559}
   m_Layer: 0
-  m_Name: LaserPuzzleMinigame
+  m_Name: EasyLaserPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,7 +1997,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8521159032982600635
+--- !u!114 &8371898863826175559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2006,14 +2006,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8521159032982600637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b415b159b2d42ac45b7d898d67d3f0ab, type: 3}
+  m_Script: {fileID: 11500000, guid: da5781c56c4251444a0eb33bc0627302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Hub: {fileID: 0}
   Reflections: 10
   MaxLength: 80
   _lineRenderer: {fileID: 1091095516166595777}
-  _laserPointer: {fileID: 7377899903096445035}
+  _laser: {fileID: 7377899903096445035}
 --- !u!1 &8771628608663768874
 GameObject:
   m_ObjectHideFlags: 0

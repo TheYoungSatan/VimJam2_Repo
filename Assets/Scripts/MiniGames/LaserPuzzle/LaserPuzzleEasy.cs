@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace MiniGame
 {
-    public class LaserPuzzle : Minigame
+    public class LaserPuzzleEasy : Minigame
     {
         #region Input
         public void InputMouseClick(InputAction.CallbackContext context)
@@ -33,7 +33,7 @@ namespace MiniGame
         [SerializeField]
         private LineRenderer _lineRenderer;
         [SerializeField]
-        private GameObject _laserPointer;
+        private GameObject _laser;
         private Ray2D _ray;
         private RaycastHit2D _hit;
 
@@ -52,15 +52,20 @@ namespace MiniGame
 
         public override void RunGame()
         {
-            base.RunGame();
+
         }
 
         public override void UpdateGame()
         {
-            _ray = new Ray2D(_laserPointer.transform.position, _laserPointer.transform.right);
+            LaserCasting(_laser, _lineRenderer);
+        }
 
-            _lineRenderer.positionCount = 1;
-            _lineRenderer.SetPosition(0, _laserPointer.transform.position);
+        private void LaserCasting(GameObject laserObj, LineRenderer laser)
+        {
+            _ray = new Ray2D(laserObj.transform.position, laserObj.transform.right);
+
+            laser.positionCount = 1;
+            laser.SetPosition(0, laserObj.transform.position);
             float remainingLength = MaxLength;
 
             for (int i = 0; i < Reflections; i++)
@@ -69,20 +74,19 @@ namespace MiniGame
                 if (_hit)
                 {
                     remainingLength -= Vector2.Distance(_ray.origin, _hit.point);
-                    _lineRenderer.positionCount += 1;
-                    _lineRenderer.SetPosition(_lineRenderer.positionCount - 1, _hit.point);
-                    
+                    laser.positionCount += 1;
+                    laser.SetPosition(laser.positionCount - 1, _hit.point);
+
                     _ray = new Ray2D(_hit.point - _ray.direction * 0.01f, Vector2.Reflect(_ray.direction, _hit.normal));
 
-                    if (_hit.collider.tag != "Mirror")
-                    {
-                        break;
-                    }  
+                    if (_hit.collider.CompareTag("Goal")) Hub.OnGameSucces();
+
+                    if (!_hit.collider.CompareTag("Mirror")) break;
                 }
                 else
                 {
-                    _lineRenderer.positionCount += 1;
-                    _lineRenderer.SetPosition(_lineRenderer.positionCount - 1, _ray.origin + _ray.direction * remainingLength);
+                    laser.positionCount += 1;
+                    laser.SetPosition(laser.positionCount - 1, _ray.origin + _ray.direction * remainingLength);
                 }
             }
         }
