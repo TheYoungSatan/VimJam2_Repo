@@ -41,6 +41,10 @@ namespace MiniGame
         private PlayerInput _playerInput;
         private InputAction _clickAction;
 
+        public GameObject newSprite;
+
+        private int _texSize = 256;
+
         private void Awake()
         {
             _playerInput = FindObjectOfType<PlayerInput>();
@@ -53,6 +57,19 @@ namespace MiniGame
         public override void RunGame()
         {
 
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    TextureDraw.DrawLine(tex, Random.Range(0, _texSize), Random.Range(0, _texSize), Random.Range(0, _texSize), Random.Range(0, _texSize),
+            //        Color.red);
+            //}
+            
+            var tex = new Texture2D(_texSize, _texSize);
+            tex.Apply();
+            var sprite = Sprite.Create(tex, new Rect(0, 0, _texSize, _texSize), new Vector2(0.5f, 0.5f));
+            GameObject testObj = new GameObject("TestObject");
+            SpriteRenderer spriteRenderer = testObj.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = sprite;
+            //newSprite.GetComponent<Renderer>().material.mainTexture = tex;
         }
 
         public override void UpdateGame()
