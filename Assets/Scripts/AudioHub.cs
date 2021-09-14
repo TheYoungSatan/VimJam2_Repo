@@ -11,14 +11,9 @@ namespace Sound
         [SerializeField] private string footstep; public static string Footstep => hub.footstep;
         [SerializeField] private string buttonclick; public static string ButtonClick => hub.buttonclick;
 
-        private void Awake()
+        private void Start()
         {
-            AudioHub[] objs = FindObjectsOfType<AudioHub>();
-            if (objs.Length > 1)
-                Destroy(this.gameObject);
-
-            DontDestroyOnLoad(this.gameObject);
-            hub = this; 
+            hub = this;
         }
 
         public static void PlaySound(string sound, GameObject go = null)

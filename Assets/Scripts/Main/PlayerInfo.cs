@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
@@ -13,7 +12,7 @@ public class PlayerInfo : MonoBehaviour
     private void Start()
     {
         Initialize();
-        StartCoroutine(test());
+        OnUpdateStats(90, 0, 0);
     }
 
     private void Initialize()
@@ -24,21 +23,28 @@ public class PlayerInfo : MonoBehaviour
         OnUpdateValues?.Invoke();
     }
 
-    public void OnUpdate(int hunger = 20, int thurst = 20, int time = 5)
+    public void DecreaseHunger(int percentage) 
+    { 
+        HungerPercentage -= percentage; HungerPercentage = Mathf.Clamp(HungerPercentage, 0, 100);
+        OnUpdateValues?.Invoke();
+    }
+    public void DecreaseThurst(int percentage) 
+    { 
+        ThurstPercentage -= percentage; ThurstPercentage = Mathf.Clamp(ThurstPercentage, 0, 100);
+        OnUpdateValues?.Invoke();
+    }
+    public void ResetAwaketime()
     {
-        HungerPercentage += hunger;
-        ThurstPercentage += thurst;
-        AwakeTime += time;
-
+        AwakeTime = 0;
         OnUpdateValues?.Invoke();
     }
 
-    IEnumerator test()
+        public void OnUpdateStats(int addhunger = 20, int addthurst = 20, int addAwaketime = 5)
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(5f);
-            OnUpdate();
-        }
+        HungerPercentage += addhunger; HungerPercentage = Mathf.Clamp(HungerPercentage, 0, 100);
+        ThurstPercentage += addthurst; ThurstPercentage = Mathf.Clamp(ThurstPercentage, 0, 100);
+        AwakeTime += addAwaketime;
+
+        OnUpdateValues?.Invoke();
     }
 }
