@@ -19,7 +19,7 @@ namespace Sound
         public static void PlaySound(string sound, GameObject go = null)
         {
             go = go == null ? hub.gameObject : go;
-            //AkSoundEngine.PostEvent(sound, go);
+            AkSoundEngine.PostEvent(sound, go);
         }
     }
 }
