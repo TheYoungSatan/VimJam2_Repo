@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Kitchen
   id: 1586158131
   guid: F571F254-74AD-4374-A4AA-64A90716C71C
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: eb7e35b239c6dcc4fbe40c2d0e02b25a,
+    type: 2}
