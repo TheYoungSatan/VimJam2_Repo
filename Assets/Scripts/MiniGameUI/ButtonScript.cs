@@ -13,13 +13,19 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerEnter(PointerEventData eventData)
     {
         // enable preview of hovered button
-        _previewMiniGame.SetActive(true);
+        if (_previewMiniGame != null)
+        {
+            _previewMiniGame.SetActive(true);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         // disable preview of hovered button
-        _previewMiniGame.SetActive(false);
+        if (_previewMiniGame != null)
+        {
+            _previewMiniGame.SetActive(false);
+        }          
     }
 
 
