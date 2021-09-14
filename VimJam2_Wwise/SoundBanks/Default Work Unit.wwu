@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{9DF09D25-D989-469F-A219-60DB595B925C}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="SoundBank" ID="{304D933E-2EDB-4AD4-8BC7-7C0622DF1F79}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>104857600</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Footstep" ID="{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

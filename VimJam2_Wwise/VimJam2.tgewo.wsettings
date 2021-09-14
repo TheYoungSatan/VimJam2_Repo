@@ -5,6 +5,8 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Pro Tools Sound Design\VimJam2\Bounced Files\"/>
 				<Property Name="Event Action List\{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AB4AD72D-3736-4680-8CEB-9235C47B2108}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -52,7 +54,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="ZktU+qFPyES+aavGGHd4ZLmQKlP2w/tEqIpK7XHru+A3c6nVoQSpR7xAQ5n2h7ETmaRlxIP1Lk6cfK1u2DLnMg=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="VQ8MFxKk0UKiIHrSrEHqrWZLVPqhT8hEvmmrxhh3eGS5kCpT9sP7RKiKSu1x67vg9HHz6G/e9EaIF1JHPAv17w=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="lwrzs8ZvnkqhKEYziQWONQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
