@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BureauScene.unity
     guid: 9cb45278756fed64189d46f47375ec4a
+  - enabled: 1
+    path: Assets/Scenes/StoreScene.unity
+    guid: bcae1a464bf840d46b38e025abeafd35
   m_configObjects: {}

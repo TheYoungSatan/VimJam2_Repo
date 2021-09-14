@@ -1,18 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public event Action OnUpdateValues;
+
+    public int AwakeTime { get; private set; }
+    public int HungerPercentage { get; private set; }
+    public int ThurstPercentage { get; private set; }
+
+    private void Start()
     {
-        
+        Initialize();
+        StartCoroutine(test());
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Initialize()
     {
-        
+        AwakeTime = 0;
+        HungerPercentage = 0;
+        ThurstPercentage = 0;
+        OnUpdateValues?.Invoke();
+    }
+
+    public void OnUpdate(int hunger = 20, int thurst = 20, int time = 5)
+    {
+        HungerPercentage += hunger;
+        ThurstPercentage += thurst;
+        AwakeTime += time;
+
+        OnUpdateValues?.Invoke();
+    }
+
+    IEnumerator test()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5f);
+            OnUpdate();
+        }
     }
 }
