@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	281699847	Footsteps_5	E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\SFX\Footsteps_5_DAAE9B59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_LivingRoom\Footsteps_5		71264
+	282707065	Footsteps_1	E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\SFX\Footsteps_1_43FBA265.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_LivingRoom\Footsteps_1		45168
+	297054626	Footsteps_4	E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\SFX\Footsteps_4_34A7C94E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_LivingRoom\Footsteps_4		87720
+	300277308	Footsteps_2	E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\SFX\Footsteps_2_92634899.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_LivingRoom\Footsteps_2		59364
+	961390975	Footsteps_3	E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\SFX\Footsteps_3_F45D0578.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_LivingRoom\Footsteps_3		73276
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>E:\Wwise 2019.2.1.7250\VimJam2\</ProjectRoot>
+		<SourceFilesRoot>E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Wwise 2019.2.1.7250\VimJam2\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Wwise 2019.2.1.7250\VimJam2\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
+			<ShortName>SoundBank</ShortName>
+			<Path>SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.228223" DurationMax="0.469928">
+					<IncludedMemoryFiles>
+						<File Id="281699847" Language="SFX">
+							<ShortName>Footsteps_5.wav</ShortName>
+							<Path>SFX\Footsteps_5_DAAE9B59.wem</Path>
+						</File>
+						<File Id="282707065" Language="SFX">
+							<ShortName>Footsteps_1.wav</ShortName>
+							<Path>SFX\Footsteps_1_43FBA265.wem</Path>
+						</File>
+						<File Id="297054626" Language="SFX">
+							<ShortName>Footsteps_4.wav</ShortName>
+							<Path>SFX\Footsteps_4_34A7C94E.wem</Path>
+						</File>
+						<File Id="300277308" Language="SFX">
+							<ShortName>Footsteps_2.wav</ShortName>
+							<Path>SFX\Footsteps_2_92634899.wem</Path>
+						</File>
+						<File Id="961390975" Language="SFX">
+							<ShortName>Footsteps_3.wav</ShortName>
+							<Path>SFX\Footsteps_3_F45D0578.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
