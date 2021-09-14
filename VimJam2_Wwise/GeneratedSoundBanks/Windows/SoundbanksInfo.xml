@@ -21,7 +21,7 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.228223" DurationMax="0.469928">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.469928">
 					<IncludedMemoryFiles>
 						<File Id="281699847" Language="SFX">
 							<ShortName>Footsteps_5.wav</ShortName>
@@ -44,8 +44,28 @@
 							<Path>SFX\Footsteps_3_F45D0578.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{AD0875BE-37D5-491A-A38E-6EF930519B8F}">
+							<Media>
+								<File Id="282707065"/>
+								<File Id="300277308"/>
+								<File Id="961390975"/>
+								<File Id="297054626"/>
+								<File Id="281699847"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2385628198" Name="Footsteps" ObjectPath="\States\Default Work Unit\Footsteps">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Footsteps\None"/>
+						<State Id="28587383" Name="LivingRoom" ObjectPath="\States\Default Work Unit\Footsteps\LivingRoom"/>
+						<State Id="1586158131" Name="Kitchen" ObjectPath="\States\Default Work Unit\Footsteps\Kitchen"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
