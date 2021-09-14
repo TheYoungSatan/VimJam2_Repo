@@ -8,15 +8,15 @@ public class MinigameHub : MonoBehaviour
 {
     private enum GameStates { Running, GameOver, GameSucces}
 
-    private enum GameChunck { Programming, Art, Sound, Publish}
+    private enum GameChunk { Programming, Art, Sound, Publish}
 
     private enum Difficulty { Easy, Medium, Hard}
 
     [Serializable]
     private struct GameCollection
     {
-        public GameChunck Chunk => _gameChunck;
-        [SerializeField] private GameChunck _gameChunck;
+        public GameChunk Chunk => _gameChunck;
+        [SerializeField] private GameChunk _gameChunck;
         [SerializeField] private Minigame[] _minigames;
 
         public Minigame GetMinigame()
@@ -26,7 +26,7 @@ public class MinigameHub : MonoBehaviour
     }
 
     [SerializeField] private GameCollection[] _gameCollections;
-    [SerializeField] private GameChunck _currentGameChunck;
+    [SerializeField] private GameChunk _currentGameChunck;
     [SerializeField] private bool _testmode = true;
     [SerializeField] private Minigame _currentMiniGame;
 
@@ -45,6 +45,11 @@ public class MinigameHub : MonoBehaviour
         }
 
         InitializeGame();
+    }
+
+    public void SetGameChunk()
+    {
+
     }
 
     private void InitializeGame()
