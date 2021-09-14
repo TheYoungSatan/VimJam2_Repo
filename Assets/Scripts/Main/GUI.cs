@@ -51,13 +51,32 @@ public class GUI : MonoBehaviour
         }
     }
     [SerializeField] private VisualGUI[] _visualGUI;
+    [SerializeField] private RectTransform _interactButton;
+
     private PlayerInfo _playerinfo;
+    private PlayerController _player;
 
     private void Awake()
     {
         instance = this;
         _playerinfo = FindObjectOfType<PlayerInfo>();
+        _player = FindObjectOfType<PlayerController>();
         _playerinfo.OnUpdateValues += UpdateGUI;
+    }
+
+    private void Update()
+    {
+        if (_player == null)
+        {
+            gameObject.SetActive(false);
+            if (TryGetComponent(out PlayerController controller))
+                _player = controller;
+        }
+        else
+        {
+            gameObject.SetActive(true);
+            SetInteractButton(_player?.CheckForInteractables());
+        }
     }
 
     private void UpdateGUI()
@@ -77,5 +96,22 @@ public class GUI : MonoBehaviour
                     break;
             }
         }
+    }
+
+    public void SetInteractButton(Transform trans)
+    {
+        if(trans == null)
+        {
+            _interactButton.gameObject.SetActive(false);
+            return;
+        }
+
+        Vector3 transpos = trans.position;
+        transpos.y += .5f;
+        transpos.x += .125f;
+        Vector3 pos = Camera.main.WorldToScreenPoint(transpos);
+        pos.z = 0;
+        _interactButton.position = pos;
+        _interactButton.gameObject.SetActive(true);
     }
 }

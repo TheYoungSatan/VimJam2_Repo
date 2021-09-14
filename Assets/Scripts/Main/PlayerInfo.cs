@@ -12,7 +12,7 @@ public class PlayerInfo : MonoBehaviour
     private void Start()
     {
         Initialize();
-        OnUpdateStats(90, 0, 0);
+        OnUpdateStats(90, 100, 0);
     }
 
     private void Initialize()

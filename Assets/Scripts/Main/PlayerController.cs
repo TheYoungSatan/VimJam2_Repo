@@ -64,6 +64,14 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    public Transform CheckForInteractables()
+    {
+        Vector3 checkPos = transform.position;
+        var colls = Physics2D.OverlapCircleAll(checkPos, _radius, _checkLayer);
+
+        return colls.Length > 0 ? transform : null;
+    }
+
     private void Awake()
     {
         _playerInput = FindObjectOfType<PlayerInput>();
