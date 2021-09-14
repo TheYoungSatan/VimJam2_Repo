@@ -7,7 +7,9 @@ TagManager:
   - Goal
   - Target
   - Mirror
+  - Unlock
   - StuckMirror
+  - MovingBlock
   layers:
   - Default
   - TransparentFX
@@ -47,6 +49,9 @@ TagManager:
     locked: 0
   - name: Backdrop
     uniqueID: 3422933647
+    locked: 0
+  - name: Backdrop_2
+    uniqueID: 2932749459
     locked: 0
   - name: Objects
     uniqueID: 456433127
