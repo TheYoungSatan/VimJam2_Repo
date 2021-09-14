@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>E:\Wwise 2019.2.1.7250\VimJam2\</ProjectRoot>
-		<SourceFilesRoot>E:\Wwise 2019.2.1.7250\VimJam2\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Wwise 2019.2.1.7250\VimJam2\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\</ProjectRoot>
+		<SourceFilesRoot>E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Wwise 2019.2.1.7250\VimJam2\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
