@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6d7002a07ed7a24b92dc3a1e325a53d, type: 3}
-  m_Name: AB9889A3-96EB-4C14-A3D7-905A5E529330
+  m_Name: E4F11521-7357-4FCA-A4E3-B48A52979042
   m_EditorClassIdentifier: 
-  objectName: LivingRoom
-  id: 28587383
-  guid: AB9889A3-96EB-4C14-A3D7-905A5E529330
+  objectName: None
+  id: 748895195
+  guid: E4F11521-7357-4FCA-A4E3-B48A52979042
   WwiseStateGroupReference: {fileID: 11400000, guid: f71238d419046aa4db8a8b6a89fd0b6f,
     type: 2}
