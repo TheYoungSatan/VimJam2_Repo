@@ -43,11 +43,12 @@ namespace MiniGame
 
 
         private Texture2D _texture;
-        public int TextureWidth = 256;
-        public int TextureHeight = 256;
+        public int TextureWidth = 128;
+        public int TextureHeight = 128;
         public Renderer PixelPlaneRenderer;
         private Color[] _fillPixels;
 
+        public MeshCollider PlaneBounds;
 
         private void Awake()
         {
@@ -59,6 +60,13 @@ namespace MiniGame
         }
 
         public override void RunGame()
+        {
+            InitializeTexture();
+
+            StartCoroutine(RefreshLines());
+        }
+
+        private void InitializeTexture()
         {
             _texture = new Texture2D(TextureWidth, TextureHeight, TextureFormat.ARGB32, false);
             _texture.filterMode = FilterMode.Point;
@@ -74,18 +82,25 @@ namespace MiniGame
             _texture.Apply();
 
             PixelPlaneRenderer.material.mainTexture = _texture;
+        }
 
-            //Vector2 startPoint = new Vector2(0, 0);
-            //Vector2 endPoint = new Vector2(20,50);
-            //DrawLineAlgorithm((int)startPoint.x, (int)startPoint.y, (int)endPoint.x, (int)endPoint.y);
+        private IEnumerator RefreshLines()
+        {
+            for (; ; )
+            {
+                _texture.SetPixels(_fillPixels);
+                _texture.Apply();
+
+                yield return new WaitForSeconds(0.5f);
+            }
         }
 
         public override void UpdateGame()
         {
-            LaserCasting(_laser, _lineRenderer);
+            LaserCasting(_laser, _lineRenderer, Color.red);
         }
 
-        private void LaserCasting(GameObject laserObj, LineRenderer laser)
+        private void LaserCasting(GameObject laserObj, LineRenderer laser, Color color)
         {
             _ray = new Ray2D(laserObj.transform.position, laserObj.transform.right);
 
@@ -98,16 +113,24 @@ namespace MiniGame
                 _hit = Physics2D.Raycast(_ray.origin, _ray.direction, remainingLength);
                 if (_hit)
                 {
+                    
+                    Vector2 startPoint = new Vector2(laser.GetPosition(laser.positionCount-1).x, laser.GetPosition(laser.positionCount-1).y);
+                    Vector2 endPoint = new Vector2(_hit.point.x, _hit.point.y);
+
                     remainingLength -= Vector2.Distance(_ray.origin, _hit.point);
                     laser.positionCount += 1;
                     laser.SetPosition(laser.positionCount - 1, _hit.point);
 
-                    
-                    Vector2 startPoint = new Vector2(laser.GetPosition(0).x, laser.GetPosition(0).y);
-                    Vector2 endPoint = new Vector2(laser.GetPosition(1).x, laser.GetPosition(1).y);
+                    var widthPlane = PlaneBounds.bounds.size.x;
+                    var heightPlane = PlaneBounds.bounds.size.y;
 
-                    DrawLineAlgorithm((int)startPoint.x, (int)startPoint.y, (int)endPoint.x, (int)endPoint.y);
-                    DrawLineAlgorithm(0, 0, 20, 20);
+                    var startXCoord = (((widthPlane / 2) + startPoint.x) / widthPlane) * TextureHeight;
+                    var startYCoord = (((heightPlane / 2) - startPoint.y) / heightPlane) * TextureWidth;
+
+                    var endXCoord = (((widthPlane / 2) + endPoint.x) / widthPlane) * TextureHeight;
+                    var endYCoord = (((heightPlane / 2) - endPoint.y) / heightPlane) * TextureWidth;
+
+                    DrawLineAlgorithm((int)startYCoord, (int)startXCoord, (int)endYCoord, (int)endXCoord, color);   //x needs to be y and y needs to be x
 
                     _ray = new Ray2D(_hit.point - _ray.direction * 0.01f, Vector2.Reflect(_ray.direction, _hit.normal));
 
@@ -129,7 +152,7 @@ namespace MiniGame
         }
 
         // from wikipedia
-        private void DrawLineAlgorithm(int x0, int y0, int x1, int y1)
+        private void DrawLineAlgorithm(int x0, int y0, int x1, int y1, Color color)
         {
             var dx = Mathf.Abs(x1 - x0);
             var sx = x0 < x1 ? 1 : -1;
@@ -141,7 +164,7 @@ namespace MiniGame
             var loop = true;
             while (loop)
             {
-                _texture.SetPixel(x0, y0, Color.red);
+                _texture.SetPixel(x0, y0, color);
                 if ((x0 == x1) && (y0 == y1)) loop = false;
                 var e2 = 2 * err;
                 if (e2 > -dy)

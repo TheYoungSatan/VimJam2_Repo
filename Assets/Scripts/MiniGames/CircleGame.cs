@@ -15,16 +15,20 @@ namespace MiniGame
 
         [SerializeField]
         private float _maxDist = 3f;
-        [SerializeField, Range(4, 96)]
-        private float _circlePoints = 48;
-        [SerializeField]
-        private LineRenderer _lineRenderer;
-
         private CircleCollider2D[] _circles;
+
+        private Texture2D _texture;
+        public int TextureWidth = 128;
+        public int TextureHeight = 128;
+        public Renderer PixelPlaneRenderer;
+        private Color[] _fillPixels;
+
+        public MeshCollider PlaneBounds;
 
         public override void RunGame()
         {
             _circles = FindObjectsOfType<CircleCollider2D>();
+            InitializeTexture();
         }
 
         public override void CheckInput()
@@ -45,34 +49,61 @@ namespace MiniGame
             //normalize the radius so it can be used to display the color from green to red
             var normalizedRadius = _circleRadius / _maxDist;
 
-            _lineRenderer.startColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
-            _lineRenderer.endColor = Color.Lerp(Color.green, Color.red, normalizedRadius);
+            _texture.SetPixels(_fillPixels);
+            _texture.Apply();
 
-            //draws a shape with the given amount of points, more points = rounder
-            DrawPolygon(_circlePoints, _circleRadius, correctMousePos, 0.1f, 0.1f);
+            var widthPlane = PlaneBounds.bounds.size.x;
+            var heightPlane = PlaneBounds.bounds.size.y;
+
+            var xCoord = (((widthPlane / 2) + correctMousePos.x) / widthPlane) * TextureHeight;
+            var yCoord = (((heightPlane / 2) - correctMousePos.y) / heightPlane) * TextureWidth;
+
+            var pixelRadius = (TextureWidth / widthPlane) * _circleRadius;
+
+            DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
 
             //if the circle is too big, its game over
             if (_circleRadius >= _maxDist) Hub.OnGameOver();
         }
 
-        private void DrawPolygon(float vertexNumber, float radius, Vector3 centerPos, float startWidth, float endWidth)
+        private void InitializeTexture()
         {
-            _lineRenderer.startWidth = startWidth;
-            _lineRenderer.endWidth = endWidth;
-            _lineRenderer.loop = true;
-            float angle = 2 * Mathf.PI / vertexNumber;
-            _lineRenderer.positionCount = (int)vertexNumber;
+            _texture = new Texture2D(TextureWidth, TextureHeight, TextureFormat.ARGB32, false);
+            _texture.filterMode = FilterMode.Point;
+            Color fillColor = Color.clear;
+            _fillPixels = new Color[TextureWidth * TextureHeight];
 
-            for (int i = 0; i < vertexNumber; i++)
+            for (int i = 0; i < _fillPixels.Length; i++)
             {
-                Matrix4x4 rotationMatrix = new Matrix4x4(new Vector4(Mathf.Cos(angle * i), Mathf.Sin(angle * i), 0, 0),
-                                                         new Vector4(-1 * Mathf.Sin(angle * i), Mathf.Cos(angle * i), 0, 0),
-                                           new Vector4(0, 0, 1, 0),
-                                           new Vector4(0, 0, 0, 1));
-                Vector3 initialRelativePosition = new Vector3(0, radius, 0);
-                _lineRenderer.SetPosition(i, centerPos + rotationMatrix.MultiplyPoint(initialRelativePosition));
-
+                _fillPixels[i] = fillColor;
             }
+
+            _texture.SetPixels(_fillPixels);
+            _texture.Apply();
+
+            PixelPlaneRenderer.material.mainTexture = _texture;
+        }
+
+        private void DrawPixelCircle(int xm, int ym, int r, float normalizedradius)
+        {
+            int x = -r;
+            int y = 0;
+            int err = 2 - 2 * r;
+
+            do
+            {
+                Color color = Color.Lerp(Color.green, Color.red, normalizedradius);
+                _texture.SetPixel(xm - x, ym + y, color);
+                _texture.SetPixel(xm - y, ym - x, color);
+                _texture.SetPixel(xm + x, ym - y, color);
+                _texture.SetPixel(xm + y, ym + x, color);
+
+                r = err;
+                if (r <= y) err += ++y * 2 + 1;
+                if (r > x || err > y) err += ++x * 2 + 1;
+            } while (x < 0);
+
+            _texture.Apply();
         }
 
         private float Length(float2 v)

@@ -79,6 +79,15 @@ namespace MiniGame
         private float _timer;
         private string _inputDir;
 
+
+        private Texture2D _texture;
+        public int TextureWidth = 128;
+        public int TextureHeight = 128;
+        public Renderer PixelPlaneRenderer;
+        private Color[] _fillPixels;
+
+        public MeshCollider PlaneBounds;
+
         public override void RunGame() 
         {
             _playerInput = FindObjectOfType<PlayerInput>();

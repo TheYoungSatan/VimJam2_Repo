@@ -540,7 +540,7 @@ MonoBehaviour:
     - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
   _currentGameChunck: 0
   _testmode: 1
-  _currentMiniGame: {fileID: 8371898863826175559, guid: 3311b1e6f224d384baa187299f99d665,
+  _currentMiniGame: {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91,
     type: 3}
   _returnScene: 
 --- !u!4 &1570460119
