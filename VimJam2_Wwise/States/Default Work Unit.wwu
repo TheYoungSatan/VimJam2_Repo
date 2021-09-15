@@ -10,14 +10,10 @@
 						<State Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Interact" ID="{5FCD4240-A2D9-4362-9048-F8B04B17FE50}">
+				<StateGroup Name="Music" ID="{83998DE9-52F2-44DF-A408-9BAC80F7F2FD}">
 					<ChildrenList>
-						<State Name="None" ID="{9F06CD67-B6DA-4E3E-BC10-E98018B5D282}"/>
-						<State Name="Bed" ID="{214FEE0F-E129-4A3B-A265-77BB0527B74D}"/>
-						<State Name="Computer" ID="{CC25EE7C-D2B0-410B-9177-4EAE38BAD4FE}"/>
-						<State Name="Fridge" ID="{1462A149-2E02-422B-A25A-7C5DF8510638}"/>
-						<State Name="Sink" ID="{E2FF6CB6-B256-4415-B802-C37AE947CF89}"/>
-						<State Name="Door" ID="{9C66007B-7701-404E-B586-6AFB1054CC23}"/>
+						<State Name="None" ID="{E4F11521-7357-4FCA-A4E3-B48A52979042}"/>
+						<State Name="LivingRoom" ID="{AB9889A3-96EB-4C14-A3D7-905A5E529330}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

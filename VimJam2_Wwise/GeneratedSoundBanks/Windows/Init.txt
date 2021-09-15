@@ -1,17 +1,13 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1466384055	Interact			\Default Work Unit\Interact	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
-	446279778	Bed	Interact			
-	748895195	None	Interact			
-	805220752	Sink	Interact			
-	1877847629	Door	Interact			
-	2337612214	Fridge	Interact			
-	2376682602	Computer	Interact			
 	28587383	LivingRoom	Footsteps			
 	748895195	None	Footsteps			
 	1586158131	Kitchen	Footsteps			
+	28587383	LivingRoom	Music			
+	748895195	None	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

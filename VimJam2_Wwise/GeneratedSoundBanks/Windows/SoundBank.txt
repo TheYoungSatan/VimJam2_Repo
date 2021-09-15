@@ -1,29 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1466384055	Interact			\Default Work Unit\Interact	
 	1866025847	Footstep			\Default Work Unit\Footstep	
+	1931805945	Interact_Fridge			\Default Work Unit\Interact\Interact_Fridge	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	1466384055	Interact			\Default Work Unit\Interact	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 
 State	ID	Name	State Group			Notes
-	446279778	Bed	Interact			
-	748895195	None	Interact			
-	805220752	Sink	Interact			
-	1877847629	Door	Interact			
-	2337612214	Fridge	Interact			
-	2376682602	Computer	Interact			
 	28587383	LivingRoom	Footsteps			
 	748895195	None	Footsteps			
 	1586158131	Kitchen	Footsteps			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	249965108	Fridge_Open_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact\Interact_Fridge\Fridge_Open_2		228064
-	261048632	Fridge_Open_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact\Interact_Fridge\Fridge_Open_3		192064
+	249965108	Fridge_Open_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_2		228064
+	261048632	Fridge_Open_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_3		192064
 	281699847	Footsteps_5	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_5_DAAE9B59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_5		71264
 	282707065	Footsteps_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_1_43FBA265.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_1		45168
 	297054626	Footsteps_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_4_34A7C94E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_4		87720
 	300277308	Footsteps_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_2_92634899.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_2		59364
-	481425321	Fridge_Open_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact\Interact_Fridge\Fridge_Open_1		204064
+	481425321	Fridge_Open_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_1		204064
 	961390975	Footsteps_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_3_F45D0578.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_3		73276
 
