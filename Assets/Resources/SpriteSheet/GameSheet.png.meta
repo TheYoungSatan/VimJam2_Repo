@@ -118,13 +118,19 @@ TextureImporter:
     second: Fence
   - first:
       213: 4118555971923783419
-    second: FenceGate
+    second: Pole
   - first:
       213: -2150776629597606076
-    second: FenceGate
+    second: Pole
   - first:
       213: -3250507852271765856
     second: FenceGate_2
+  - first:
+      213: -2150776629597606076
+    second: Pole
+  - first:
+      213: 4118555971923783419
+    second: Pole
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -987,13 +993,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FenceGate
+      name: Pole
       rect:
         serializedVersion: 2
-        x: 25
-        y: 90
-        width: 6
-        height: 9
+        x: 124
+        y: 1
+        width: 3
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,6 +1030,27 @@ TextureImporter:
       bones: []
       spriteID: 0a639bd8450e3e2d0800000000000000
       internalID: -3250507852271765856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 90
+        width: 6
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea41ed5dc082930800000000000000
+      internalID: 4118555971923783419
       vertices: []
       indices: 
       edges: []
