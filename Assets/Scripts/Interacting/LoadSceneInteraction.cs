@@ -1,25 +1,17 @@
-﻿using UnityEngine;
+﻿using Sound;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Interacting 
 {
-    [RequireComponent(typeof(SwitchEventCaller), typeof(AkState))]
     public class LoadSceneInteraction : MonoBehaviour, IInteractable
     {
+        [SerializeField] private string _audioName = "_Computer";
         [SerializeField] private string _sceneToLoad = "Yoni_MinigameTesting";
-        private SwitchEventCaller _caller;
-
-        private void Awake()
-        {
-            if (TryGetComponent(out SwitchEventCaller caller))
-                _caller = caller;
-            else
-                _caller = gameObject.AddComponent<SwitchEventCaller>();
-        }
 
         public void OnInteract()
         {
-            _caller.CallSwitch();
+            AudioHub.PlaySound(AudioHub.Interact + _audioName);
             SceneManager.LoadScene(_sceneToLoad);
         }
     }

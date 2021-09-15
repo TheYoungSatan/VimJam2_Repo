@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 7874376018228303672}
   - component: {fileID: 4516123314898171554}
   - component: {fileID: 7064388292626333335}
-  - component: {fileID: 4786203524579078836}
-  - component: {fileID: 4233433557512728705}
   - component: {fileID: 2871663825563998287}
   m_Layer: 8
   m_Name: StoreDoor
@@ -111,45 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27867445, y: 0.31056097}
   m_EdgeRadius: 0
---- !u!114 &4786203524579078836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725506639247807332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6091d81384f254689cd4c0bcbc2bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _checkObject: {fileID: 0}
-  _checkTrigger: 0
---- !u!114 &4233433557512728705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725506639247807332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4245ce226224c9438398ab3d4b8d71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: da0e65ee0162a194a869745ec7a17e3b,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!114 &2871663825563998287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,4 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca825fa01951aca4e88fd68c553517ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioName: _SlidingDoor
   _sceneToLoad: BureauScene

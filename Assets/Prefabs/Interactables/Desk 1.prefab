@@ -204,8 +204,6 @@ GameObject:
   - component: {fileID: 6828570703838281046}
   - component: {fileID: 6828570703838281047}
   - component: {fileID: 6828570703838281040}
-  - component: {fileID: 1324354200}
-  - component: {fileID: 1324354201}
   m_Layer: 8
   m_Name: Desk 1
   m_TagString: Untagged
@@ -318,44 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca825fa01951aca4e88fd68c553517ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioName: _Computer
   _sceneToLoad: Yoni_MinigameTesting
---- !u!114 &1324354200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6828570703838281044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6091d81384f254689cd4c0bcbc2bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1324354201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6828570703838281044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4245ce226224c9438398ab3d4b8d71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ded87938
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6342529d4d518fd449108f813f7e74cc,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1 &6828570704483579076
 GameObject:
   m_ObjectHideFlags: 0

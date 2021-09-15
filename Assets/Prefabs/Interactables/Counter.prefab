@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 3544485432997802928}
   - component: {fileID: 7750732767225372074}
   - component: {fileID: 4544065673869956896}
-  - component: {fileID: 2081821472}
-  - component: {fileID: 2081821473}
   m_Layer: 8
   m_Name: Counter
   m_TagString: Untagged
@@ -125,40 +123,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _decreaseValue: 100
---- !u!114 &2081821472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2574745592059779127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6091d81384f254689cd4c0bcbc2bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2081821473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2574745592059779127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4245ce226224c9438398ab3d4b8d71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ded87938
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2d8e1fe3e55b63e46bf30d09618d66f5,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
