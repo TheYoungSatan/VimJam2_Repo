@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footstep" ID="{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}">
+					<ChildrenList>
+						<Action Name="" ID="{627C4320-7886-4C6C-B643-E318C68DE1FD}" ShortID="544097216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Switch" ID="{C465A499-F583-4E2E-9C7C-AD6ED832E732}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Interact" ID="{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}">
+					<ChildrenList>
+						<Action Name="" ID="{9AF06C9F-9EB2-49E7-8124-3B53F6B55ADB}" ShortID="488833721">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact" ID="{170C0F55-A412-42D1-A220-7AD2AC41EAAD}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

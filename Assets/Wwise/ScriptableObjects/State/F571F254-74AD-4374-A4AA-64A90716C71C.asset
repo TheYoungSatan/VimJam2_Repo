@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d7002a07ed7a24b92dc3a1e325a53d, type: 3}
+  m_Name: F571F254-74AD-4374-A4AA-64A90716C71C
+  m_EditorClassIdentifier: 
+  objectName: Kitchen
+  id: 1586158131
+  guid: F571F254-74AD-4374-A4AA-64A90716C71C
+  WwiseStateGroupReference: {fileID: 11400000, guid: eb7e35b239c6dcc4fbe40c2d0e02b25a,
+    type: 2}

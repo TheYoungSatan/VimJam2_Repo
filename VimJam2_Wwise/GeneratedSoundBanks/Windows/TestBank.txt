@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	580235682	Test Sound	E:\Unity\Unity Projects\FinalImpact\Final_Impact_Wwise\VimJam2\.cache\Windows\SFX\alien_die_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test Sound		3275328
+

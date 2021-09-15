@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EB5A1B3D-B6D0-4FC9-B1AF-0D0226A9DB70}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{EB5A1B3D-B6D0-4FC9-B1AF-0D0226A9DB70}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Footsteps" ID="{A3BC6045-1CFF-4593-91FF-D64985B5ADB2}">
+					<ChildrenList>
+						<State Name="None" ID="{90576EBC-3005-4E13-A92C-F9DF96236E84}"/>
+						<State Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}"/>
+						<State Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Interact" ID="{5FCD4240-A2D9-4362-9048-F8B04B17FE50}">
+					<ChildrenList>
+						<State Name="None" ID="{9F06CD67-B6DA-4E3E-BC10-E98018B5D282}"/>
+						<State Name="Bed" ID="{214FEE0F-E129-4A3B-A265-77BB0527B74D}"/>
+						<State Name="Computer" ID="{CC25EE7C-D2B0-410B-9177-4EAE38BAD4FE}"/>
+						<State Name="Fridge" ID="{1462A149-2E02-422B-A25A-7C5DF8510638}"/>
+						<State Name="Sink" ID="{E2FF6CB6-B256-4415-B802-C37AE947CF89}"/>
+						<State Name="Door" ID="{9C66007B-7701-404E-B586-6AFB1054CC23}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
