@@ -60,8 +60,11 @@ namespace MiniGame
 
             var pixelRadius = (TextureWidth / widthPlane) * _circleRadius;
 
-            DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
-
+            if (xCoord != 7.1 && yCoord != 96)  //this basically makes it so it doesnt spawn a circle when the players mouse hasnt been on screen yet
+            {
+                DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
+            }
+            
             //if the circle is too big, its game over
             if (_circleRadius >= _maxDist) Hub.OnGameOver();
         }

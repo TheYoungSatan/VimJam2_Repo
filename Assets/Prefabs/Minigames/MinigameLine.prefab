@@ -1615,6 +1615,10 @@ MonoBehaviour:
   _borderMask:
     serializedVersion: 2
     m_Bits: 768
+  TextureWidth: 128
+  TextureHeight: 128
+  PixelPlaneRenderer: {fileID: 6663466063621793035}
+  PlaneBounds: {fileID: 6663466063621793033}
 --- !u!1001 &6266295487246145864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1677,6 +1681,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 760890217413262406, guid: c80b32113c0a6cb488fa9191d13aab14,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 760890217413262406, guid: c80b32113c0a6cb488fa9191d13aab14,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 760890217413262409, guid: c80b32113c0a6cb488fa9191d13aab14,
         type: 3}
       propertyPath: m_Name
@@ -1687,6 +1701,18 @@ PrefabInstance:
 --- !u!4 &6663466063621793038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 760890217413262406, guid: c80b32113c0a6cb488fa9191d13aab14,
+    type: 3}
+  m_PrefabInstance: {fileID: 6266295487246145864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6663466063621793033 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 760890217413262401, guid: c80b32113c0a6cb488fa9191d13aab14,
+    type: 3}
+  m_PrefabInstance: {fileID: 6266295487246145864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6663466063621793035 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 760890217413262403, guid: c80b32113c0a6cb488fa9191d13aab14,
     type: 3}
   m_PrefabInstance: {fileID: 6266295487246145864}
   m_PrefabAsset: {fileID: 0}

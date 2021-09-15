@@ -144,6 +144,35 @@ namespace MiniGame
             }
         }
 
+        private void DrawLineAlgorithm(int x0, int y0, int x1, int y1, Color color)
+        {
+            var dx = Mathf.Abs(x1 - x0);
+            var sx = x0 < x1 ? 1 : -1;
+            var dy = Mathf.Abs(y1 - y0);
+            var sy = y0 < y1 ? 1 : -1;
+
+            var err = dx - dy;
+
+            var loop = true;
+            while (loop)
+            {
+                _texture.SetPixel(x0, y0, color);
+                if ((x0 == x1) && (y0 == y1)) loop = false;
+                var e2 = 2 * err;
+                if (e2 > -dy)
+                {
+                    err = err - dy;
+                    x0 = x0 + sx;
+                }
+                if (e2 < dx)
+                {
+                    err = err + dx;
+                    y0 = y0 + sy;
+                }
+            }
+            _texture.Apply();
+        }
+
         private void LineCreateInterval()
         {
             if (_inputDir != null)
