@@ -56,6 +56,9 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="59705223" Name="Interact_Bed" ObjectPath="\Events\Default Work Unit\Interact\Interact_Bed" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1581818321" Name="Interact_Computer" ObjectPath="\Events\Default Work Unit\Interact\Interact_Computer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1785205318" Name="Interact_Door" ObjectPath="\Events\Default Work Unit\Interact\Interact_Door" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1931805945" Name="Interact_Fridge" ObjectPath="\Events\Default Work Unit\Interact\Interact_Fridge" DurationType="OneShot" DurationMin="0.943874" DurationMax="1.258112">
 					<IncludedMemoryFiles>
 						<File Id="249965108" Language="SFX">
@@ -72,6 +75,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="2.775606" DurationMax="2.959244">
+					<IncludedMemoryFiles>
+						<File Id="705320496" Language="SFX">
+							<ShortName>Sink_On_1.wav</ShortName>
+							<Path>SFX\Sink_On_1_10C4C929.wem</Path>
+						</File>
+						<File Id="940383650" Language="SFX">
+							<ShortName>Sink_On_2.wav</ShortName>
+							<Path>SFX\Sink_On_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="28587383" Name="Livingroom" ObjectPath="\Events\Music\Livingroom" DurationType="Infinite"/>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="2385628198" Name="Footsteps" ObjectPath="\States\Default Work Unit\Footsteps">
