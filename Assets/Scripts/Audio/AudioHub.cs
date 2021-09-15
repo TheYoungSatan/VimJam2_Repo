@@ -10,6 +10,7 @@ namespace Sound
         [SerializeField] private string interact; public static string Interact => hub.interact;
         [SerializeField] private string footstep; public static string Footstep => hub.footstep;
         [SerializeField] private string buttonclick; public static string ButtonClick => hub.buttonclick;
+        [SerializeField] private string backgroundMusic; public static string BackgroundMusic => hub.backgroundMusic;
 
         private void Start()
         {
