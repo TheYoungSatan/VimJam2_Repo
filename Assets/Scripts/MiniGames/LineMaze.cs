@@ -111,6 +111,26 @@ namespace MiniGame
             _line.SetPosition(1, _startPoint.position);
             _line.startWidth = _lineThickness;
             _line.endWidth = _lineThickness;
+
+            InitializeTexture();
+        }
+
+        private void InitializeTexture()
+        {
+            _texture = new Texture2D(TextureWidth, TextureHeight, TextureFormat.ARGB32, false);
+            _texture.filterMode = FilterMode.Point;
+            Color fillColor = Color.clear;
+            _fillPixels = new Color[TextureWidth * TextureHeight];
+
+            for (int i = 0; i < _fillPixels.Length; i++)
+            {
+                _fillPixels[i] = fillColor;
+            }
+
+            _texture.SetPixels(_fillPixels);
+            _texture.Apply();
+
+            PixelPlaneRenderer.material.mainTexture = _texture;
         }
 
         public override void UpdateGame()   
@@ -136,8 +156,23 @@ namespace MiniGame
                 }
                 else
                 {
-                    var pointOffset = new Vector3(_line.GetPosition(_line.positionCount - 1).x + xOffset,
-                                        _line.GetPosition(_line.positionCount - 1).y + yOffset, 0);
+                    var startpos = new Vector3(_line.GetPosition(_line.positionCount - 1).x, _line.GetPosition(_line.positionCount - 1).y, 0);
+
+                    var pointOffset = new Vector3(startpos.x + xOffset, startpos.y + yOffset, 0);
+
+                    _texture.SetPixels(_fillPixels);
+                    _texture.Apply();
+
+                    var widthPlane = PlaneBounds.bounds.size.x;
+                    var heightPlane = PlaneBounds.bounds.size.y;
+
+                    var startXCoord = (((widthPlane / 2) + startpos.x) / widthPlane) * TextureHeight;
+                    var startYCoord = (((heightPlane / 2) - startpos.y) / heightPlane) * TextureWidth;
+
+                    var endXCoord = (((widthPlane / 2) + pointOffset.x) / widthPlane) * TextureHeight;
+                    var endYCoord = (((heightPlane / 2) - pointOffset.y) / heightPlane) * TextureWidth;
+
+                    DrawLineAlgorithm((int)startYCoord, (int)startXCoord, (int)endYCoord, (int)endXCoord, Color.red);
 
                     _line.SetPosition(_line.positionCount - 1, pointOffset);
                 }
