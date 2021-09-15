@@ -14,17 +14,65 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Interact" ID="{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}">
+				<Folder Name="Interact" ID="{0A8D6B19-BE22-4648-8F04-70A65877B96C}" ShortID="558305616">
 					<ChildrenList>
-						<Action Name="" ID="{9AF06C9F-9EB2-49E7-8124-3B53F6B55ADB}" ShortID="488833721">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Interact" ID="{170C0F55-A412-42D1-A220-7AD2AC41EAAD}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Interact_Fridge" ID="{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}">
+							<ChildrenList>
+								<Action Name="" ID="{9AF06C9F-9EB2-49E7-8124-3B53F6B55ADB}" ShortID="488833721">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Fridge" ID="{27A158F0-941B-4038-9C80-98DD4CFD491C}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Interact_Bed" ID="{B33853C5-C43B-496C-B609-9A985CEBADC4}">
+							<ChildrenList>
+								<Action Name="" ID="{49B6CEB6-F407-45F9-89FC-B50ED4FCD8EF}" ShortID="918515971">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Bed" ID="{03AF17EF-61A4-47B4-9CC5-136568ED12E1}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Interact_Sink" ID="{9AA191F5-260A-4A1E-BB32-6AEEB50F326D}">
+							<ChildrenList>
+								<Action Name="" ID="{1D4F5186-51C9-47C6-B8C6-1B4657E1A057}" ShortID="1041585707">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Sink" ID="{C783442C-28DD-43A9-AC6A-A46C25220BDD}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Interact_Door" ID="{2471C7B5-1510-40E0-AF8D-91BA7DEC618E}">
+							<ChildrenList>
+								<Action Name="" ID="{8BBB2911-DA36-4070-B006-74CFBE48F952}" ShortID="741923355">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Door" ID="{7AE1CBE8-02CA-4F82-B467-804545EC2372}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Interact_Computer" ID="{5C55F9E8-7E35-437C-B468-35953831C254}">
+							<ChildrenList>
+								<Action Name="" ID="{5AE63AA9-516D-4449-8127-8D5B1207746A}" ShortID="993433396">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

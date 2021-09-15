@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Interact" ID="{5777ACCF-D957-4034-87E4-5F6162359B0D}">
+					<ChildrenList>
+						<Switch Name="Bed" ID="{0F52072B-DA65-477E-B1E1-914181048E21}"/>
+						<Switch Name="Fridge" ID="{C248A901-762F-417F-8EC6-AE352B799C27}"/>
+						<Switch Name="Sink" ID="{8656EDF4-3CAE-4094-B734-6B6171CA9486}"/>
+						<Switch Name="Door" ID="{C0E65D29-AFA2-4A0A-9F4A-177844A3E09D}"/>
+						<Switch Name="Computer" ID="{B37280E4-A4EB-4F80-9716-C3F1ECC1B2C0}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
