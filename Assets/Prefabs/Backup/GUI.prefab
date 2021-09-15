@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 9145954585786979384}
   - component: {fileID: 9145954585786979387}
   - component: {fileID: 9145954585786979386}
-  - component: {fileID: 9145954585786979366}
+  - component: {fileID: 6895316621567065332}
   m_Layer: 5
   m_Name: GUI
   m_TagString: Untagged
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &9145954585786979366
+--- !u!114 &6895316621567065332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8c786ade7260446991c05ffdaecca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _guiPanel: {fileID: 9145954586356411808}
   _visualGUI:
   - Stat: 0
     mainImage: {fileID: 9145954587695138972}

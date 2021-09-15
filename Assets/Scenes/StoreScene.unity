@@ -461,19 +461,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2107568947227352513, guid: db8b774287101e34b84c6ad2e2770482,
         type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 217789780}
-    - target: {fileID: 2107568947227352513, guid: db8b774287101e34b84c6ad2e2770482,
-        type: 3}
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 217789780}
     - target: {fileID: 2107568947227352513, guid: db8b774287101e34b84c6ad2e2770482,
         type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 1.15
-      objectReference: {fileID: 0}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 217789780}
     - target: {fileID: 2107568947227352518, guid: db8b774287101e34b84c6ad2e2770482,
         type: 3}
       propertyPath: m_LocalPosition.x

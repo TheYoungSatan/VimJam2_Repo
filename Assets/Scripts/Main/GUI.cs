@@ -50,17 +50,18 @@ public class GUI : MonoBehaviour
             }
         }
     }
+
+    [SerializeField] private GameObject _guiPanel;
     [SerializeField] private VisualGUI[] _visualGUI;
     [SerializeField] private RectTransform _interactButton;
 
     private PlayerInfo _playerinfo;
-    private PlayerController _player;
+    private PlayerController _player = null;
 
-    private void Awake()
+    private void Start()
     {
         instance = this;
         _playerinfo = FindObjectOfType<PlayerInfo>();
-        _player = FindObjectOfType<PlayerController>();
         _playerinfo.OnUpdateValues += UpdateGUI;
     }
 
@@ -68,13 +69,14 @@ public class GUI : MonoBehaviour
     {
         if (_player == null)
         {
-            gameObject.SetActive(false);
-            if (TryGetComponent(out PlayerController controller))
-                _player = controller;
+            _player = FindObjectOfType<PlayerController>();
+            if (_guiPanel.activeSelf)
+                _guiPanel.SetActive(false);
         }
         else
         {
-            gameObject.SetActive(true);
+            if(!_guiPanel.activeSelf)
+                _guiPanel.SetActive(true);
             SetInteractButton(_player?.CheckForInteractables());
         }
     }
