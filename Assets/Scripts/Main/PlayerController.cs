@@ -83,7 +83,8 @@ public class PlayerController : MonoBehaviour
 
         _moveAction = _playerInput?.currentActionMap.FindAction("Move");
         _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
-        _info.OnUpdateValues += CheckValues;
+        if(_info)
+            _info.OnUpdateValues += CheckValues;
 
         _moveAction.performed += Move;
         _interactAction.performed += Interact;

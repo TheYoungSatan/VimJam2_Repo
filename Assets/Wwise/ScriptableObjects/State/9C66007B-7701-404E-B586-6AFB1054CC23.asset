@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Door
   id: 1877847629
   guid: 9C66007B-7701-404E-B586-6AFB1054CC23
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 5b40eb5f2736b1549879a6d282ce684d,
+    type: 2}
