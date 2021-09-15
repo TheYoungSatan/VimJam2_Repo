@@ -240,7 +240,7 @@
                     "name": "",
                     "id": "fbad4367-bdcb-45d3-a75c-bc915df36783",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "MouseClick",
