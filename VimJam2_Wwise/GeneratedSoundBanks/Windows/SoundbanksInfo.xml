@@ -68,12 +68,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1581818321" Name="Interact_Computer" ObjectPath="\Events\Default Work Unit\Interact\Interact_Computer" DurationType="OneShot" DurationMin="0.294961" DurationMax="0.984629">
+				<Event Id="1581818321" Name="Interact_Computer" ObjectPath="\Events\Default Work Unit\Interact\Interact_Computer" DurationType="OneShot" DurationMin="0.220614" DurationMax="0.463515">
 					<IncludedMemoryFiles>
-						<File Id="370302274" Language="SFX">
-							<ShortName>Interact_Computer_4.wav</ShortName>
-							<Path>SFX\Interact_Computer_4_E83C68AD.wem</Path>
-						</File>
 						<File Id="498871758" Language="SFX">
 							<ShortName>Interact_Computer_2.wav</ShortName>
 							<Path>SFX\Interact_Computer_2_10C4C929.wem</Path>
@@ -84,7 +80,7 @@
 						</File>
 						<File Id="993274319" Language="SFX">
 							<ShortName>Interact_Computer_3.wav</ShortName>
-							<Path>SFX\Interact_Computer_3_6CB9D63C.wem</Path>
+							<Path>SFX\Interact_Computer_3_FE4BFF68.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -116,15 +112,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="1.929616" DurationMax="2.133291">
+				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="0.648914" DurationMax="1.125680">
 					<IncludedMemoryFiles>
-						<File Id="705320496" Language="SFX">
-							<ShortName>Sink_On_1.wav</ShortName>
-							<Path>SFX\Sink_On_1_B7084768.wem</Path>
+						<File Id="586467242" Language="SFX">
+							<ShortName>Interact_Sink_3.wav</ShortName>
+							<Path>SFX\Interact_Sink_3_10C4C929.wem</Path>
 						</File>
-						<File Id="940383650" Language="SFX">
-							<ShortName>Sink_On_2.wav</ShortName>
-							<Path>SFX\Sink_On_2_8C87E0BE.wem</Path>
+						<File Id="853255680" Language="SFX">
+							<ShortName>Interact_Sink_2.wav</ShortName>
+							<Path>SFX\Interact_Sink_2_10C4C929.wem</Path>
+						</File>
+						<File Id="916821349" Language="SFX">
+							<ShortName>Interact_Sink_1.wav</ShortName>
+							<Path>SFX\Interact_Sink_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

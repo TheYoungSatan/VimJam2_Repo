@@ -492,9 +492,8 @@
 									<ChildrenList>
 										<AudioFileSource Name="Interact_Computer_3" ID="{4D634CC4-8902-4211-9C04-2E4139719D57}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0943921232876712"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0943921232876712"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.641267123287671"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Interact_Computer_3.wav</AudioFile>
@@ -508,6 +507,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Interact_Computer_4" ID="{61165D9C-2CE6-449C-A67F-20E3E3AA901B}" ShortID="292253378">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -520,7 +526,7 @@
 										<AudioFileSource Name="Interact_Computer_4" ID="{D801C877-9DC1-4A0E-A6D7-D34F82A2364A}">
 											<PropertyList>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.695633561643836"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.34674657534247"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Interact_Computer_4.wav</AudioFile>
