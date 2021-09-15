@@ -12,7 +12,6 @@ public class PlayerInfo : MonoBehaviour
     private void Start()
     {
         Initialize();
-        OnUpdateStats(90, 100, 0);
     }
 
     private void Initialize()
@@ -39,7 +38,7 @@ public class PlayerInfo : MonoBehaviour
         OnUpdateValues?.Invoke();
     }
 
-        public void OnUpdateStats(int addhunger = 20, int addthurst = 20, int addAwaketime = 5)
+    public void OnUpdateStats(int addhunger = 20, int addthurst = 20, int addAwaketime = 5)
     {
         HungerPercentage += addhunger; HungerPercentage = Mathf.Clamp(HungerPercentage, 0, 100);
         ThurstPercentage += addthurst; ThurstPercentage = Mathf.Clamp(ThurstPercentage, 0, 100);

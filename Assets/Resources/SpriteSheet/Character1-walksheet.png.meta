@@ -50,6 +50,54 @@ TextureImporter:
   - first:
       213: 7501613241396468209
     second: Character1_Idle_7
+  - first:
+      213: -8907985537200241428
+    second: SleepyCharacter_Walk_0
+  - first:
+      213: -576751387285987261
+    second: SleepyCharacter_Walk_1
+  - first:
+      213: -567841992811551050
+    second: SleepyCharacter_Walk_2
+  - first:
+      213: -7713307417670650413
+    second: SleepyCharacter_Walk_3
+  - first:
+      213: -3778810041774374788
+    second: SleepyCharacter_Walk_4
+  - first:
+      213: 8385577510432083787
+    second: SleepyCharacter_Walk_5
+  - first:
+      213: 8181753962590029743
+    second: SleepyCharacter_Walk_6
+  - first:
+      213: 2529585455061471312
+    second: SleepyCharacter_Walk_7
+  - first:
+      213: 4190847668537837560
+    second: SleepyCharacter_Idle_0
+  - first:
+      213: -3227658834413458082
+    second: SleepyCharacter_Idle_1
+  - first:
+      213: 6174269183217355431
+    second: SleepyCharacter_Idle_2
+  - first:
+      213: -7978745541743740852
+    second: SleepyCharacter_Idle_3
+  - first:
+      213: 5472027943559576527
+    second: SleepyCharacter_Idle_4
+  - first:
+      213: 6189429929115786186
+    second: SleepyCharacter_Idle_5
+  - first:
+      213: 6147184075369943435
+    second: SleepyCharacter_Idle_6
+  - first:
+      213: -7146491865720046900
+    second: SleepyCharacter_Idle_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,11 +187,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,11 +208,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,11 +229,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 65
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,11 +250,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 97
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,11 +271,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,11 +292,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,11 +313,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 193
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,11 +334,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 225
-        y: 32
-        width: 11
+        y: 96
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,11 +355,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,11 +376,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,11 +397,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 65
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,11 +418,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 97
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,11 +439,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,11 +460,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,11 +481,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 193
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,11 +502,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 225
-        y: 0
-        width: 11
+        y: 64
+        width: 15
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,6 +514,342 @@ TextureImporter:
       bones: []
       spriteID: 1f99dcf6f751b1860800000000000000
       internalID: 7501613241396468209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4ccd6b95a706480800000000000000
+      internalID: -8907985537200241428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340ea154ba7fef7f0800000000000000
+      internalID: -576751387285987261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6eae157be9e18f0800000000000000
+      internalID: -567841992811551050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5fa5e35c3d4f490800000000000000
+      internalID: -7713307417670650413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c700c5ab948fe8bc0800000000000000
+      internalID: -3778810041774374788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f0fc9215e8f5470800000000000000
+      internalID: 8385577510432083787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7c2d351ed6b8170800000000000000
+      internalID: 8181753962590029743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 32
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0501feda194ea1320800000000000000
+      internalID: 2529585455061471312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7c8fe10c1e82a30800000000000000
+      internalID: 4190847668537837560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d62a6146d0533d0800000000000000
+      internalID: -3227658834413458082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aacf450c196fa550800000000000000
+      internalID: 6174269183217355431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48f127f33dc54190800000000000000
+      internalID: -7978745541743740852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb31e03c6c80fb40800000000000000
+      internalID: 5472027943559576527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb1e1f3ab545e550800000000000000
+      internalID: 6189429929115786186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b811d5de85f2f4550800000000000000
+      internalID: 6147184075369943435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SleepyCharacter_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 15
+        height: 32
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccab989038f82dc90800000000000000
+      internalID: -7146491865720046900
       vertices: []
       indices: 
       edges: []

@@ -15,7 +15,7 @@ public class SwitchEventCaller : AkTriggerBase
     {
         if (triggerDelegate != null)
         {
-            triggerDelegate(this.gameObject);
+            triggerDelegate(_checkObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

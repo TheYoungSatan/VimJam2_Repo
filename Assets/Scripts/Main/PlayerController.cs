@@ -1,5 +1,6 @@
 ﻿using Interacting;
 using Sound;
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 _input;
     private Rigidbody2D _rigid;
+    private PlayerInfo _info;
 
     #region Input
 
@@ -75,14 +77,21 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _playerInput = FindObjectOfType<PlayerInput>();
+        _info = FindObjectOfType<PlayerInfo>();
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
 
         _moveAction = _playerInput?.currentActionMap.FindAction("Move");
         _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
+        _info.OnUpdateValues += CheckValues;
 
         _moveAction.performed += Move;
         _interactAction.performed += Interact;
+    }
+
+    private void CheckValues()
+    {
+        _animator.SetBool("IsSleepy", _info.AwakeTime > 15);
     }
 
     private void Update()
