@@ -74,20 +74,15 @@ public class PlayerController : MonoBehaviour
         return colls.Length > 0 ? transform : null;
     }
 
-    private void Awake()
+    private void Start()
     {
-        _playerInput = FindObjectOfType<PlayerInput>();
-        _info = FindObjectOfType<PlayerInfo>();
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
 
-        _moveAction = _playerInput?.currentActionMap.FindAction("Move");
-        _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
-        if(_info)
+        if (!_info)
+            _info = FindObjectOfType<PlayerInfo>();
+        if (_info)
             _info.OnUpdateValues += CheckValues;
-
-        _moveAction.performed += Move;
-        _interactAction.performed += Interact;
     }
 
     private void CheckValues()
@@ -99,6 +94,18 @@ public class PlayerController : MonoBehaviour
     {
         _rigid.position += _input * Time.deltaTime * _moveSpeed;
         _animator.SetFloat("Speed", Mathf.Abs(_input.magnitude));
+
+        if (!_playerInput)
+        {
+            _playerInput = FindObjectOfType<PlayerInput>();
+            _moveAction = _playerInput?.currentActionMap.FindAction("Move");
+            _interactAction = _playerInput?.currentActionMap.FindAction("Interact");
+            _moveAction.performed += Move;
+            _interactAction.performed += Interact;
+        }
+
+        if(!_info)
+            _info = FindObjectOfType<PlayerInfo>();
     }
 
     private void OnDrawGizmos()

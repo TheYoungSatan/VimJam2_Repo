@@ -11,6 +11,12 @@ public class SwitchEventCaller : AkTriggerBase
             _checkObject = FindObjectOfType<PlayerController>().gameObject;
     }
 
+    private void Update()
+    {
+        if (!_checkObject)
+            _checkObject = FindObjectOfType<PlayerController>().gameObject;
+    }
+
     public void CallSwitch()
     {
         if (triggerDelegate != null)
