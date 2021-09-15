@@ -491,6 +491,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Interact_Computer_3" ID="{4D634CC4-8902-4211-9C04-2E4139719D57}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0943921232876712"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0943921232876712"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Interact_Computer_3.wav</AudioFile>
 											<MediaIDList>
@@ -513,6 +518,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Interact_Computer_4" ID="{D801C877-9DC1-4A0E-A6D7-D34F82A2364A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.695633561643836"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Interact_Computer_4.wav</AudioFile>
 											<MediaIDList>
@@ -766,6 +775,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Sink_On_1" ID="{FCCA8B0E-64E2-4785-8DC1-C7C37234C8A6}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.631070098458904"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.98615860445205"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sink_On_1.wav</AudioFile>
 											<MediaIDList>
@@ -788,6 +802,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Sink_On_2" ID="{6AECDB3D-D665-48F5-A158-F44B235096BA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.753210616438356"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.07255993150685"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sink_On_2.wav</AudioFile>
 											<MediaIDList>
