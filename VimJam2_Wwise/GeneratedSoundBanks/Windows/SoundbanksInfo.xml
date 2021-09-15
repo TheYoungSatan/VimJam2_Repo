@@ -56,9 +56,50 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="59705223" Name="Interact_Bed" ObjectPath="\Events\Default Work Unit\Interact\Interact_Bed" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1581818321" Name="Interact_Computer" ObjectPath="\Events\Default Work Unit\Interact\Interact_Computer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1785205318" Name="Interact_Door" ObjectPath="\Events\Default Work Unit\Interact\Interact_Door" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="59705223" Name="Interact_Bed" ObjectPath="\Events\Default Work Unit\Interact\Interact_Bed" DurationType="OneShot" DurationMin="1.061859" DurationMax="1.324329">
+					<IncludedMemoryFiles>
+						<File Id="49479373" Language="SFX">
+							<ShortName>Interact_Bed_1.wav</ShortName>
+							<Path>SFX\Interact_Bed_1_10C4C929.wem</Path>
+						</File>
+						<File Id="760634124" Language="SFX">
+							<ShortName>Interact_Bed_2.wav</ShortName>
+							<Path>SFX\Interact_Bed_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1581818321" Name="Interact_Computer" ObjectPath="\Events\Default Work Unit\Interact\Interact_Computer" DurationType="OneShot" DurationMin="0.294961" DurationMax="1.721628">
+					<IncludedMemoryFiles>
+						<File Id="370302274" Language="SFX">
+							<ShortName>Interact_Computer_4.wav</ShortName>
+							<Path>SFX\Interact_Computer_4_10C4C929.wem</Path>
+						</File>
+						<File Id="498871758" Language="SFX">
+							<ShortName>Interact_Computer_2.wav</ShortName>
+							<Path>SFX\Interact_Computer_2_10C4C929.wem</Path>
+						</File>
+						<File Id="828933744" Language="SFX">
+							<ShortName>Interact_Computer_1.wav</ShortName>
+							<Path>SFX\Interact_Computer_1_10C4C929.wem</Path>
+						</File>
+						<File Id="993274319" Language="SFX">
+							<ShortName>Interact_Computer_3.wav</ShortName>
+							<Path>SFX\Interact_Computer_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1785205318" Name="Interact_Door" ObjectPath="\Events\Default Work Unit\Interact\Interact_Door" DurationType="OneShot" DurationMin="0.766898" DurationMax="1.136274">
+					<IncludedMemoryFiles>
+						<File Id="294254975" Language="SFX">
+							<ShortName>Door_Open_House_1.wav</ShortName>
+							<Path>SFX\Door_Open_House_1_10C4C929.wem</Path>
+						</File>
+						<File Id="843802253" Language="SFX">
+							<ShortName>Door_Open_House_2.wav</ShortName>
+							<Path>SFX\Door_Open_House_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1931805945" Name="Interact_Fridge" ObjectPath="\Events\Default Work Unit\Interact\Interact_Fridge" DurationType="OneShot" DurationMin="0.943874" DurationMax="1.258112">
 					<IncludedMemoryFiles>
 						<File Id="249965108" Language="SFX">
