@@ -215,6 +215,37 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="93 Footsteps; Grass- Slow_1_L" ID="{6888FBBD-41E2-43FD-B608-377425ACCE25}" ShortID="119394310">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="93 Footsteps; Grass- Slow_1_L" ID="{567F2560-93B7-4AEF-B9BC-94DE2F9C5129}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113350642537536"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.623428533956446"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.365555822183552"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.11817444233897"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>93 Footsteps; Grass- Slow.1.L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="912606623"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="93 Footsteps; Grass- Slow_1_L" ID="{567F2560-93B7-4AEF-B9BC-94DE2F9C5129}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
@@ -698,9 +729,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="Sink_On_1" ID="{FCCA8B0E-64E2-4785-8DC1-C7C37234C8A6}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.631070098458904"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.865886879280822"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.98615860445205"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.181004601883562"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.90299432791095"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sink_On_1.wav</AudioFile>
@@ -725,9 +757,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="Sink_On_2" ID="{6AECDB3D-D665-48F5-A158-F44B235096BA}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.753210616438356"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0344606164383562"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.98951198630137"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.07255993150685"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.275684931506849"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.00856164383562"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sink_On_2.wav</AudioFile>
@@ -738,6 +772,94 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Sink_On_2" ID="{6AECDB3D-D665-48F5-A158-F44B235096BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Interact_Sliding_Door" ID="{B0FB9547-39C4-4124-A4A1-9D77E5C7429E}" ShortID="470017028">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>130</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F4E20B8D-7578-4423-803E-EF4C7A0D46D0}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sliding_Door_1" ID="{759E399E-A1F3-4A27-87FC-8ECF99A44185}" ShortID="837735357">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sliding_Door_1" ID="{7260A185-8C33-4D44-B83D-C5F448C44124}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.742294520547945"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.49914383561644"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Sliding_Door_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="843108919"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sliding_Door_1" ID="{7260A185-8C33-4D44-B83D-C5F448C44124}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sliding_Door_2" ID="{826E4147-437A-42F4-89C9-E4ECDD733F3D}" ShortID="584415499">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sliding_Door_2" ID="{995987CC-CA4D-4483-8931-01CF9D72B31D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.808219178082192"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.56849315068493"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Sliding_Door_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="774186105"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sliding_Door_2" ID="{995987CC-CA4D-4483-8931-01CF9D72B31D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

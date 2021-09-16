@@ -60,6 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Interact_SlidingDoor" ID="{7CABFADA-8D64-4B2E-A306-6E14C930DB6F}">
+							<ChildrenList>
+								<Action Name="" ID="{2411963A-C835-4407-ABC1-1D7AA8DA176F}" ShortID="518221115">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Sliding_Door" ID="{B0FB9547-39C4-4124-A4A1-9D77E5C7429E}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">

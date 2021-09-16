@@ -121,15 +121,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="1.929616" DurationMax="2.133291">
+				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="1.672968" DurationMax="1.783654">
 					<IncludedMemoryFiles>
 						<File Id="705320496" Language="SFX">
 							<ShortName>Sink_On_1.wav</ShortName>
-							<Path>SFX\Sink_On_1_ADE83FFE.wem</Path>
+							<Path>SFX\Sink_On_1_37460C35.wem</Path>
 						</File>
 						<File Id="940383650" Language="SFX">
 							<ShortName>Sink_On_2.wav</ShortName>
-							<Path>SFX\Sink_On_2_D8ACF549.wem</Path>
+							<Path>SFX\Sink_On_2_FA026908.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3468829444" Name="Interact_SlidingDoor" ObjectPath="\Events\Default Work Unit\Interact\Interact_SlidingDoor" DurationType="OneShot" DurationMin="1.390694" DurationMax="1.455027">
+					<IncludedMemoryFiles>
+						<File Id="774186105" Language="SFX">
+							<ShortName>Sliding_Door_2.wav</ShortName>
+							<Path>SFX\Sliding_Door_2_7C0E4292.wem</Path>
+						</File>
+						<File Id="843108919" Language="SFX">
+							<ShortName>Sliding_Door_1.wav</ShortName>
+							<Path>SFX\Sliding_Door_1_38882F3B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
