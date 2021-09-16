@@ -28,6 +28,7 @@ namespace Wwise
 
         private void OnTriggerExit2D(Collider2D collision)
         {
+            Debug.Log("Exit");
             if (collision.gameObject == _checkObject)
                 CallSwitch();
         }

@@ -318,6 +318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioName: _Computer
   _sceneToLoad: Yoni_MinigameTesting
+  _loadMainScene: 0
+  _showInfoPanel: 1
+  _text: Computer Work on game
 --- !u!1 &6828570704483579076
 GameObject:
   m_ObjectHideFlags: 0

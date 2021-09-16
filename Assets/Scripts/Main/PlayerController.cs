@@ -92,11 +92,6 @@ public class PlayerController : MonoBehaviour
     {
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-
-        if (!_info)
-            _info = FindObjectOfType<PlayerInfo>();
-        if (_info)
-            _info.OnUpdateValues += CheckValues;
     }
 
     private IEnumerator InputDelay()
@@ -125,8 +120,12 @@ public class PlayerController : MonoBehaviour
             _interactAction.performed += Interact;
         }
 
-        if(!_info)
+        if (!_info)
+        {
             _info = FindObjectOfType<PlayerInfo>();
+        }
+
+        CheckValues();
     }
 
     private void OnDrawGizmos()

@@ -7,12 +7,6 @@ namespace Interacting
     public class CheckOut : MonoBehaviour, IInteractable
     {
         [SerializeField] private int _costFoodPiece = GameInfo.FoodCost;
-        [SerializeField] private GUI _gui;
-
-        private void Awake()
-        {
-            _gui = FindObjectOfType<GUI>();
-        }
 
         public bool Interactable()
         {
@@ -26,7 +20,6 @@ namespace Interacting
             if (GameInfo.PouchMoney < _costFoodPiece)
             {
                 GameInfo.ChangeUnpayedFoodPiecesAmount(-GameInfo.UnpayedFood);
-                _gui.UpdateGUI();
                 return;
             }
 
@@ -37,7 +30,6 @@ namespace Interacting
             GameInfo.ChangeFoodPiecesAmount(affordable);
             GameInfo.ChangeUnpayedFoodPiecesAmount(-GameInfo.UnpayedFood);
 
-            _gui.UpdateGUI();
             AudioHub.PlaySound(AudioHub.Interact + "_checkOut");
         }
 

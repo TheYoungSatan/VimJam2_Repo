@@ -152,6 +152,15 @@ TextureImporter:
   - first:
       213: 66523898121994415
     second: GameSheet_45
+  - first:
+      213: -1727173679425141145
+    second: Reading_Sofa
+  - first:
+      213: -8533757846684692019
+    second: Art
+  - first:
+      213: 1743453664265979959
+    second: Bookshelf
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1219,6 +1228,69 @@ TextureImporter:
       bones: []
       spriteID: fa0c2a402275ce000800000000000000
       internalID: 66523898121994415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reading_Sofa
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766c57480b8d708e0800000000000000
+      internalID: -1727173679425141145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 147
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc11825c370029980800000000000000
+      internalID: -8533757846684692019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7384de4deddf13810800000000000000
+      internalID: 1743453664265979959
       vertices: []
       indices: 
       edges: []

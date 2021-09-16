@@ -1,4 +1,5 @@
 ﻿using Sound;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,21 +9,27 @@ namespace Interacting
     {
         [SerializeField] private string _audioName = "_Computer";
         [SerializeField] private string _sceneToLoad = "Yoni_MinigameTesting";
+        [SerializeField] private bool _loadMainScene = true;
+        [SerializeField] private bool _showInfoPanel = true;
+        [SerializeField] private string _text = "";
 
         public bool HasInfoPanel()
         {
-            return false;
+            return _showInfoPanel;
         }
 
         public string InfoText()
         {
-            return "";
+            return _text;
         }
 
         public void OnInteract()
         {
+            if (_loadMainScene)
+                GameInfo.AddTime(GameInfo.TravelTime);
+
             AudioHub.PlaySound(AudioHub.Interact + _audioName);
-            SceneManager.LoadScene(_sceneToLoad);
+            StartCoroutine("LoadScene");
         }
 
         public bool Interactable()
@@ -33,6 +40,15 @@ namespace Interacting
         public Transform Position()
         {
             return transform;
+        }
+
+        IEnumerator LoadScene()
+        {
+            yield return new WaitForEndOfFrame();
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(_sceneToLoad);
+
+            while (!asyncLoad.isDone)
+                yield return null;
         }
     }
 }

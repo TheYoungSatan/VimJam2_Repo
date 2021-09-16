@@ -9,10 +9,12 @@ public class PlayerInfo : MonoBehaviour
     public int HungerPercentage { get; private set; }
     public int ThurstPercentage { get; private set; }
 
+    [SerializeField] private int _hungerPerHour = 10;
+    [SerializeField] private int _thurstPerHour = 15;
+
     private void Start()
     {
         Initialize();
-        OnUpdateStats();
     }
 
     private void Initialize()
@@ -39,12 +41,20 @@ public class PlayerInfo : MonoBehaviour
         OnUpdateValues?.Invoke();
     }
 
-    public void OnUpdateStats(int addhunger = 20, int addthurst = 20, int addAwaketime = 5)
+    public void AddAwakeTime(int addAwaketime = 0)
     {
-        HungerPercentage += addhunger; HungerPercentage = Mathf.Clamp(HungerPercentage, 0, 100);
-        ThurstPercentage += addthurst; ThurstPercentage = Mathf.Clamp(ThurstPercentage, 0, 100);
+        SetValuesBasedOnTime(addAwaketime);
         AwakeTime += addAwaketime;
 
+        Debug.Log(AwakeTime);
+
+        OnUpdateValues?.Invoke();
+    }
+
+    public void SetValuesBasedOnTime(int time)
+    {
+        HungerPercentage += _hungerPerHour * time; HungerPercentage = Mathf.Clamp(HungerPercentage, 0, 100);
+        ThurstPercentage += _thurstPerHour * time; ThurstPercentage = Mathf.Clamp(ThurstPercentage, 0, 100);
         OnUpdateValues?.Invoke();
     }
 }

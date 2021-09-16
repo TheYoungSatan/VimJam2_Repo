@@ -5870,7 +5870,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a80cd553d3512c94eb13bbdc294e1049,
+    WwiseObjectReference: {fileID: 11400000, guid: a505886136064544c968338305cb14e1,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -7706,7 +7706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _costFoodPiece: 5
-  _gui: {fileID: 0}
 --- !u!1 &8045403881039052870
 GameObject:
   m_ObjectHideFlags: 0
