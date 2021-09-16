@@ -107,8 +107,9 @@ GameObject:
   - component: {fileID: 742848194343636739}
   - component: {fileID: 7337519078161562513}
   - component: {fileID: 7453376897767699766}
+  - component: {fileID: 5043327730061134884}
   m_Layer: 8
-  m_Name: ShoppingDesk_0
+  m_Name: ShoppingDesk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,3 +207,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.05126226}
   m_EdgeRadius: 0
+--- !u!114 &5043327730061134884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655725776931870052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad64d74f8768b34e996ff6c46615515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 4716269751908932956, guid: 5c335e90298844243b783a6daccb7796, type: 3}
+  - {fileID: -8838401229263325937, guid: 5c335e90298844243b783a6daccb7796, type: 3}
+  - {fileID: -1688809002549482418, guid: 5c335e90298844243b783a6daccb7796, type: 3}
+  - {fileID: 5038143794466042509, guid: 5c335e90298844243b783a6daccb7796, type: 3}
+  _shopBox: {fileID: 4236435612877775452}

@@ -67,12 +67,20 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    public Transform CheckForInteractables()
+    public (Transform transform, IInteractable interactable) CheckForInteractables()
     {
         Vector3 checkPos = transform.position;
         var colls = Physics2D.OverlapCircleAll(checkPos, _radius, _checkLayer);
+        IInteractable i = null;
 
-        return colls.Length > 0 ? transform : null;
+        if (colls.Length > 0)
+        {
+            var closest = colls.Aggregate((p, n) => Vector3.Distance(p.transform.position, checkPos) < Vector3.Distance(n.transform.position, checkPos) ? p : n);
+            GameObject closestObj = closest.gameObject;
+            i = closestObj.GetComponent<IInteractable>();            
+        }
+
+        return (colls.Length > 0 ? transform : null, i);
     }
 
     private void Start()

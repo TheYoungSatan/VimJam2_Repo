@@ -26,6 +26,18 @@ TextureImporter:
   - first:
       213: 8811928372063714945
     second: Thurst_3
+  - first:
+      213: 5503356097045835852
+    second: Money_0
+  - first:
+      213: 1847349068181992825
+    second: Money_1
+  - first:
+      213: 3154639173914165116
+    second: Money_2
+  - first:
+      213: 3106531468999034843
+    second: Money_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -274,6 +286,90 @@ TextureImporter:
       bones: []
       spriteID: 18e3b03ba224a4a70800000000000000
       internalID: 8811928372063714945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Money_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40b5e45639df5c40800000000000000
+      internalID: 5503356097045835852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Money_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975f229903a13a910800000000000000
+      internalID: 1847349068181992825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Money_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f7fab5d9787cb20800000000000000
+      internalID: 3154639173914165116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Money_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7824579ed9c1b20800000000000000
+      internalID: 3106531468999034843
       vertices: []
       indices: 
       edges: []

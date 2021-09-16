@@ -376,7 +376,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Store
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4699985223241066014, guid: aa187d5b661ed374a985b3f653ee4a5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aa187d5b661ed374a985b3f653ee4a5a, type: 3}
 --- !u!60 &92217154 stripped
 PolygonCollider2D:
@@ -464,6 +465,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cf6fb566ec59364fa13941ca3f5562e, type: 3}
+--- !u!1 &530468989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7935432262774001102, guid: aa187d5b661ed374a985b3f653ee4a5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 72221428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &530468992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530468989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862b20dc13c8a4e40b80f2df2c82d05b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _costFoodPiece: 5
+  _gui: {fileID: 0}
 --- !u!114 &575227766 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2241834374303934343, guid: 31fa729280e05f24eb76793094ae7338,

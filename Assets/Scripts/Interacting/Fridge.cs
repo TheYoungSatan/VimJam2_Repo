@@ -22,5 +22,10 @@ namespace Interacting
                 GameInfo.ChangeFoodPiecesAmount(-1);
             }
         }
+
+        public bool Interactable()
+        {
+            return GameInfo.FoodPieces > 0 && _info.HungerPercentage > 0;
+        }
     }
 }

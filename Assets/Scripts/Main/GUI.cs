@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interacting;
+using System;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
@@ -7,11 +8,12 @@ using UnityEngine.UI;
 public class GUI : MonoBehaviour
 {
     private static GUI instance;
-    private enum Stat { Energy, Hunger, Thurst}
+    private enum Stat { Energy, Hunger, Thurst, Money}
     [Serializable]
     private struct VisualGUI
     {
         public Stat Stat;
+        public Text Text;
         public Image mainImage;
 
         [Serializable]
@@ -25,9 +27,10 @@ public class GUI : MonoBehaviour
         public Visual[] Visuals;
         private Coroutine routine;
 
-        public void UpdateVisuals(int percentage)
+        public void UpdateVisuals(int amount)
         {
-            Visual current = Visuals.Aggregate((p, n) => percentage <= p.Percentage ? p : n);
+            Visual current = Visuals.Aggregate((p, n) => amount <= p.Percentage ? p : n);
+
             if (!current.IsAnimation)
             {
                 mainImage.sprite = current.Sprite[0];
@@ -36,6 +39,9 @@ public class GUI : MonoBehaviour
             }
             else
                 routine = instance.StartCoroutine(Animate(current));
+
+            if (Text)
+                Text.text = amount.ToString();
         }
         IEnumerator Animate(Visual v)
         {
@@ -78,11 +84,13 @@ public class GUI : MonoBehaviour
         {
             if(!_guiPanel.activeSelf)
                 _guiPanel.SetActive(true);
-            SetInteractButton(_player?.CheckForInteractables());
+
+            var playerVals = _player?.CheckForInteractables();
+            SetInteractButton(playerVals.Value.transform, playerVals.Value.interactable);
         }
     }
 
-    private void UpdateGUI()
+    public void UpdateGUI()
     {
         foreach (var visual in _visualGUI)
         {
@@ -97,13 +105,16 @@ public class GUI : MonoBehaviour
                 case Stat.Thurst:
                     visual.UpdateVisuals(_playerinfo.ThurstPercentage);
                     break;
+                case Stat.Money:
+                    visual.UpdateVisuals(GameInfo.PouchMoney);
+                    break;
             }
         }
     }
 
-    public void SetInteractButton(Transform trans)
+    public void SetInteractButton(Transform trans, IInteractable interactable)
     {
-        if(trans == null)
+        if(interactable == null || !interactable.Interactable())
         {
             _interactButton.gameObject.SetActive(false);
             return;

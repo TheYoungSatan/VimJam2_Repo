@@ -9,6 +9,11 @@ namespace Interacting
         [SerializeField] private string _audioName = "_Computer";
         [SerializeField] private string _sceneToLoad = "Yoni_MinigameTesting";
 
+        public bool Interactable()
+        {
+            return true;
+        }
+
         public void OnInteract()
         {
             AudioHub.PlaySound(AudioHub.Interact + _audioName);
