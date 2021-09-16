@@ -1,11 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
-	28587383	LivingRoom	Footsteps			
-	748895195	None	Footsteps			
-	1586158131	Kitchen	Footsteps			
 	28587383	LivingRoom	Music			
 	748895195	None	Music			
 

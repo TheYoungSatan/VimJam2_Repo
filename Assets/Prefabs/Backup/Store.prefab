@@ -5779,7 +5779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7928674961969044161}
   - component: {fileID: 7928674961969044160}
-  - component: {fileID: 1099827580}
+  - component: {fileID: 3451038678159018470}
   m_Layer: 0
   m_Name: ShoppingFloor (9)
   m_TagString: Untagged
@@ -5851,7 +5851,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1099827580
+--- !u!114 &3451038678159018470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5860,7 +5860,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7928674961969044162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4245ce226224c9438398ab3d4b8d71a, type: 3}
+  m_Script: {fileID: 11500000, guid: 05e62622b9659ff459750b7ad5cd083a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -5870,7 +5870,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a505886136064544c968338305cb14e1,
+    WwiseObjectReference: {fileID: 11400000, guid: f985d9cd1672c244cb35aec42eba8bff,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -7070,7 +7070,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fe08b57ba4a53ea4c8bb23f77931c048,
+    WwiseObjectReference: {fileID: 11400000, guid: 0a28899f52c3d99419b83c91c90e8013,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0

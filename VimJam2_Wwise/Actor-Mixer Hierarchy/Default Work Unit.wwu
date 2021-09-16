@@ -3,46 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{FA544B66-4FA1-44C8-BE69-ABC618777864}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Music" ID="{D5A97337-04A1-47A9-BC40-4399F687B113}" ShortID="804038744">
-					<ChildrenList>
-						<Sound Name="Living Room" ID="{6E011C7E-48CC-4E1E-8863-B4DC60B0514D}" ShortID="290104976">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-18</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Living_Room" ID="{9951FAAF-B777-4DD6-B5B8-83A6886826A8}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="3.66690138073789"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="11.4786890369565"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="132.689620009407"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Living_Room.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="918506892"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Living_Room" ID="{9951FAAF-B777-4DD6-B5B8-83A6886826A8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Footsteps" ID="{532A90B9-C3F6-44FB-A88A-4AED71EBBBE0}" ShortID="521624468">
 					<ChildrenList>
 						<SwitchContainer Name="Footsteps_Switch" ID="{C465A499-F583-4E2E-9C7C-AD6ED832E732}" ShortID="439851931">
@@ -51,13 +11,13 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}" WorkUnitID="{EB5A1B3D-B6D0-4FC9-B1AF-0D0226A9DB70}"/>
+									<ObjectRef Name="Empty" ID="{5D43612E-3CFE-441A-95A4-CF04F64D3FA7}" WorkUnitID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Footsteps" ID="{A3BC6045-1CFF-4593-91FF-D64985B5ADB2}" WorkUnitID="{EB5A1B3D-B6D0-4FC9-B1AF-0D0226A9DB70}"/>
+									<ObjectRef Name="Footsteps" ID="{5FD31FD7-487C-45DC-B3A8-E5DF8F7A0C5C}" WorkUnitID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -245,23 +205,6 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Footsteps" ID="{A3BC6045-1CFF-4593-91FF-D64985B5ADB2}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
-												<CustomState Name="" ID="{FB9E6A3F-E983-43D9-A86C-E563798D46AC}" ShortID="737404987"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}"/>
-												<CustomState Name="" ID="{F60A45C2-F95A-4585-8212-57DF33B82F32}" ShortID="6630737"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Footsteps_Kitchen" ID="{AC5ECD3A-59EB-4714-B583-1EE3ED3C24E5}" ShortID="422009923">
 									<ReferenceList>
@@ -274,23 +217,6 @@
 									</ReferenceList>
 								</RandomSequenceContainer>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Footsteps" ID="{A3BC6045-1CFF-4593-91FF-D64985B5ADB2}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
-										<CustomState Name="" ID="{F243ADDC-EC68-4B18-9271-19E6A544C877}" ShortID="450867650"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}"/>
-										<CustomState Name="" ID="{3631AE68-555B-4BBE-8F6B-EBB56D66DB88}" ShortID="627360478"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -302,30 +228,20 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
+										<SwitchRef Name="LivingRoom" ID="{1D53E833-2FF2-4855-B03D-2AFC569A918E}"/>
 										<ItemList>
-											<ItemRef Name="Footsteps_Kitchen" ID="{AC5ECD3A-59EB-4714-B583-1EE3ED3C24E5}"/>
+											<ItemRef Name="Footsteps_LivingRoom" ID="{B5C2541C-D7E5-41AE-9A98-1C726E8E02D3}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}"/>
+										<SwitchRef Name="Kitchen" ID="{55E40A3C-8DA7-4E9E-8712-53985CA1573B}"/>
 										<ItemList>
-											<ItemRef Name="Footsteps_LivingRoom" ID="{B5C2541C-D7E5-41AE-9A98-1C726E8E02D3}"/>
+											<ItemRef Name="Footsteps_Kitchen" ID="{AC5ECD3A-59EB-4714-B583-1EE3ED3C24E5}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<RandomSequenceContainer Name="Interact_Sink" ID="{A4CF6426-9486-4A11-BF5F-534AC4C33B23}" ShortID="1026623930">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interact" ID="{E8F371F4-DE6F-46F4-8817-52473C0BF5EF}" ShortID="422664081">

@@ -189,7 +189,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
+  unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1703937116
@@ -665,7 +665,7 @@ PrefabInstance:
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5555557
+      value: -0.87629783
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}

@@ -1,22 +1,27 @@
 Event	ID	Name			Wwise Object Path	Notes
-	28587383	Livingroom			\Music\Livingroom	
 	59705223	Interact_Bed			\Default Work Unit\Interact\Interact_Bed	
 	1581818321	Interact_Computer			\Default Work Unit\Interact\Interact_Computer	
 	1785205318	Interact_Door			\Default Work Unit\Interact\Interact_Door	
-	1866025847	Footstep			\Default Work Unit\Footstep	
 	1931805945	Interact_Fridge			\Default Work Unit\Interact\Interact_Fridge	
+	2385628198	Footsteps			\Default Work Unit\Footsteps\Footsteps	
 	3789687639	Interact_Sink			\Default Work Unit\Interact\Interact_Sink	
+	3991942870	Music			\Music\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	28587383	LivingRoom	Footsteps			
+	1586158131	Kitchen	Footsteps			
+	3354297748	Empty	Footsteps			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
-	28587383	LivingRoom	Footsteps			
-	748895195	None	Footsteps			
-	1586158131	Kitchen	Footsteps			
 	28587383	LivingRoom	Music			
 	748895195	None	Music			
+	1686739432	Store	Music			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	49479373	Interact_Bed_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Bed_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Bed\Interact_Bed_1		240064
@@ -29,12 +34,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	300277308	Footsteps_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_2_92634899.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_2		59364
 	481425321	Fridge_Open_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_1		204064
 	498871758	Interact_Computer_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Computer_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Computer\Interact_Computer_2		84064
-	586467242	Interact_Sink_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Sink_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Interact_Sink_3		204064
+	705320496	Sink_On_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Sink_On_1_ADE83FFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Sink_On_1		381408
 	760634124	Interact_Bed_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Bed_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Bed\Interact_Bed_2		216064
 	828933744	Interact_Computer_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Computer_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Computer\Interact_Computer_1		60064
 	843802253	Door_Open_House_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Door_Open_House_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Door\Door_Open_House_2		156064
-	853255680	Interact_Sink_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Sink_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Interact_Sink_2		132064
-	916821349	Interact_Sink_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Sink_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Interact_Sink_1		132064
+	905931715	Store_Music	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Store_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\Store_Container\Store_Music\Store_Music		27039808
+	908482993	Living_Room	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Living_Room_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\LivingRoom_Container\LivingRoom\Living_Room		28615744
+	940383650	Sink_On_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Sink_On_2_D8ACF549.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Sink_On_2		397996
 	961390975	Footsteps_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_3_F45D0578.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_3		73276
 	993274319	Interact_Computer_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Computer_3_FE4BFF68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Computer\Interact_Computer_3		44940
 

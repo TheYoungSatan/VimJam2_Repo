@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footstep" ID="{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}">
-					<ChildrenList>
-						<Action Name="" ID="{627C4320-7886-4C6C-B643-E318C68DE1FD}" ShortID="544097216">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps_Switch" ID="{C465A499-F583-4E2E-9C7C-AD6ED832E732}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Interact" ID="{0A8D6B19-BE22-4648-8F04-70A65877B96C}" ShortID="558305616">
 					<ChildrenList>
 						<Event Name="Interact_Fridge" ID="{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}">
@@ -66,6 +55,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Interact_Computer" ID="{08197B48-F4AC-4F17-83D0-2468C595B4FF}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">
+					<ChildrenList>
+						<Event Name="Footstep" ID="{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}">
+							<ChildrenList>
+								<Action Name="" ID="{627C4320-7886-4C6C-B643-E318C68DE1FD}" ShortID="544097216">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Switch" ID="{C465A499-F583-4E2E-9C7C-AD6ED832E732}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
