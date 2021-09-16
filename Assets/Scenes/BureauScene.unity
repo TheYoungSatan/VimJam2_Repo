@@ -350,37 +350,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3593551751748159300, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.365
-      objectReference: {fileID: 0}
-    - target: {fileID: 6791059019872619042, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6791059019872619042, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.014311954
-      objectReference: {fileID: 0}
-    - target: {fileID: 6791059019872619042, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.28221902
-      objectReference: {fileID: 0}
-    - target: {fileID: 6830638252083129702, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c2e9d67fb8966a64aae296689c346096,
-        type: 3}
-    - target: {fileID: 6830638252083129702, guid: b116c01987526f44d89a1687f3c184a5,
-        type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b116c01987526f44d89a1687f3c184a5, type: 3}
 --- !u!60 &490794713200219501 stripped
@@ -665,7 +634,7 @@ PrefabInstance:
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.87629783
+      value: -0.5555557
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}

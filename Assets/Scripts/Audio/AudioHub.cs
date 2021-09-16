@@ -22,5 +22,7 @@ namespace Sound
             go = go == null ? hub.gameObject : go;
             AkSoundEngine.PostEvent(sound, go);
         }
+
+        public static void SetState(string stategroup, string state) => AkSoundEngine.SetState(stategroup, state);
     }
 }

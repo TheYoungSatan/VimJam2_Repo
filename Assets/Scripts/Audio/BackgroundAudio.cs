@@ -2,14 +2,12 @@
 using UnityEngine;
 using Wwise;
 
-[RequireComponent(typeof(SwitchEventCaller), typeof(AkState))]
 public class BackgroundAudio : MonoBehaviour
 {
-    private SwitchEventCaller _caller;
+    [SerializeField] private string _state = "LivingRoom";
     private void Start()
     {
-        _caller = GetComponent<SwitchEventCaller>();
-        _caller.CallSwitch();
         AudioHub.PlaySound(AudioHub.BackgroundMusic);
+        AudioHub.SetState(AudioHub.BackgroundMusic, _state);
     }
 }
