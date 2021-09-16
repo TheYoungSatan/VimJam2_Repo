@@ -127,12 +127,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2241834373675429347}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &1045964445 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 490794712385141891, guid: b116c01987526f44d89a1687f3c184a5,
-    type: 3}
-  m_PrefabInstance: {fileID: 490794713200219500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1703561828 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2241834374303934343, guid: 31fa729280e05f24eb76793094ae7338,
@@ -367,6 +361,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b116c01987526f44d89a1687f3c184a5, type: 3}
+--- !u!60 &490794713200219501 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 490794712385141891, guid: b116c01987526f44d89a1687f3c184a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 490794713200219500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1907540563814051135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -537,9 +537,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 1045964445}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8b774287101e34b84c6ad2e2770482, type: 3}
+--- !u!1 &2107568948153667227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2107568947227352512, guid: db8b774287101e34b84c6ad2e2770482,
+    type: 3}
+  m_PrefabInstance: {fileID: 2107568948153667226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2107568948153667228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107568948153667227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473e21fb9c9673d4fbc2205fc1bd69b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boundingShape: {fileID: 490794713200219501}
 --- !u!1001 &2241834373675429347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,12 +648,12 @@ PrefabInstance:
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.35555568
+      value: 0.387
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000011920929
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}

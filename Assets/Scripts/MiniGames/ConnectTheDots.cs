@@ -22,6 +22,12 @@ namespace MiniGame
         private List<Vector3> _lineSegments = new List<Vector3>();
         private List<Dot> _dotList = new List<Dot>();
 
+        private Texture2D _texture;
+        public int TextureWidth = 128;
+        public int TextureHeight = 128;
+        public Renderer PixelPlaneRenderer;
+        private Color[] _fillPixels;
+
         public override void RunGame()
         {
             for (int i = 1; i <= _dotAmount; i++)
@@ -46,7 +52,26 @@ namespace MiniGame
             if (!FindObjectOfType<EventSystem>())
                 new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
 
+            InitializeTexture();
             StartCoroutine(DelayTime());
+        }
+
+        private void InitializeTexture()
+        {
+            _texture = new Texture2D(TextureWidth, TextureHeight, TextureFormat.ARGB32, false);
+            _texture.filterMode = FilterMode.Point;
+            Color fillColor = Color.clear;
+            _fillPixels = new Color[TextureWidth * TextureHeight];
+
+            for (int i = 0; i < _fillPixels.Length; i++)
+            {
+                _fillPixels[i] = fillColor;
+            }
+
+            _texture.SetPixels(_fillPixels);
+            _texture.Apply();
+
+            PixelPlaneRenderer.material.mainTexture = _texture;
         }
 
         public override void UpdateGame()

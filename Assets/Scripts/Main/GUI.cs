@@ -63,6 +63,7 @@ public class GUI : MonoBehaviour
         instance = this;
         _playerinfo = FindObjectOfType<PlayerInfo>();
         _playerinfo.OnUpdateValues += UpdateGUI;
+        UpdateGUI();
     }
 
     private void Update()

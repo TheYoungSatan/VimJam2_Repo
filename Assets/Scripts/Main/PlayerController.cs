@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.started)
+        Debug.Log("Interact");
+        if (context.performed)
         {
             Vector3 checkPos = transform.position;
             checkPos.y += _radius;

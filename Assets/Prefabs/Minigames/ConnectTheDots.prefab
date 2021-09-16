@@ -152,6 +152,9 @@ MonoBehaviour:
   _dotAmount: 6
   _displayTime: 3
   _screenSpaceReduction: 20
+  TextureWidth: 128
+  TextureHeight: 128
+  PixelPlaneRenderer: {fileID: 8163503133813726745}
 --- !u!120 &7727959342265798781
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -365,6 +368,12 @@ PrefabInstance:
 --- !u!4 &8163503133813726748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 760890217413262406, guid: c80b32113c0a6cb488fa9191d13aab14,
+    type: 3}
+  m_PrefabInstance: {fileID: 8918727352465089114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8163503133813726745 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 760890217413262403, guid: c80b32113c0a6cb488fa9191d13aab14,
     type: 3}
   m_PrefabInstance: {fileID: 8918727352465089114}
   m_PrefabAsset: {fileID: 0}
