@@ -28,7 +28,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="146556.922763474"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -196,7 +196,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="235014.00696"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -516,7 +516,7 @@
 										<MusicCue Name="Exit Cue" ID="{CCC13582-42FF-4528-B3D6-4E2B0EBDA721}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="140832"/>
+												<Property Name="TimeMs" Type="Real64" Value="70416.0000000002"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>

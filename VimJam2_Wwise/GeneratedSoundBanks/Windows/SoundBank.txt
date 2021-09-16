@@ -8,12 +8,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Music\Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	1866025847	Footstep			\Default Work Unit\Footstep	
 
 Switch	ID	Name	Switch Group			Notes
-	28587383	LivingRoom	Footsteps			
-	1586158131	Kitchen	Footsteps			
-	3354297748	Empty	Footsteps			
+	28587383	LivingRoom	Footstep			
+	1586158131	Kitchen	Footstep			
+	3354297748	Empty	Footstep			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	

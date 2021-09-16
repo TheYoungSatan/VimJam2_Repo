@@ -28,7 +28,7 @@
 				<Property Name="Game Profiler\Capture List\Filters\Scope - Game Object" Type="bool" Value="True"/>
 				<Property Name="Game Profiler\Capture List\Filters\Scope - Global" Type="bool" Value="True"/>
 				<Property Name="Game Profiler\Capture List\Filters\Sub Type - Mask" Type="int32" Value="8191"/>
-				<Property Name="Game Profiler\Capture List\Filters\Type - Mask" Type="int32" Value="100"/>
+				<Property Name="Game Profiler\Capture List\Filters\Type - Mask" Type="int32" Value="253"/>
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Game Objects" Type="bool" Value="False"/>
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Hierarchy" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Parents" Type="bool" Value="False"/>
@@ -45,7 +45,7 @@
 				<Property Name="Interactive Music\x64_{266BFADB-CB67-4C72-BA79-0A3B91ABC6A7} - SegmentEditorZoomInfo" Type="string" Value="btGgoSsQ4j8AAAAAAADwP3Icx3EcxxtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{28397A35-4BBC-42C6-A65E-DF5EBD57DA67} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP/NnFZDDPvU/AAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{547DB329-DF47-4BE7-AFD3-EACE5DEE8FDA} - SegmentEditorZoomInfo" Type="string" Value="mpmZmZmZuT8AAAAAAADwPwAAAAAAkG5AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
-				<Property Name="Interactive Music\x64_{559D7D35-2219-437C-B0C3-A57C3F5B75AF} - SegmentEditorZoomInfo" Type="string" Value="JA5wgkXbyz8AAAAAAADwPwAAAAAAYEdAAAAAAAAA8D8AAAAAAAiAQAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{559D7D35-2219-437C-B0C3-A57C3F5B75AF} - SegmentEditorZoomInfo" Type="string" Value="JA5wgkXbyz8AAAAAAADwPwAAAAAAYEdAAAAAAAAA8D8AAAAAABB8QAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{68BA2D80-9746-456E-B49C-AD485D7EDAB5} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAYEdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{7B0FAD5C-3658-4916-ADDB-760C251F996A} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAYEdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{AA9794EE-995F-4200-975C-00922D0D097E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1k/td88E/Q/AAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -68,6 +68,7 @@
 				<Property Name="Music Transition List\{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7F2ECFE6-01D7-416E-811D-0C455A1BAE65}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{8F2E4C01-1145-4C18-A048-B446348C9982}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{9417A221-616E-46F5-88A8-9996D79775E0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{95ACCF4B-E63D-450F-B51E-94511B97AF35}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{9EAAD55E-EC9D-4E60-BAD3-B9DBA1B3CFD5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{AD776875-87CA-4306-9EFA-C42F2CE60AF0}\x64_Expand States" Type="string" Value=""/>

@@ -17,7 +17,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Footsteps" ID="{5FD31FD7-487C-45DC-B3A8-E5DF8F7A0C5C}" WorkUnitID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}"/>
+									<ObjectRef Name="Footstep" ID="{5FD31FD7-487C-45DC-B3A8-E5DF8F7A0C5C}" WorkUnitID="{D427E50A-F9E5-498F-B780-AB3BFC19ED22}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

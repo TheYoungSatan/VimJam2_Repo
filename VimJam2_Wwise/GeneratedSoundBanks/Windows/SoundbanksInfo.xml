@@ -159,11 +159,11 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
-				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
+				<SwitchGroup Id="1866025847" Name="Footstep" ObjectPath="\Switches\Default Work Unit\Footstep">
 					<Switches>
-						<Switch Id="28587383" Name="LivingRoom" ObjectPath="\Switches\Default Work Unit\Footsteps\LivingRoom"/>
-						<Switch Id="1586158131" Name="Kitchen" ObjectPath="\Switches\Default Work Unit\Footsteps\Kitchen"/>
-						<Switch Id="3354297748" Name="Empty" ObjectPath="\Switches\Default Work Unit\Footsteps\Empty"/>
+						<Switch Id="28587383" Name="LivingRoom" ObjectPath="\Switches\Default Work Unit\Footstep\LivingRoom"/>
+						<Switch Id="1586158131" Name="Kitchen" ObjectPath="\Switches\Default Work Unit\Footstep\Kitchen"/>
+						<Switch Id="3354297748" Name="Empty" ObjectPath="\Switches\Default Work Unit\Footstep\Empty"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
