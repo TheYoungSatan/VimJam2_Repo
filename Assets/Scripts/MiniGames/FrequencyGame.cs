@@ -12,13 +12,18 @@ namespace MiniGame
         [SerializeField]
         private LineRenderer _referenceLine;
         [SerializeField]
-        private Transform _startPos;
+        private Transform _startPosReference;
+        [SerializeField]
+        private Transform _startPosModifyable;
 
+        [Header("ReferenceWave")]
         [SerializeField, Range(0.2f, 2)]
-        private float _amplitude = 1;
+        private float _amplitude = 0.5f;
         [SerializeField, Range(0.2f, 5)]
         private float _waveLength = 2;
 
+        private float _amplitudeMod;
+        private float _waveLengthMod;
 
         private Texture2D _texture;
         public int TextureWidth = 128;
@@ -31,12 +36,15 @@ namespace MiniGame
         public override void RunGame()
         {
             InitializeTexture();
-            //DrawSineWave(_startPos.position, Random.Range(0.2f, 2f), Random.Range(0.2f, 2f));
+            _amplitudeMod = Random.Range(0.2f, 2f);
+            _waveLengthMod = Random.Range(0.5f, 3f);
         }
 
         public override void UpdateGame()
         {
-            DrawTravellingSineWave(_startPos.position, _amplitude, _waveLength, 2);
+            DrawTravellingSineWave(_startPosReference.position, _startPosModifyable.position, _amplitude, _waveLength, 2, Color.green, Color.red);
+
+            //DrawTravellingSineWave(_startPosModifyable.position, Random.Range(0.2f, 2f), Random.Range(0.2f, 5f), 2, Color.red);
         }
 
         private void InitializeTexture()
@@ -57,31 +65,69 @@ namespace MiniGame
             PixelPlaneRenderer.material.mainTexture = _texture;
         }
 
-        private void DrawTravellingSineWave(Vector3 startPoint, float amplitude, float wavelength, float waveSpeed)
+        private void DrawTravellingSineWave(Vector3 startPointRef, Vector3 startPointMod, float amplitude, float wavelength, float waveSpeed, Color colorRef, Color colorMod)
         {
             _texture.SetPixels(_fillPixels);
             _texture.Apply();
 
-            float x = 0f;
-            float y;
-            float k = 2 * Mathf.PI / wavelength;
-            float w = k * waveSpeed;
+            var widthPlane = PlaneBounds.bounds.size.x;
+            var heightPlane = PlaneBounds.bounds.size.y;
+
+            float xRef = 0f;
+            float yRef;
+            float kRef = 2 * Mathf.PI / wavelength;
+            float wRef = kRef * waveSpeed;
             for (int i = 0; i < 80; i++)
             {
-                x += i * 0.001f;
-                y = amplitude * Mathf.Sin(k * x + w * Time.time);
+                xRef += i * 0.001f;
+                yRef = amplitude * Mathf.Sin(kRef * xRef + wRef * Time.time);
 
-                var worldPos = new Vector3(x, y, 0) + startPoint;
+                var worldPosRef = new Vector3(xRef, yRef, 0) + startPointRef;
 
-                var widthPlane = PlaneBounds.bounds.size.x;
-                var heightPlane = PlaneBounds.bounds.size.y;
+                var xCoordRef = (((widthPlane / 2) + worldPosRef.x) / widthPlane) * TextureHeight;
+                var yCoordRef = (((heightPlane / 2) - worldPosRef.y) / heightPlane) * TextureWidth;
 
-                var xCoord = (((widthPlane / 2) + worldPos.x) / widthPlane) * TextureHeight;
-                var yCoord = (((heightPlane / 2) - worldPos.y) / heightPlane) * TextureWidth;
-
-                _texture.SetPixel((int)yCoord, (int)xCoord, Color.red);
-                _texture.Apply();
+                _texture.SetPixel((int)yCoordRef, (int)xCoordRef, colorRef);
             }
+
+            float xMod = 0f;
+            float yMod;
+            float kMod = (float)(2 * Mathf.PI / System.Math.Round(_waveLengthMod, 1));
+            float wMod = kMod * waveSpeed;
+            for (int i = 0; i < 80; i++)
+            {
+                xMod += i * 0.001f;
+                yMod = (float)(System.Math.Round(_amplitudeMod, 1) * Mathf.Sin(kMod * xMod + wMod * Time.time));
+
+                var worldPosMod = new Vector3(xMod, yMod, 0) + startPointMod;
+
+                var xCoordMod = (((widthPlane / 2) + worldPosMod.x) / widthPlane) * TextureHeight;
+                var yCoordMod = (((heightPlane / 2) - worldPosMod.y) / heightPlane) * TextureWidth;
+
+                _texture.SetPixel((int)yCoordMod, (int)xCoordMod, colorMod);
+            }
+
+            _texture.Apply();
+        }
+
+        public void IncreaseAmplitude()
+        {
+            _amplitudeMod += 0.1f;
+        }
+
+        public void DecreaseAmplitude()
+        {
+            _amplitudeMod -= 0.1f;
+        }
+
+        public void IncreaseWaveLength()
+        {
+            _waveLengthMod += 0.1f;
+        }
+
+        public void DecreaseWaveLength()
+        {
+            _waveLengthMod -= 0.1f;
         }
 
         void DrawSineWave(Vector3 startPoint, float amplitude, float wavelength)
