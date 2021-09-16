@@ -21,7 +21,7 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.469928">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.228223" DurationMax="0.752619">
 					<IncludedMemoryFiles>
 						<File Id="281699847" Language="SFX">
 							<ShortName>Footsteps_5.wav</ShortName>
@@ -39,6 +39,10 @@
 							<ShortName>Footsteps_2.wav</ShortName>
 							<Path>SFX\Footsteps_2_92634899.wem</Path>
 						</File>
+						<File Id="912606623" Language="SFX">
+							<ShortName>93 Footsteps; Grass- Slow.1.L.wav</ShortName>
+							<Path>SFX\93 Footsteps; Grass- Slow.1.L_BFBEE418.wem</Path>
+						</File>
 						<File Id="961390975" Language="SFX">
 							<ShortName>Footsteps_3.wav</ShortName>
 							<Path>SFX\Footsteps_3_F45D0578.wem</Path>
@@ -52,6 +56,11 @@
 								<File Id="961390975"/>
 								<File Id="297054626"/>
 								<File Id="281699847"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{55E40A3C-8DA7-4E9E-8712-53985CA1573B}">
+							<Media>
+								<File Id="912606623"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
