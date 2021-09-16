@@ -358,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 6791059019872619042, guid: b116c01987526f44d89a1687f3c184a5,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6791059019872619042, guid: b116c01987526f44d89a1687f3c184a5,
         type: 3}

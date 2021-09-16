@@ -9,7 +9,7 @@ public class GameInfo : MonoBehaviour
     public static int UnpayedFood = 0;
     public static int PouchMoney = 12;
     public static int FoodCost = 5;
-    public static int CurrentTime = 22;
+    public static int CurrentTime = 10;
     public static int TravelTime = 1;
 
     private PlayerInfo playerInfo;

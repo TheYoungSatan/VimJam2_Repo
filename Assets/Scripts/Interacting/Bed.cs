@@ -4,7 +4,6 @@ namespace Interacting
 {
     public class Bed : MonoBehaviour, IInteractable
     {
-        [SerializeField] private int _wakeupTime = 10;
         private PlayerInfo _playerinfo;
 
         private void Awake()
@@ -31,7 +30,7 @@ namespace Interacting
         {
             if(Interactable())
             {
-                GameInfo.SetTime(_wakeupTime);
+                GameInfo.SetTime(_playerinfo.WakeupTime);
             }
         }
 

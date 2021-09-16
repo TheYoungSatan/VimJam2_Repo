@@ -8,9 +8,11 @@ public class PlayerInfo : MonoBehaviour
     public int AwakeTime { get; private set; }
     public int HungerPercentage { get; private set; }
     public int ThurstPercentage { get; private set; }
+    public int WakeupTime => _wakeupTime;
 
     [SerializeField] private int _hungerPerHour = 10;
     [SerializeField] private int _thurstPerHour = 15;
+    [SerializeField] private int _wakeupTime = 8;
 
     private void Start()
     {

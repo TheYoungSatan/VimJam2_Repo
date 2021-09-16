@@ -61,6 +61,7 @@ public class GUI : MonoBehaviour
     [SerializeField] private VisualGUI[] _visualGUI;
     [SerializeField] private RectTransform _interactButton;
     [SerializeField] private InfoPanel _infoPanel;
+    [SerializeField] private SceneTransition transition;
 
     private PlayerInfo _playerinfo;
     private PlayerController _player = null;
@@ -71,6 +72,7 @@ public class GUI : MonoBehaviour
         _playerinfo = FindObjectOfType<PlayerInfo>();
         _playerinfo.OnUpdateValues += UpdateGUI;
         UpdateGUI();
+        FadeOut();
     }
 
     private void Update()
@@ -156,4 +158,7 @@ public class GUI : MonoBehaviour
         else
             _infoPanel.SetActive(false);
     }
+
+    public static void FadeIn() => instance.transition.FadeIn();
+    public static void FadeOut() => instance.transition.FadeOut();
 }
