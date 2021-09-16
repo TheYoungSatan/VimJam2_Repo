@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sound;
+using System;
 using UnityEngine;
 
 namespace Interacting
@@ -25,6 +26,7 @@ namespace Interacting
             if (GameInfo.PouchMoney < _costFoodPiece)
             {
                 GameInfo.ChangeUnpayedFoodPiecesAmount(-GameInfo.UnpayedFood);
+                _gui.UpdateGUI();
                 return;
             }
 
@@ -32,10 +34,11 @@ namespace Interacting
             int affordable = CheckAffordable();
             cost = cost > GameInfo.PouchMoney ? GameInfo.FoodCost * affordable : cost;
             GameInfo.ChangePouchMoneyAmount(-cost);
-            GameInfo.ChangeFoodPiecesAmount(cost / affordable);
+            GameInfo.ChangeFoodPiecesAmount(affordable);
             GameInfo.ChangeUnpayedFoodPiecesAmount(-GameInfo.UnpayedFood);
 
             _gui.UpdateGUI();
+            AudioHub.PlaySound(AudioHub.Interact + "_checkOut");
         }
 
         private int CheckAffordable()

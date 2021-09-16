@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sound;
+using UnityEngine;
 
 namespace Interacting
 {
@@ -42,6 +43,7 @@ namespace Interacting
             GameInfo.ChangeUnpayedFoodPiecesAmount(1);
             _hasFood = false;
             _shopBox.sprite = _sprites[0];
+            AudioHub.PlaySound(AudioHub.Interact + "_shoppingDesk");
         }
 
         public string InfoText()

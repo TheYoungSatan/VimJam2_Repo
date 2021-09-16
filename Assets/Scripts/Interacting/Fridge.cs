@@ -7,10 +7,12 @@ namespace Interacting
     {
         [SerializeField] private int _decreaseValue = 85;
         private PlayerInfo _info;
+        private GUI _gui;
 
         private void Awake()
         {
             _info = FindObjectOfType<PlayerInfo>();
+            _gui = FindObjectOfType<GUI>();
         }
 
         public void OnInteract()
@@ -18,8 +20,9 @@ namespace Interacting
             if(GameInfo.FoodPieces > 0)
             {
                 _info.DecreaseHunger(_decreaseValue);
-                AudioHub.PlaySound(AudioHub.Interact + "_Fridge");
                 GameInfo.ChangeFoodPiecesAmount(-1);
+                AudioHub.PlaySound(AudioHub.Interact + "_Fridge");
+                _gui.UpdateGUI();
             }
         }
 

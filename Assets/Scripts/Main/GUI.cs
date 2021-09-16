@@ -75,6 +75,7 @@ public class GUI : MonoBehaviour
 
     private void Update()
     {
+        UpdateGUI();
         if (_player == null)
         {
             _player = FindObjectOfType<PlayerController>();
@@ -87,7 +88,7 @@ public class GUI : MonoBehaviour
                 _guiPanel.SetActive(true);
 
             var playerVals = _player?.CheckForInteractables();
-            SetInteractButton(playerVals.Value.transform, playerVals.Value.interactable);
+            SetInfoObjects(playerVals.Value.transform, playerVals.Value.interactable);
         }
     }
 
@@ -113,14 +114,16 @@ public class GUI : MonoBehaviour
         }
     }
 
-    public void SetInteractButton(Transform trans, IInteractable interactable)
+    public void SetInfoObjects(Transform trans, IInteractable interactable)
     {
         if(interactable == null || !interactable.Interactable())
         {
             _interactButton.gameObject.SetActive(false);
-            _infoPanel.SetActive(false);
+            ShowInfoPanel(interactable);
             return;
         }
+
+        ShowInfoPanel(interactable);
 
         Vector3 transpos = trans.position;
         transpos.y += .5f;
@@ -129,6 +132,15 @@ public class GUI : MonoBehaviour
         pos.z = 0;
         _interactButton.position = pos;
         _interactButton.gameObject.SetActive(true);
+    }
+
+    private void ShowInfoPanel(IInteractable interactable)
+    {
+        if (interactable == null)
+        {
+            _infoPanel.SetActive(false);
+            return;
+        }
 
         if (interactable.HasInfoPanel())
         {
@@ -141,5 +153,7 @@ public class GUI : MonoBehaviour
             _infoPanel.SetText(interactable.InfoText());
             _infoPanel.SetActive(true);
         }
+        else
+            _infoPanel.SetActive(false);
     }
 }

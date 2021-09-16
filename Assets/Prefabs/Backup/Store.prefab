@@ -5870,7 +5870,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a505886136064544c968338305cb14e1,
+    WwiseObjectReference: {fileID: 11400000, guid: a80cd553d3512c94eb13bbdc294e1049,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -7051,8 +7051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6091d81384f254689cd4c0bcbc2bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _checkObject: {fileID: 0}
-  _checkTrigger: 0
 --- !u!114 &3149571225994911050
 MonoBehaviour:
   m_ObjectHideFlags: 0

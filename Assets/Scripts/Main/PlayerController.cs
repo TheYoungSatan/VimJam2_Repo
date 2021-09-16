@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
             i = closestObj.GetComponent<IInteractable>();            
         }
 
-        return (colls.Length > 0 ? transform : null, i);
+        return (colls.Length > 0 ? (transform, i) : (null, null));
     }
 
     private void Start()

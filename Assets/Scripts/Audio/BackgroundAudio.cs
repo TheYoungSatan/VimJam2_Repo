@@ -1,5 +1,6 @@
 ﻿using Sound;
 using UnityEngine;
+using Wwise;
 
 [RequireComponent(typeof(SwitchEventCaller), typeof(AkState))]
 public class BackgroundAudio : MonoBehaviour
