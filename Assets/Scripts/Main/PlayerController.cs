@@ -1,9 +1,11 @@
 ﻿using Interacting;
 using Sound;
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class PlayerController : MonoBehaviour
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _input;
     private Rigidbody2D _rigid;
     private PlayerInfo _info;
+    private bool _inputDelay;
 
     #region Input
 
@@ -47,7 +50,8 @@ public class PlayerController : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        Debug.Log("Interact");
+        if (_inputDelay) return;
+
         if (context.performed)
         {
             Vector3 checkPos = transform.position;
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
                 IInteractable i = closestObj.GetComponent<IInteractable>();
                 i?.OnInteract();
                 AudioHub.PlaySound(AudioHub.Interact);
+                StartCoroutine("InputDelay");
             }
         }
     }
@@ -92,6 +97,13 @@ public class PlayerController : MonoBehaviour
             _info = FindObjectOfType<PlayerInfo>();
         if (_info)
             _info.OnUpdateValues += CheckValues;
+    }
+
+    private IEnumerator InputDelay()
+    {
+        _inputDelay = true;
+        yield return new WaitForSeconds(.25f);
+        _inputDelay = false;
     }
 
     private void CheckValues()

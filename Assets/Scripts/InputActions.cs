@@ -72,7 +72,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""id"": ""6f6af874-9d1c-450b-bd48-5e40e8916654"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
                 },
                 {
                     ""name"": ""MouseClick"",

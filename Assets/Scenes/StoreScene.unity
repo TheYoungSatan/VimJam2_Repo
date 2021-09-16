@@ -234,19 +234,9 @@ PrefabInstance:
       objectReference: {fileID: 575227766}
     - target: {fileID: 2540677725882412448, guid: cf566d4896cfe6849832b60c1da23bb9,
         type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Move
-      objectReference: {fileID: 0}
-    - target: {fileID: 2540677725882412448, guid: cf566d4896cfe6849832b60c1da23bb9,
-        type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 575227766}
-    - target: {fileID: 2540677725882412448, guid: cf566d4896cfe6849832b60c1da23bb9,
-        type: 3}
-      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Interact
-      objectReference: {fileID: 0}
     - target: {fileID: 3208749495055631855, guid: cf566d4896cfe6849832b60c1da23bb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -376,8 +366,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Store
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4699985223241066014, guid: aa187d5b661ed374a985b3f653ee4a5a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa187d5b661ed374a985b3f653ee4a5a, type: 3}
 --- !u!60 &92217154 stripped
 PolygonCollider2D:
@@ -411,12 +400,12 @@ PrefabInstance:
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27499998
+      value: -1.557
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.70700014
+      value: 0.707
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
@@ -465,26 +454,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cf6fb566ec59364fa13941ca3f5562e, type: 3}
---- !u!1 &530468989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7935432262774001102, guid: aa187d5b661ed374a985b3f653ee4a5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 72221428}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &530468992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530468989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 862b20dc13c8a4e40b80f2df2c82d05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _costFoodPiece: 5
-  _gui: {fileID: 0}
 --- !u!114 &575227766 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2241834374303934343, guid: 31fa729280e05f24eb76793094ae7338,
@@ -597,7 +566,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 92217154}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8b774287101e34b84c6ad2e2770482, type: 3}
 --- !u!1001 &2041471929

@@ -27,5 +27,20 @@ namespace Interacting
         {
             return GameInfo.FoodPieces > 0 && _info.HungerPercentage > 0;
         }
+
+        public string InfoText()
+        {
+            return $"Fridge \n Food: {GameInfo.FoodPieces}";
+        }
+
+        public bool HasInfoPanel()
+        {
+            return true;
+        }
+
+        public Transform Position()
+        {
+            return transform;
+        }
     }
 }

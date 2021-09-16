@@ -60,6 +60,7 @@ public class GUI : MonoBehaviour
     [SerializeField] private GameObject _guiPanel;
     [SerializeField] private VisualGUI[] _visualGUI;
     [SerializeField] private RectTransform _interactButton;
+    [SerializeField] private InfoPanel _infoPanel;
 
     private PlayerInfo _playerinfo;
     private PlayerController _player = null;
@@ -117,6 +118,7 @@ public class GUI : MonoBehaviour
         if(interactable == null || !interactable.Interactable())
         {
             _interactButton.gameObject.SetActive(false);
+            _infoPanel.SetActive(false);
             return;
         }
 
@@ -127,5 +129,17 @@ public class GUI : MonoBehaviour
         pos.z = 0;
         _interactButton.position = pos;
         _interactButton.gameObject.SetActive(true);
+
+        if (interactable.HasInfoPanel())
+        {
+            Vector3 panelPos = interactable.Position().position;
+            panelPos.y += .5f;
+            panelPos.x -= .25f;
+            panelPos = Camera.main.WorldToScreenPoint(panelPos);
+            panelPos.z = 0;
+            _infoPanel.SetPosition(panelPos);
+            _infoPanel.SetText(interactable.InfoText());
+            _infoPanel.SetActive(true);
+        }
     }
 }

@@ -50,5 +50,20 @@ namespace Interacting
             }
             return rv;
         }
+
+        public string InfoText()
+        {
+            return $"Checkout \n Food: {GameInfo.UnpayedFood} \n Cost: {GameInfo.FoodCost * GameInfo.UnpayedFood}";
+        }
+
+        public bool HasInfoPanel()
+        {
+            return true;
+        }
+
+        public Transform Position()
+        {
+            return transform;
+        }
     }
 }

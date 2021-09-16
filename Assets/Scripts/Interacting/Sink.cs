@@ -23,5 +23,20 @@ namespace Interacting
         {
             return _info.ThurstPercentage > 0;
         }
+
+        public string InfoText()
+        {
+            return "";
+        }
+
+        public bool HasInfoPanel()
+        {
+            return false;
+        }
+
+        public Transform Position()
+        {
+            return transform;
+        }
     }
 }
