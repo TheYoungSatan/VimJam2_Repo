@@ -2,8 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	59705223	Interact_Bed			\Default Work Unit\Interact\Interact_Bed	
 	1581818321	Interact_Computer			\Default Work Unit\Interact\Interact_Computer	
 	1785205318	Interact_Door			\Default Work Unit\Interact\Interact_Door	
+	1866025847	Footstep			\Default Work Unit\Footsteps\Footstep	
 	1931805945	Interact_Fridge			\Default Work Unit\Interact\Interact_Fridge	
-	2385628198	Footsteps			\Default Work Unit\Footsteps\Footsteps	
 	3789687639	Interact_Sink			\Default Work Unit\Interact\Interact_Sink	
 	3991942870	Music			\Music\Music	
 

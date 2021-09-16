@@ -21,7 +21,7 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Footsteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.469928">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.469928">
 					<IncludedMemoryFiles>
 						<File Id="281699847" Language="SFX">
 							<ShortName>Footsteps_5.wav</ShortName>
