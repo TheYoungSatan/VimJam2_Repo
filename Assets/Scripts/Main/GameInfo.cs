@@ -11,6 +11,7 @@ public class GameInfo : MonoBehaviour
     public static int FoodCost = 5;
     public static int CurrentTime = 10;
     public static int TravelTime = 1;
+    public static bool IsBackgroundSoundPlaying = false;
 
     private PlayerInfo playerInfo;
 
@@ -42,6 +43,8 @@ public class GameInfo : MonoBehaviour
         if (PouchMoney <= 0)
             PouchMoney = 0;
     }
+
+    public static void SetBackgroundSound(bool value) => IsBackgroundSoundPlaying = value;
 
     public static void AddTime(int time)
     {

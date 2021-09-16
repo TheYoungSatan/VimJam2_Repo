@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkObject: {fileID: 0}
+  _state: Kitchen
 --- !u!114 &1703937119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkObject: {fileID: 0}
+  _state: LivingRoom
 --- !u!114 &1703937121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 490794713200219501}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8b774287101e34b84c6ad2e2770482, type: 3}
 --- !u!1 &2107568948153667227 stripped
@@ -634,7 +636,7 @@ PrefabInstance:
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5555557
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: 2912727482957265630, guid: 9cf6fb566ec59364fa13941ca3f5562e,
         type: 3}

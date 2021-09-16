@@ -29,7 +29,7 @@ public class GUI : MonoBehaviour
 
         public void UpdateVisuals(int amount)
         {
-            Visual current = Visuals.Aggregate((p, n) => amount <= p.Percentage ? p : n);
+            Visual current = Visuals.Aggregate((p, n) => amount <= n.Percentage ? p : n);
 
             if (!current.IsAnimation)
             {

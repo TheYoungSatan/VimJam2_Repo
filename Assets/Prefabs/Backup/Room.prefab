@@ -687,7 +687,6 @@ GameObject:
   m_Component:
   - component: {fileID: 490794711433420648}
   - component: {fileID: 490794711433420649}
-  - component: {fileID: 7428555872801380201}
   m_Layer: 0
   m_Name: Floor1 (4)
   m_TagString: Untagged
@@ -759,31 +758,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7428555872801380201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490794711433420655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e62622b9659ff459750b7ad5cd083a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d95a7ea2417b23444afea7da883b28da,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1 &490794711442664704
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _state: LivingRoom
+  _footstepState: LivingRoom
 --- !u!1 &490794711479437676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,8 +2298,6 @@ GameObject:
   - component: {fileID: 1362244749}
   - component: {fileID: 5178609190099700393}
   - component: {fileID: 7571950752783389802}
-  - component: {fileID: 3378189109829300008}
-  - component: {fileID: 6755392529054711603}
   m_Layer: 0
   m_Name: Floor1 (5)
   m_TagString: Untagged
@@ -2435,6 +2408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkObject: {fileID: 0}
+  _state: Kitchen
 --- !u!114 &7571950752783389802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2448,56 +2422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _checkObject: {fileID: 0}
---- !u!114 &3378189109829300008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490794712239973274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e62622b9659ff459750b7ad5cd083a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 9612e65d
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f985d9cd1672c244cb35aec42eba8bff,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
---- !u!114 &6755392529054711603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490794712239973274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e62622b9659ff459750b7ad5cd083a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 3e9a5234
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d95a7ea2417b23444afea7da883b28da,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
+  _state: LivingRoom
 --- !u!1 &490794712260539501
 GameObject:
   m_ObjectHideFlags: 0
@@ -8789,15 +8714,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6929781545282396251, guid: 443f634f528010649b3a3735d510ff87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 443f634f528010649b3a3735d510ff87, type: 3}
---- !u!4 &6859183677171718601 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4438217523173948917, guid: 443f634f528010649b3a3735d510ff87,
-    type: 3}
-  m_PrefabInstance: {fileID: 7108650970187834428}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2641348252011217032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5044300246942901428, guid: 443f634f528010649b3a3735d510ff87,
+    type: 3}
+  m_PrefabInstance: {fileID: 7108650970187834428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6859183677171718601 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4438217523173948917, guid: 443f634f528010649b3a3735d510ff87,
     type: 3}
   m_PrefabInstance: {fileID: 7108650970187834428}
   m_PrefabAsset: {fileID: 0}

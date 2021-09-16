@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Sound;
+using UnityEngine;
 
 namespace Wwise
 {
     public class SwitchEventEnterCaller : AkTriggerBase
     {
         [SerializeField] private GameObject _checkObject;
+        [SerializeField] private string _state = "LivingRoom";
 
         private void Awake()
         {
@@ -12,25 +14,10 @@ namespace Wwise
                 _checkObject = FindObjectOfType<PlayerController>().gameObject;
         }
 
-        private void Update()
-        {
-            if (!_checkObject)
-                _checkObject = FindObjectOfType<PlayerController>().gameObject;
-        }
-
-        public void CallSwitch()
-        {
-            if (triggerDelegate != null)
-            {
-                triggerDelegate(_checkObject);
-            }
-        }
-
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Debug.Log("Enter");
             if (collision.gameObject == _checkObject)
-                CallSwitch();
+                AudioHub.SetSwitch(AudioHub.Footstep, _state);
         }
     }
 }

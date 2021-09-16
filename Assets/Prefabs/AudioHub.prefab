@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: Interact
-  footstep: Footsteps
+  footstep: Footstep
   buttonclick: ButtonClick
   backgroundMusic: Music

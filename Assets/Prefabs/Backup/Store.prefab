@@ -5779,7 +5779,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7928674961969044161}
   - component: {fileID: 7928674961969044160}
-  - component: {fileID: 3451038678159018470}
   m_Layer: 0
   m_Name: ShoppingFloor (9)
   m_TagString: Untagged
@@ -5851,31 +5850,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3451038678159018470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7928674961969044162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e62622b9659ff459750b7ad5cd083a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f985d9cd1672c244cb35aec42eba8bff,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1 &7928674961978285787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,6 +7024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _state: Store
+  _footstepState: Kitchen
 --- !u!1 &7928674962853052449
 GameObject:
   m_ObjectHideFlags: 0
