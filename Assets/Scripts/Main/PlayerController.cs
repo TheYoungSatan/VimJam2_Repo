@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class PlayerController : MonoBehaviour
@@ -63,6 +64,10 @@ public class PlayerController : MonoBehaviour
                 var closest = colls.Aggregate((p, n) => Vector3.Distance(p.transform.position, checkPos) < Vector3.Distance(n.transform.position, checkPos) ? p : n);
                 GameObject closestObj = closest.gameObject;
                 IInteractable i = closestObj.GetComponent<IInteractable>();
+
+                if (i is LoadSceneInteraction && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BureauScene"))
+                    _info.LivingRoomPlayerPos = _rigid.transform.position;
+
                 i?.OnInteract();
                 AudioHub.PlaySound(AudioHub.Interact);
                 StartCoroutine("InputDelay");
@@ -92,6 +97,9 @@ public class PlayerController : MonoBehaviour
     {
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BureauScene"))
+            _rigid.transform.position = _info.LivingRoomPlayerPos != Vector3.zero ? _info.LivingRoomPlayerPos : _rigid.transform.position;
     }
 
     private IEnumerator InputDelay()

@@ -12,6 +12,7 @@ namespace Interacting
         [SerializeField] private bool _loadMainScene = true;
         [SerializeField] private bool _showInfoPanel = true;
         [SerializeField] private string _text = "";
+        [SerializeField] private int _timePassed = 0;
 
         public bool HasInfoPanel()
         {
@@ -25,9 +26,11 @@ namespace Interacting
 
         public void OnInteract()
         {
-            if (_loadMainScene)
-                GameInfo.AddTime(GameInfo.TravelTime);
+            _timePassed = _timePassed > GameInfo.TravelTime ? _timePassed : GameInfo.TravelTime;
 
+            if (_loadMainScene)
+                GameInfo.AddTime(_timePassed);
+            
             AudioHub.PlaySound(AudioHub.Interact + _audioName);
             StartCoroutine("LoadScene");
         }

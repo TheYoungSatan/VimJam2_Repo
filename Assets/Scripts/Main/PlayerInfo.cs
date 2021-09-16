@@ -5,6 +5,8 @@ public class PlayerInfo : MonoBehaviour
 {
     public event Action OnUpdateValues;
 
+    public Vector3 LivingRoomPlayerPos = Vector3.zero;
+
     public int AwakeTime { get; private set; }
     public int HungerPercentage { get; private set; }
     public int ThurstPercentage { get; private set; }

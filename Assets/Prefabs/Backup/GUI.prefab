@@ -30,7 +30,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 9145954586356411809}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -184,7 +184,7 @@ RectTransform:
   m_Children:
   - {fileID: 3869944424881957930}
   m_Father: {fileID: 9145954586356411809}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -690,7 +690,7 @@ MonoBehaviour:
       Percentage: 40
   _interactButton: {fileID: 2232811835111212968}
   _infoPanel: {fileID: 8015222889637740742}
-  _transition: {fileID: 0}
+  transition: {fileID: 0}
 --- !u!1 &9145954586356411808
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,8 +719,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9145954587695138975}
-  - {fileID: 2232811835111212968}
   - {fileID: 8460151255733993335}
+  - {fileID: 2232811835111212968}
   m_Father: {fileID: 9145954585786979385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
