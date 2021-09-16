@@ -44,7 +44,6 @@ namespace Interacting
 
         IEnumerator LoadScene()
         {
-            yield return new WaitForEndOfFrame();
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(_sceneToLoad);
 
             while (!asyncLoad.isDone)

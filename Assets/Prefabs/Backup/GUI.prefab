@@ -519,17 +519,17 @@ MonoBehaviour:
     Visuals:
     - Sprite:
       - {fileID: 4081041798647628877, guid: ea8ac36349a90d645879c4fd4d811dd9, type: 3}
-      Percentage: 5
+      Percentage: 8
     - Sprite:
       - {fileID: -11795911770581827, guid: ea8ac36349a90d645879c4fd4d811dd9, type: 3}
-      Percentage: 10
+      Percentage: 15
     - Sprite:
       - {fileID: -4933704316052635427, guid: ea8ac36349a90d645879c4fd4d811dd9, type: 3}
-      Percentage: 15
+      Percentage: 20
     - Sprite:
       - {fileID: 683634063838355696, guid: ea8ac36349a90d645879c4fd4d811dd9, type: 3}
       - {fileID: 8873616041096815601, guid: ea8ac36349a90d645879c4fd4d811dd9, type: 3}
-      Percentage: 20
+      Percentage: 30
   - Stat: 1
     Text: {fileID: 0}
     mainImage: {fileID: 9145954586411369475}

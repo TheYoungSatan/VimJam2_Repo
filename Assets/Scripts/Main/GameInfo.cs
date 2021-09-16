@@ -9,7 +9,7 @@ public class GameInfo : MonoBehaviour
     public static int UnpayedFood = 0;
     public static int PouchMoney = 12;
     public static int FoodCost = 5;
-    public static int CurrentTime = 10;
+    public static int CurrentTime = 22;
     public static int TravelTime = 1;
 
     private PlayerInfo playerInfo;
@@ -26,13 +26,13 @@ public class GameInfo : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public static void OnSceneSwitch()
+    private void Update()
     {
-        AddTime(2);
-        instance.playerInfo.AddAwakeTime(2);
+        if(!playerInfo)
+            playerInfo = FindObjectOfType<PlayerInfo>();
     }
 
-    public static void ChangeFoodPiecesAmount(int amount) { Debug.Log($"Change food: \nResult = {FoodPieces} -> {FoodPieces + amount}"); FoodPieces += amount;  }
+    public static void ChangeFoodPiecesAmount(int amount) => FoodPieces += amount;  
 
     public static void ChangeUnpayedFoodPiecesAmount(int amount) => UnpayedFood += amount;
 
@@ -45,6 +45,7 @@ public class GameInfo : MonoBehaviour
 
     public static void AddTime(int time)
     {
+        instance.playerInfo.AddAwakeTime(time);
         CurrentTime += time;
         if (CurrentTime > 24) 
             CurrentTime = CurrentTime - 24;
@@ -53,6 +54,7 @@ public class GameInfo : MonoBehaviour
     public static void SetTime(int time)
     {
         int timepast = (24 - CurrentTime) + time;
+        AddTime(timepast);
         instance.playerInfo.SetValuesBasedOnTime(timepast);
         instance.playerInfo.ResetAwaketime();
     }

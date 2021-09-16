@@ -43,12 +43,8 @@ public class PlayerInfo : MonoBehaviour
 
     public void AddAwakeTime(int addAwaketime = 0)
     {
-        SetValuesBasedOnTime(addAwaketime);
         AwakeTime += addAwaketime;
-
-        Debug.Log(AwakeTime);
-
-        OnUpdateValues?.Invoke();
+        SetValuesBasedOnTime(addAwaketime);
     }
 
     public void SetValuesBasedOnTime(int time)
