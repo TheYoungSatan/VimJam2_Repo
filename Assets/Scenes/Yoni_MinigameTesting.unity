@@ -542,7 +542,7 @@ MonoBehaviour:
   _testmode: 1
   _currentMiniGame: {fileID: 2307853621857225888, guid: 0dfc288481f6cf24ea0c9434bd040132,
     type: 3}
-  _returnScene: 
+  _returnScene: BureauScene
 --- !u!4 &1570460119
 Transform:
   m_ObjectHideFlags: 0

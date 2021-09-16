@@ -59,8 +59,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 408bd4505d5bae744bd7bc14fff0b4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LivingRoomPlayerPos: {x: 0, y: 0, z: 0}
   _hungerPerHour: 5
   _thurstPerHour: 8
+  _wakeupTime: 8
 --- !u!1001 &1907540562726401912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,6 +129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545300693270714315, guid: 5e9b23cf53aff0d428b59463299adac6,
+        type: 3}
+      propertyPath: backgroundMusic
+      value: Music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9b23cf53aff0d428b59463299adac6, type: 3}
