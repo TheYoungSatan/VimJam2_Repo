@@ -145,6 +145,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4059813333" Name="LazerGame_Mirror" ObjectPath="\Events\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror" DurationType="OneShot" DurationMin="0.250000" DurationMax="0.312500">
+					<IncludedMemoryFiles>
+						<File Id="226253619" Language="SFX">
+							<ShortName>LazerGame_Mirror_2.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_2_10C4C929.wem</Path>
+						</File>
+						<File Id="488938900" Language="SFX">
+							<ShortName>LazerGame_Mirror_3.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_3_10C4C929.wem</Path>
+						</File>
+						<File Id="779025014" Language="SFX">
+							<ShortName>LazerGame_Mirror_1.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="905931715" Language="SFX">
@@ -168,6 +184,39 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\MiniGames\Victory" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3840355556" Name="WhackAMole_BugDeath" ObjectPath="\Events\Default Work Unit\MiniGames\WhackAMole\WhackAMole_BugDeath" DurationType="OneShot" DurationMin="0.406464" DurationMax="0.475194">
+					<IncludedMemoryFiles>
+						<File Id="163129119" Language="SFX">
+							<ShortName>WhackAMole_Bug_Death_3.wav</ShortName>
+							<Path>SFX\WhackAMole_Bug_Death_3_3D74BBAB.wem</Path>
+						</File>
+						<File Id="512591310" Language="SFX">
+							<ShortName>WhackAMole_Bug_Death_1.wav</ShortName>
+							<Path>SFX\WhackAMole_Bug_Death_1_A63F1187.wem</Path>
+						</File>
+						<File Id="742497892" Language="SFX">
+							<ShortName>WhackAMole_Bug_Death_2.wav</ShortName>
+							<Path>SFX\WhackAMole_Bug_Death_2_7202E76F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3657908075" Name="WhackAMole_Hit" ObjectPath="\Events\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit" DurationType="OneShot" DurationMin="0.353953" DurationMax="0.463515">
+					<IncludedMemoryFiles>
+						<File Id="543386112" Language="SFX">
+							<ShortName>WhackAMole_Hit_2.wav</ShortName>
+							<Path>SFX\WhackAMole_Hit_2_10C4C929.wem</Path>
+						</File>
+						<File Id="574718469" Language="SFX">
+							<ShortName>WhackAMole_Hit_3.wav</ShortName>
+							<Path>SFX\WhackAMole_Hit_3_10C4C929.wem</Path>
+						</File>
+						<File Id="655711591" Language="SFX">
+							<ShortName>WhackAMole_Hit_1.wav</ShortName>
+							<Path>SFX\WhackAMole_Hit_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>

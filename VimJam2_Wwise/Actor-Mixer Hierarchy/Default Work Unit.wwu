@@ -902,6 +902,332 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="MiniGames" ID="{B011F6E6-2721-4305-B391-BC67CA334F97}" ShortID="1042574510">
+					<ChildrenList>
+						<Folder Name="LazerGame" ID="{D40AEDD6-5386-404F-A27D-2600D5ACD3AD}" ShortID="17749280">
+							<ChildrenList>
+								<RandomSequenceContainer Name="LazerGame_Mirror" ID="{58B8FA01-98A2-43D3-8591-FBE74C6543F6}" ShortID="794997083">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8D3D2D2F-2081-4DC7-A213-19A27784AD7B}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="LazerGame_Mirror_1" ID="{A55643A7-D826-41BE-BD9E-577C845C9E78}" ShortID="684965657">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_1" ID="{DFD5F648-E4FE-45CA-B40E-6D489FDD4140}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="779025014"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_1" ID="{DFD5F648-E4FE-45CA-B40E-6D489FDD4140}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LazerGame_Mirror_2" ID="{3E5F3EB7-DC0D-4A84-BF99-BD483C00385D}" ShortID="239192859">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_2" ID="{114E6A76-62E4-435E-8AEB-1836C4D5D7D4}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="226253619"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_2" ID="{114E6A76-62E4-435E-8AEB-1836C4D5D7D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LazerGame_Mirror_3" ID="{87B161CA-2AEF-43CA-8059-44CEA2FF6387}" ShortID="167986755">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_3" ID="{C199DDC5-D75D-46B7-B3BE-C5A2A79BB00E}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="488938900"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_3" ID="{C199DDC5-D75D-46B7-B3BE-C5A2A79BB00E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WhackAMole" ID="{DA2F2113-E7C0-4CDF-865E-44C266DB3FBA}" ShortID="218705836">
+							<ChildrenList>
+								<RandomSequenceContainer Name="WhackAMole_Hit" ID="{ACE883AF-6AA7-42D2-AE33-0DD695307D19}" ShortID="418143604">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{22FB5AEA-1872-4074-9951-5C4A7B9418BC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WhackAMole_Hit_1" ID="{2CFF8C86-CEB9-433A-AF13-D544A3A8FCE2}" ShortID="149617569">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Hit_1" ID="{2C55A45A-02EE-4A1E-80CA-3F64D8805B95}">
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Hit_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="655711591"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Hit_1" ID="{2C55A45A-02EE-4A1E-80CA-3F64D8805B95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WhackAMole_Hit_2" ID="{55C90213-AB08-4768-9BE2-9AD6070CBA8F}" ShortID="1025194266">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Hit_2" ID="{E0EDA2D1-3808-4128-8C5D-80F76243145B}">
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Hit_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="543386112"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Hit_2" ID="{E0EDA2D1-3808-4128-8C5D-80F76243145B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WhackAMole_Hit_3" ID="{AEE1ECD0-3181-417E-8342-D457940D7428}" ShortID="491191900">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Hit_3" ID="{AC415DDB-E69E-43C0-B175-B07CB706EF0C}">
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Hit_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="574718469"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Hit_3" ID="{AC415DDB-E69E-43C0-B175-B07CB706EF0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="WhackAMole_BugDeath" ID="{42D47878-BCE2-4E4C-B20C-A14BD89C2C3E}" ShortID="407055352">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8440190F-2D94-492A-B0F1-BEFB66DAE8B9}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WhackAMole_Bug_Death_1" ID="{2E90E268-4E31-4CA0-8D36-14B831853102}" ShortID="907415248">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Bug_Death_1" ID="{80F5EEEA-040B-41C9-ADF8-E71B7DB3454F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.207084760273973"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.406464041095891"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Bug_Death_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512591310"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Bug_Death_1" ID="{80F5EEEA-040B-41C9-ADF8-E71B7DB3454F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WhackAMole_Bug_Death_2" ID="{3B1AA191-6FB6-46E2-A3C5-FC67F96CBEB2}" ShortID="280045411">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Bug_Death_2" ID="{D88EFA40-E85E-4375-8348-C90ACF83A3EC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.258989726027397"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.444135273972603"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Bug_Death_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="742497892"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Bug_Death_2" ID="{D88EFA40-E85E-4375-8348-C90ACF83A3EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WhackAMole_Bug_Death_3" ID="{7E315249-EE43-4E7A-B994-20E9DCAD66BD}" ShortID="355426410">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A1E02ABD-8500-4A37-B910-E4CDE91CC2F4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WhackAMole_Bug_Death_3" ID="{C3865417-28BB-40F4-9D81-1D755AFA80FB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.323737157534247"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.448523116438356"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WhackAMole_Bug_Death_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="163129119"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WhackAMole_Bug_Death_3" ID="{C3865417-28BB-40F4-9D81-1D755AFA80FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
