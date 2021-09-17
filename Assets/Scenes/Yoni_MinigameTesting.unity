@@ -366,6 +366,7 @@ MonoBehaviour:
   _currentMiniGame: {fileID: 7367757098291703351, guid: af89f021a544e284287794b48a75fc43,
     type: 3}
   _returnScene: BureauScene
+  _screenSelectPanel: {fileID: 0}
 --- !u!4 &1570460119
 Transform:
   m_ObjectHideFlags: 0

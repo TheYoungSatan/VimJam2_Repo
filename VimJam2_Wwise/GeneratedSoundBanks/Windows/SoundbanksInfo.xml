@@ -21,8 +21,16 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.228223" DurationMax="0.752619">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.105841" DurationMax="0.469928">
 					<IncludedMemoryFiles>
+						<File Id="32611736" Language="SFX">
+							<ShortName>Footsteps_Tile_1.wav</ShortName>
+							<Path>SFX\Footsteps_Tile_1_AC722690.wem</Path>
+						</File>
+						<File Id="71212125" Language="SFX">
+							<ShortName>Footsteps_Tile_5.wav</ShortName>
+							<Path>SFX\Footsteps_Tile_5_C4AA0BDE.wem</Path>
+						</File>
 						<File Id="281699847" Language="SFX">
 							<ShortName>Footsteps_5.wav</ShortName>
 							<Path>SFX\Footsteps_5_DAAE9B59.wem</Path>
@@ -39,9 +47,17 @@
 							<ShortName>Footsteps_2.wav</ShortName>
 							<Path>SFX\Footsteps_2_92634899.wem</Path>
 						</File>
-						<File Id="912606623" Language="SFX">
-							<ShortName>93 Footsteps; Grass- Slow.1.L.wav</ShortName>
-							<Path>SFX\93 Footsteps; Grass- Slow.1.L_71723FD1.wem</Path>
+						<File Id="390240556" Language="SFX">
+							<ShortName>Footsteps_Tile_3.wav</ShortName>
+							<Path>SFX\Footsteps_Tile_3_B0F4084E.wem</Path>
+						</File>
+						<File Id="405000881" Language="SFX">
+							<ShortName>Footsteps_Tile_4.wav</ShortName>
+							<Path>SFX\Footsteps_Tile_4_9A72A562.wem</Path>
+						</File>
+						<File Id="434923010" Language="SFX">
+							<ShortName>Footsteps_Tile_2.wav</ShortName>
+							<Path>SFX\Footsteps_Tile_2_A1C637B7.wem</Path>
 						</File>
 						<File Id="961390975" Language="SFX">
 							<ShortName>Footsteps_3.wav</ShortName>
@@ -60,7 +76,11 @@
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{55E40A3C-8DA7-4E9E-8712-53985CA1573B}">
 							<Media>
-								<File Id="912606623"/>
+								<File Id="32611736"/>
+								<File Id="434923010"/>
+								<File Id="390240556"/>
+								<File Id="405000881"/>
+								<File Id="71212125"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -133,15 +153,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3468829444" Name="Interact_SlidingDoor" ObjectPath="\Events\Default Work Unit\Interact\Interact_SlidingDoor" DurationType="OneShot" DurationMin="1.390694" DurationMax="3.594679">
+				<Event Id="3468829444" Name="Interact_SlidingDoor" ObjectPath="\Events\Default Work Unit\Interact\Interact_SlidingDoor" DurationType="OneShot" DurationMin="1.464955" DurationMax="1.464955">
 					<IncludedMemoryFiles>
 						<File Id="271686455" Language="SFX">
 							<ShortName>Sliding_Door_3.wav</ShortName>
-							<Path>SFX\Sliding_Door_3_10C4C929.wem</Path>
-						</File>
-						<File Id="843108919" Language="SFX">
-							<ShortName>Sliding_Door_1.wav</ShortName>
-							<Path>SFX\Sliding_Door_1_EC7DF691.wem</Path>
+							<Path>SFX\Sliding_Door_3_B49C3510.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -185,20 +201,36 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3481096201" Name="Number_Type" ObjectPath="\Events\Default Work Unit\MiniGames\NumberMemoryGame\Number_Type" DurationType="OneShot" DurationMin="0.161218" DurationMax="0.231871">
+					<IncludedMemoryFiles>
+						<File Id="107999699" Language="SFX">
+							<ShortName>Memory_Type_1.wav</ShortName>
+							<Path>SFX\Memory_Type_1_A59DC10B.wem</Path>
+						</File>
+						<File Id="697221225" Language="SFX">
+							<ShortName>Memory_Type_3.wav</ShortName>
+							<Path>SFX\Memory_Type_3_F1557754.wem</Path>
+						</File>
+						<File Id="699951758" Language="SFX">
+							<ShortName>Memory_Type_2.wav</ShortName>
+							<Path>SFX\Memory_Type_2_6B37E86E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\MiniGames\Victory" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3840355556" Name="WhackAMole_BugDeath" ObjectPath="\Events\Default Work Unit\MiniGames\WhackAMole\WhackAMole_BugDeath" DurationType="OneShot" DurationMin="0.406464" DurationMax="0.475194">
 					<IncludedMemoryFiles>
 						<File Id="163129119" Language="SFX">
 							<ShortName>WhackAMole_Bug_Death_3.wav</ShortName>
-							<Path>SFX\WhackAMole_Bug_Death_3_3D74BBAB.wem</Path>
+							<Path>SFX\WhackAMole_Bug_Death_3_E2C4F217.wem</Path>
 						</File>
 						<File Id="512591310" Language="SFX">
 							<ShortName>WhackAMole_Bug_Death_1.wav</ShortName>
-							<Path>SFX\WhackAMole_Bug_Death_1_A63F1187.wem</Path>
+							<Path>SFX\WhackAMole_Bug_Death_1_6DE4403D.wem</Path>
 						</File>
 						<File Id="742497892" Language="SFX">
 							<ShortName>WhackAMole_Bug_Death_2.wav</ShortName>
-							<Path>SFX\WhackAMole_Bug_Death_2_7202E76F.wem</Path>
+							<Path>SFX\WhackAMole_Bug_Death_2_BB1AD8D8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -132,6 +132,22 @@
 							</ChildrenList>
 						</Folder>
 						<Event Name="Victory" ID="{C109C7F7-D719-4C19-991C-1638481836DA}"/>
+						<Folder Name="Snake" ID="{9F274922-E68C-466F-9B5D-AF3B0CB9A1C3}" ShortID="845146846"/>
+						<Folder Name="NumberMemoryGame" ID="{15B06B15-46D1-4991-8DA1-640B28D38B16}" ShortID="347040797">
+							<ChildrenList>
+								<Event Name="Number_Type" ID="{50D3B4D5-BD3B-46D1-A3E6-F9E858C4A732}">
+									<ChildrenList>
+										<Action Name="" ID="{10D80091-8D76-41DB-A7BC-60D2B0C2D1F4}" ShortID="956199075">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Number_Type" ID="{A469480F-D4DA-4EB2-9CEA-ED62EB5ADE46}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
