@@ -15,6 +15,6 @@ public class MovingBlock : MonoBehaviour
 
     void Update()
     {
-        if (CanMove) transform.position = _startPos + new Vector2(0f, Mathf.Sin(Time.time));
+        if (CanMove) transform.position = _startPos + new Vector2(0f, Mathf.Sin(Time.time)/2);
     }
 }

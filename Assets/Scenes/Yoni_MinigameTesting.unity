@@ -363,7 +363,7 @@ MonoBehaviour:
     - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
   _currentGameChunck: 0
   _testmode: 1
-  _currentMiniGame: {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db,
+  _currentMiniGame: {fileID: 7367757098291703351, guid: af89f021a544e284287794b48a75fc43,
     type: 3}
   _returnScene: BureauScene
 --- !u!4 &1570460119

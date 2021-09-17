@@ -50,9 +50,10 @@ namespace MiniGame
         private InputAction _clickAction;
 
         private CircleCollider2D[] _circles;
+        public Transform Centre;
 
-        private Vector2 _screenEdgesX = new Vector2(-8.5f, 8.5f);
-        private Vector2 _screenEdgesY = new Vector2(-5f, 5f);
+        private Vector2 _screenEdgesX;
+        private Vector2 _screenEdgesY;
 
         private void Awake()
         {
@@ -65,6 +66,12 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            var pos = Camera.main.ScreenToWorldPoint(Centre.position);
+            var offset = new Vector2(4.3f - _targetSize, 2.25f - _targetSize);
+
+            _screenEdgesX = new Vector2(pos.x - offset.x, pos.x + offset.x);
+            _screenEdgesY = new Vector2(pos.y + offset.y, pos.y - offset.y);
+
             _currentCount = 0;
             _timer = 0;
             StartCoroutine(ConstantSpawnCircle());
