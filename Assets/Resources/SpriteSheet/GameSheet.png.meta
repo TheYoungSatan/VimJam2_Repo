@@ -131,6 +131,36 @@ TextureImporter:
   - first:
       213: 4118555971923783419
     second: Pole
+  - first:
+      213: 8169215000890379430
+    second: Carpet
+  - first:
+      213: 9114699789374712780
+    second: Poster
+  - first:
+      213: 308567231797816351
+    second: Tv
+  - first:
+      213: -9064313298876536788
+    second: Cactus_0
+  - first:
+      213: -9172152048799213400
+    second: Cactus_1
+  - first:
+      213: 6353148070730420470
+    second: GameSheet_44
+  - first:
+      213: 66523898121994415
+    second: GameSheet_45
+  - first:
+      213: -1727173679425141145
+    second: Reading_Sofa
+  - first:
+      213: -8533757846684692019
+    second: Art
+  - first:
+      213: 1743453664265979959
+    second: Bookshelf
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1051,6 +1081,216 @@ TextureImporter:
       bones: []
       spriteID: bfea41ed5dc082930800000000000000
       internalID: 4118555971923783419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carpet
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 144
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac0dddc2c1ee5170800000000000000
+      internalID: 8169215000890379430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poster
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 145
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbe10caa2bed7e70800000000000000
+      internalID: 9114699789374712780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tv
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 128
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c62a03340484400800000000000000
+      internalID: 308567231797816351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 128
+        width: 8
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c286d975417153280800000000000000
+      internalID: -9064313298876536788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 128
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a89379ce48f5b080800000000000000
+      internalID: -9172152048799213400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameSheet_44
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 128
+        width: 30
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f05859828aea2850800000000000000
+      internalID: 6353148070730420470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameSheet_45
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 150
+        width: 24
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0c2a402275ce000800000000000000
+      internalID: 66523898121994415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reading_Sofa
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766c57480b8d708e0800000000000000
+      internalID: -1727173679425141145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 147
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc11825c370029980800000000000000
+      internalID: -8533757846684692019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7384de4deddf13810800000000000000
+      internalID: 1743453664265979959
       vertices: []
       indices: 
       edges: []

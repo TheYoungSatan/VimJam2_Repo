@@ -3,17 +3,11 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{EB5A1B3D-B6D0-4FC9-B1AF-0D0226A9DB70}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Footsteps" ID="{A3BC6045-1CFF-4593-91FF-D64985B5ADB2}">
-					<ChildrenList>
-						<State Name="None" ID="{90576EBC-3005-4E13-A92C-F9DF96236E84}"/>
-						<State Name="LivingRoom" ID="{AD0875BE-37D5-491A-A38E-6EF930519B8F}"/>
-						<State Name="Kitchen" ID="{F571F254-74AD-4374-A4AA-64A90716C71C}"/>
-					</ChildrenList>
-				</StateGroup>
 				<StateGroup Name="Music" ID="{83998DE9-52F2-44DF-A408-9BAC80F7F2FD}">
 					<ChildrenList>
 						<State Name="None" ID="{E4F11521-7357-4FCA-A4E3-B48A52979042}"/>
 						<State Name="LivingRoom" ID="{AB9889A3-96EB-4C14-A3D7-905A5E529330}"/>
+						<State Name="Store" ID="{38B139D1-D3A9-4429-8869-049B347403E4}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

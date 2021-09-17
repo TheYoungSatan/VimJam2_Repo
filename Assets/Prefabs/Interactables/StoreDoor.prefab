@@ -123,3 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioName: _SlidingDoor
   _sceneToLoad: BureauScene
+  _loadMainScene: 1
+  _showInfoPanel: 1
+  _text: Go Home

@@ -1,9 +1,12 @@
 ﻿using Interacting;
 using Sound;
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class PlayerController : MonoBehaviour
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _input;
     private Rigidbody2D _rigid;
     private PlayerInfo _info;
+    private bool _inputDelay;
 
     #region Input
 
@@ -47,7 +51,9 @@ public class PlayerController : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (_inputDelay) return;
+
+        if (context.performed)
         {
             Vector3 checkPos = transform.position;
             checkPos.y += _radius;
@@ -58,20 +64,33 @@ public class PlayerController : MonoBehaviour
                 var closest = colls.Aggregate((p, n) => Vector3.Distance(p.transform.position, checkPos) < Vector3.Distance(n.transform.position, checkPos) ? p : n);
                 GameObject closestObj = closest.gameObject;
                 IInteractable i = closestObj.GetComponent<IInteractable>();
+
+                if (i is LoadSceneInteraction && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BureauScene"))
+                    _info.LivingRoomPlayerPos = _rigid.transform.position;
+
                 i?.OnInteract();
                 AudioHub.PlaySound(AudioHub.Interact);
+                StartCoroutine("InputDelay");
             }
         }
     }
 
     #endregion
 
-    public Transform CheckForInteractables()
+    public (Transform transform, IInteractable interactable) CheckForInteractables()
     {
         Vector3 checkPos = transform.position;
         var colls = Physics2D.OverlapCircleAll(checkPos, _radius, _checkLayer);
+        IInteractable i = null;
 
-        return colls.Length > 0 ? transform : null;
+        if (colls.Length > 0)
+        {
+            var closest = colls.Aggregate((p, n) => Vector3.Distance(p.transform.position, checkPos) < Vector3.Distance(n.transform.position, checkPos) ? p : n);
+            GameObject closestObj = closest.gameObject;
+            i = closestObj.GetComponent<IInteractable>();            
+        }
+
+        return (colls.Length > 0 ? (transform, i) : (null, null));
     }
 
     private void Start()
@@ -79,10 +98,15 @@ public class PlayerController : MonoBehaviour
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
 
-        if (!_info)
-            _info = FindObjectOfType<PlayerInfo>();
-        if (_info)
-            _info.OnUpdateValues += CheckValues;
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BureauScene"))
+            _rigid.transform.position = _info.LivingRoomPlayerPos != Vector3.zero ? _info.LivingRoomPlayerPos : _rigid.transform.position;
+    }
+
+    private IEnumerator InputDelay()
+    {
+        _inputDelay = true;
+        yield return new WaitForSeconds(.25f);
+        _inputDelay = false;
     }
 
     private void CheckValues()
@@ -104,8 +128,12 @@ public class PlayerController : MonoBehaviour
             _interactAction.performed += Interact;
         }
 
-        if(!_info)
+        if (!_info)
+        {
             _info = FindObjectOfType<PlayerInfo>();
+        }
+
+        CheckValues();
     }
 
     private void OnDrawGizmos()

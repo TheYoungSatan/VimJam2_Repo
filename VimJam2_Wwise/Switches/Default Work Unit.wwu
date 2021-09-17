@@ -12,6 +12,13 @@
 						<Switch Name="Computer" ID="{B37280E4-A4EB-4F80-9716-C3F1ECC1B2C0}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footstep" ID="{5FD31FD7-487C-45DC-B3A8-E5DF8F7A0C5C}">
+					<ChildrenList>
+						<Switch Name="LivingRoom" ID="{1D53E833-2FF2-4855-B03D-2AFC569A918E}"/>
+						<Switch Name="Kitchen" ID="{55E40A3C-8DA7-4E9E-8712-53985CA1573B}"/>
+						<Switch Name="Empty" ID="{5D43612E-3CFE-441A-95A4-CF04F64D3FA7}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

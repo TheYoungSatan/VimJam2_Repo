@@ -46,3 +46,4 @@ MonoBehaviour:
   interact: Interact
   footstep: Footstep
   buttonclick: ButtonClick
+  backgroundMusic: Music

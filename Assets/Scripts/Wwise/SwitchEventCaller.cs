@@ -1,34 +1,15 @@
 ﻿using UnityEngine;
 
-public class SwitchEventCaller : AkTriggerBase
+namespace Wwise
 {
-    [SerializeField] private GameObject _checkObject;
-    public bool _checkTrigger = false;
-
-    private void Awake()
+    public class SwitchEventCaller : AkTriggerBase
     {
-        if (!_checkObject)
-            _checkObject = FindObjectOfType<PlayerController>().gameObject;
-    }
-
-    private void Update()
-    {
-        if (!_checkObject)
-            _checkObject = FindObjectOfType<PlayerController>().gameObject;
-    }
-
-    public void CallSwitch()
-    {
-        if (triggerDelegate != null)
+        public void CallSwitch()
         {
-            triggerDelegate(_checkObject);
+            if (triggerDelegate != null)
+            {
+                triggerDelegate(null);
+            }
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (!_checkTrigger) return;
-
-        if (collision.gameObject == _checkObject)
-            CallSwitch();
     }
 }

@@ -15,12 +15,32 @@ namespace Interacting
 
         public void OnInteract()
         {
-            if(GameInfo.FoodPieces > 0)
+            if(Interactable())
             {
+                GameInfo.ChangeFoodPiecesAmount(-1);
                 _info.DecreaseHunger(_decreaseValue);
                 AudioHub.PlaySound(AudioHub.Interact + "_Fridge");
-                GameInfo.ChangeFoodPiecesAmount(-1);
             }
+        }
+
+        public bool Interactable()
+        {
+            return GameInfo.FoodPieces > 0 && _info.HungerPercentage > 0;
+        }
+
+        public string InfoText()
+        {
+            return $"Fridge \n Food: {GameInfo.FoodPieces}";
+        }
+
+        public bool HasInfoPanel()
+        {
+            return true;
+        }
+
+        public Transform Position()
+        {
+            return transform;
         }
     }
 }

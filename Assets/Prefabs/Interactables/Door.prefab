@@ -124,3 +124,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioName: _Door
   _sceneToLoad: StoreScene
+  _loadMainScene: 1
+  _showInfoPanel: 1
+  _text: Go to the store

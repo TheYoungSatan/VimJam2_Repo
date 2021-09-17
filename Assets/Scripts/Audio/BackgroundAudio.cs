@@ -1,14 +1,20 @@
 ﻿using Sound;
+using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(SwitchEventCaller), typeof(AkState))]
 public class BackgroundAudio : MonoBehaviour
 {
-    private SwitchEventCaller _caller;
-    private void Start()
+    [SerializeField] private string _state = "LivingRoom";
+    [SerializeField] private string _footstepState = "LivingRoom";
+
+    private IEnumerator Start()
     {
-        _caller = GetComponent<SwitchEventCaller>();
-        _caller.CallSwitch();
-        AudioHub.PlaySound(AudioHub.BackgroundMusic);
+        AudioHub.SetState(AudioHub.BackgroundMusic, _state);
+        AudioHub.SetSwitch(AudioHub.Footstep, _footstepState);
+        yield return new WaitForEndOfFrame();
+        if (!GameInfo.IsBackgroundSoundPlaying)
+            AudioHub.PlaySound(AudioHub.BackgroundMusic);
+
+        GameInfo.SetBackgroundSound(true);
     }
 }

@@ -7,9 +7,10 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Interact_Door" ID="{2471C7B5-1510-40E0-AF8D-91BA7DEC618E}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Computer" ID="{5C55F9E8-7E35-437C-B468-35953831C254}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Livingroom" ID="{5EC15645-AF13-4860-A1B9-C93654013015}" WorkUnitID="{821B73AC-B799-463A-8C14-D73EE188A767}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{5EC15645-AF13-4860-A1B9-C93654013015}" WorkUnitID="{821B73AC-B799-463A-8C14-D73EE188A767}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Bed" ID="{B33853C5-C43B-496C-B609-9A985CEBADC4}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Sink" ID="{9AA191F5-260A-4A1E-BB32-6AEEB50F326D}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interact_SlidingDoor" ID="{7CABFADA-8D64-4B2E-A306-6E14C930DB6F}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{41E6CBCC-53B5-4E12-9E16-B3BDE1A49E1A}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Fridge" ID="{ED107B8E-F413-4EF9-9AA3-A71F9F28321F}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

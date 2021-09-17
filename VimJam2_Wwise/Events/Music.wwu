@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{821B73AC-B799-463A-8C14-D73EE188A767}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Livingroom" ID="{5EC15645-AF13-4860-A1B9-C93654013015}">
+				<Event Name="Music" ID="{5EC15645-AF13-4860-A1B9-C93654013015}">
 					<ChildrenList>
 						<Action Name="" ID="{916AA678-CA96-40B7-97FF-DD8265D8B543}" ShortID="18997642">
 							<ReferenceList>

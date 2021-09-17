@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interacting;
+using System;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
@@ -7,11 +8,12 @@ using UnityEngine.UI;
 public class GUI : MonoBehaviour
 {
     private static GUI instance;
-    private enum Stat { Energy, Hunger, Thurst}
+    private enum Stat { Energy, Hunger, Thurst, Money}
     [Serializable]
     private struct VisualGUI
     {
         public Stat Stat;
+        public Text Text;
         public Image mainImage;
 
         [Serializable]
@@ -25,9 +27,10 @@ public class GUI : MonoBehaviour
         public Visual[] Visuals;
         private Coroutine routine;
 
-        public void UpdateVisuals(int percentage)
+        public void UpdateVisuals(int amount)
         {
-            Visual current = Visuals.Aggregate((p, n) => percentage <= p.Percentage ? p : n);
+            Visual current = Visuals.Aggregate((p, n) => amount <= n.Percentage ? p : n);
+
             if (!current.IsAnimation)
             {
                 mainImage.sprite = current.Sprite[0];
@@ -36,6 +39,9 @@ public class GUI : MonoBehaviour
             }
             else
                 routine = instance.StartCoroutine(Animate(current));
+
+            if (Text)
+                Text.text = amount.ToString();
         }
         IEnumerator Animate(Visual v)
         {
@@ -54,6 +60,8 @@ public class GUI : MonoBehaviour
     [SerializeField] private GameObject _guiPanel;
     [SerializeField] private VisualGUI[] _visualGUI;
     [SerializeField] private RectTransform _interactButton;
+    [SerializeField] private InfoPanel _infoPanel;
+    [SerializeField] private SceneTransition transition;
 
     private PlayerInfo _playerinfo;
     private PlayerController _player = null;
@@ -63,10 +71,13 @@ public class GUI : MonoBehaviour
         instance = this;
         _playerinfo = FindObjectOfType<PlayerInfo>();
         _playerinfo.OnUpdateValues += UpdateGUI;
+        UpdateGUI();
+        FadeOut();
     }
 
     private void Update()
     {
+        UpdateGUI();
         if (_player == null)
         {
             _player = FindObjectOfType<PlayerController>();
@@ -77,11 +88,13 @@ public class GUI : MonoBehaviour
         {
             if(!_guiPanel.activeSelf)
                 _guiPanel.SetActive(true);
-            SetInteractButton(_player?.CheckForInteractables());
+
+            var playerVals = _player?.CheckForInteractables();
+            SetInfoObjects(playerVals.Value.transform, playerVals.Value.interactable);
         }
     }
 
-    private void UpdateGUI()
+    public void UpdateGUI()
     {
         foreach (var visual in _visualGUI)
         {
@@ -96,17 +109,23 @@ public class GUI : MonoBehaviour
                 case Stat.Thurst:
                     visual.UpdateVisuals(_playerinfo.ThurstPercentage);
                     break;
+                case Stat.Money:
+                    visual.UpdateVisuals(GameInfo.PouchMoney);
+                    break;
             }
         }
     }
 
-    public void SetInteractButton(Transform trans)
+    public void SetInfoObjects(Transform trans, IInteractable interactable)
     {
-        if(trans == null)
+        if(interactable == null || !interactable.Interactable())
         {
             _interactButton.gameObject.SetActive(false);
+            ShowInfoPanel(interactable);
             return;
         }
+
+        ShowInfoPanel(interactable);
 
         Vector3 transpos = trans.position;
         transpos.y += .5f;
@@ -116,4 +135,30 @@ public class GUI : MonoBehaviour
         _interactButton.position = pos;
         _interactButton.gameObject.SetActive(true);
     }
+
+    private void ShowInfoPanel(IInteractable interactable)
+    {
+        if (interactable == null)
+        {
+            _infoPanel.SetActive(false);
+            return;
+        }
+
+        if (interactable.HasInfoPanel())
+        {
+            Vector3 panelPos = interactable.Position().position;
+            panelPos.y += .5f;
+            panelPos.x -= .25f;
+            panelPos = Camera.main.WorldToScreenPoint(panelPos);
+            panelPos.z = 0;
+            _infoPanel.SetPosition(panelPos);
+            _infoPanel.SetText(interactable.InfoText());
+            _infoPanel.SetActive(true);
+        }
+        else
+            _infoPanel.SetActive(false);
+    }
+
+    public static void FadeIn() => instance.transition.FadeIn();
+    public static void FadeOut() => instance.transition.FadeOut();
 }

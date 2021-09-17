@@ -18,5 +18,25 @@ namespace Interacting
             _info.DecreaseThurst(_decreaseValue);
             AudioHub.PlaySound(AudioHub.Interact + "_Sink");
         }
+
+        public bool Interactable()
+        {
+            return _info.ThurstPercentage > 0;
+        }
+
+        public string InfoText()
+        {
+            return "";
+        }
+
+        public bool HasInfoPanel()
+        {
+            return false;
+        }
+
+        public Transform Position()
+        {
+            return transform;
+        }
     }
 }
