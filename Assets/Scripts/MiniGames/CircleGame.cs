@@ -22,8 +22,9 @@ namespace MiniGame
         public int TextureHeight = 128;
         public Renderer PixelPlaneRenderer;
         private Color[] _fillPixels;
-
         public MeshCollider PlaneBounds;
+
+        private float _timer;
 
         public override void RunGame()
         {
@@ -38,13 +39,14 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
+            _timer += Time.deltaTime;
             //gets the mousepos in a Vector2 for the circle and a float2 for the calculations on distance
             var scaledMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
             var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
             var float2MousePos = new float2(correctMousePos.x, correctMousePos.y);
 
             //assigns the radius of the circle to the closests distance to a circle
-            _circleRadius = ClosestDistToCircle(float2MousePos);
+            _circleRadius = ClosestDistToCircle(float2MousePos) + 0.25f;
 
             //normalize the radius so it can be used to display the color from green to red
             var normalizedRadius = _circleRadius / _maxDist;
@@ -60,13 +62,10 @@ namespace MiniGame
 
             var pixelRadius = (TextureWidth / widthPlane) * _circleRadius;
 
-            if (xCoord != 7.1 && yCoord != 96)  //this basically makes it so it doesnt spawn a circle when the players mouse hasnt been on screen yet
-            {
-                DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
-            }
-            
+            DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
+
             //if the circle is too big, its game over
-            if (_circleRadius >= _maxDist) Hub.OnGameOver();
+            if (_circleRadius >= _maxDist  && _timer >= 3f) Hub.OnGameOver();
         }
 
         private void InitializeTexture()
@@ -95,11 +94,12 @@ namespace MiniGame
 
             do
             {
-                Color color = Color.Lerp(Color.green, Color.red, normalizedradius);
-                _texture.SetPixel(xm - x, ym + y, color);
-                _texture.SetPixel(xm - y, ym - x, color);
-                _texture.SetPixel(xm + x, ym - y, color);
-                _texture.SetPixel(xm + y, ym + x, color);
+                Color color = Color.Lerp(Color.yellow, Color.magenta, normalizedradius);
+
+                if (xm - x >= 11 && xm - x <= 46) _texture.SetPixel(xm - x, ym + y, color);
+                if (xm - y >= 11 && xm - y <= 46) _texture.SetPixel(xm - y, ym - x, color);
+                if (xm + x >= 11 && xm + x <= 46) _texture.SetPixel(xm + x, ym - y, color);
+                if (xm + y >= 11 && xm + y <= 46) _texture.SetPixel(xm + y, ym + x, color);
 
                 r = err;
                 if (r <= y) err += ++y * 2 + 1;

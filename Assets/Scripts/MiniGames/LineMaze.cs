@@ -90,6 +90,8 @@ namespace MiniGame
 
         public override void RunGame() 
         {
+            _startPoint.position = Camera.main.ScreenToWorldPoint(_startPoint.position);
+
             _playerInput = FindObjectOfType<PlayerInput>();
 
             _upAction = _playerInput.currentActionMap.FindAction(Directions.Up);
