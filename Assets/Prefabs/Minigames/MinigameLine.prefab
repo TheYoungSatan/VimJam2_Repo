@@ -1696,6 +1696,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PixelLinePlane
       objectReference: {fileID: 0}
+    - target: {fileID: 760890217413262409, guid: c80b32113c0a6cb488fa9191d13aab14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80b32113c0a6cb488fa9191d13aab14, type: 3}
 --- !u!4 &6663466063621793038 stripped

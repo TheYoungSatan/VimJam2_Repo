@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: d87ca79e761b8f942b91dac669199441
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3416819198893024973
+    second: ButtonPlus_0
+  - first:
+      213: 3509113449331654968
+    second: ButtonPlus_1
+  - first:
+      213: 787482949837704779
+    second: Gate_0
+  - first:
+      213: 5817921174108217538
+    second: Gate_1
+  - first:
+      213: 6585224713735905880
+    second: MovingWall_Blue
+  - first:
+      213: -6796082011073932796
+    second: MovingWall_Yellow
+  - first:
+      213: 3540699057417930295
+    second: MovingWall_Green
+  - first:
+      213: -1761323235656633275
+    second: MovingWall_Orange
+  - first:
+      213: 3313639627771572374
+    second: Small_Mirror
+  - first:
+      213: -4206766577781856829
+    second: BigMirror
+  - first:
+      213: -5976332673069826426
+    second: ButtonMinus_0
+  - first:
+      213: 6559897487403135328
+    second: ButtonMinus_1
+  - first:
+      213: 6347469935318523448
+    second: StraightPipe
+  - first:
+      213: -8584245517542829594
+    second: CurvedPipe
+  - first:
+      213: 7542831501912442631
+    second: ButtonGreen
+  - first:
+      213: 7944472919235251418
+    second: ButtonYellow
+  - first:
+      213: 8062306155701750734
+    second: ButtonBlue
+  - first:
+      213: -2752118793462690698
+    second: ButtonOrange
+  - first:
+      213: -7349341835861456386
+    second: StartOrange
+  - first:
+      213: -4585745025994895772
+    second: StartGreen
+  - first:
+      213: -8288595039049923988
+    second: StartBlue
+  - first:
+      213: 2517689338813231851
+    second: StartYellow
+  - first:
+      213: -7951224490637816114
+    second: BoundingBox_Straight
+  - first:
+      213: -6005798833489568197
+    second: BoundingBox_Corner
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButtonPlus_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3391f3caa050590d0800000000000000
+      internalID: -3416819198893024973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonPlus_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83185ff0710e2b030800000000000000
+      internalID: 3509113449331654968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 27
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ec0c31293bdea00800000000000000
+      internalID: 787482949837704779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 27
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0a1f1bb786db050800000000000000
+      internalID: 5817921174108217538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingWall_Blue
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 27
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8522a54bcfa636b50800000000000000
+      internalID: 6585224713735905880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingWall_Yellow
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 20
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40214890b677fa1a0800000000000000
+      internalID: -6796082011073932796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingWall_Green
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736c4f58807132130800000000000000
+      internalID: 3540699057417930295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingWall_Orange
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 20
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5447b0c59d58e87e0800000000000000
+      internalID: -1761323235656633275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_Mirror
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 13
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6907bfe5fa96cfd20800000000000000
+      internalID: 3313639627771572374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigMirror
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 13
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5a35ef5109e95c0800000000000000
+      internalID: -4206766577781856829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonMinus_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ebc1a091dcf0da0800000000000000
+      internalID: -5976332673069826426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonMinus_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06134ab4200790b50800000000000000
+      internalID: 6559897487403135328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StraightPipe
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed12d964eb61850800000000000000
+      internalID: 6347469935318523448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CurvedPipe
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1de1ede22aed880800000000000000
+      internalID: -8584245517542829594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonGreen
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 7
+        width: 2
+        height: 5
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7070e1099458da860800000000000000
+      internalID: 7542831501912442631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonYellow
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 2
+        height: 5
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc4ab64700704e60800000000000000
+      internalID: 7944472919235251418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBlue
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 2
+        height: 5
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb4c019bb013ef60800000000000000
+      internalID: 8062306155701750734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonOrange
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 7
+        width: 2
+        height: 5
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ccaf7e9828ec9d0800000000000000
+      internalID: -2752118793462690698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartOrange
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 7
+        width: 3
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef98f8ce984e10a90800000000000000
+      internalID: -7349341835861456386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartGreen
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 7
+        width: 3
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e4f07f1392c50c0800000000000000
+      internalID: -4585745025994895772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartBlue
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 3
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c624d521abef8fc80800000000000000
+      internalID: -8288595039049923988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartYellow
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 3
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be230c64d11a0f220800000000000000
+      internalID: 2517689338813231851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoundingBox_Straight
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece8522047397a190800000000000000
+      internalID: -7951224490637816114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoundingBox_Corner
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e1661f7cd17aca0800000000000000
+      internalID: -6005798833489568197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
