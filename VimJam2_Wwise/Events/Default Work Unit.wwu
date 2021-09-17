@@ -88,6 +88,52 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="MiniGames" ID="{2FE1A1F8-608F-4835-9D59-1AF2B3F1952F}" ShortID="149575659">
+					<ChildrenList>
+						<Folder Name="LazerGame" ID="{98E50D64-28F4-4A4D-8132-22E99553A268}" ShortID="465521836">
+							<ChildrenList>
+								<Event Name="LazerGame_Mirror" ID="{6B7190CE-1790-418D-8FEC-09E54E7B0BD9}">
+									<ChildrenList>
+										<Action Name="" ID="{8AD10C56-28CD-4D2E-9D85-11F92B3FA8F1}" ShortID="142706504">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LazerGame_Mirror" ID="{58B8FA01-98A2-43D3-8591-FBE74C6543F6}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WhackAMole" ID="{19E81F7D-07BE-40A2-AE4B-873DBE32E9D6}" ShortID="768008303">
+							<ChildrenList>
+								<Event Name="WhackAMole_BugDeath" ID="{F73458C8-47A8-41D8-BFB5-D001A26B7EAC}">
+									<ChildrenList>
+										<Action Name="" ID="{D72B9F47-33CB-4BF1-970B-4C2B533AD8D0}" ShortID="128879725">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WhackAMole_BugDeath" ID="{42D47878-BCE2-4E4C-B20C-A14BD89C2C3E}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WhackAMole_Hit" ID="{F9FE9952-447A-41EF-ABCE-63AE83DB5027}">
+									<ChildrenList>
+										<Action Name="" ID="{C56148CB-5A10-4958-8141-C6B9974E22CA}" ShortID="677425448">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WhackAMole_Hit" ID="{ACE883AF-6AA7-42D2-AE33-0DD695307D19}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Victory" ID="{C109C7F7-D719-4C19-991C-1638481836DA}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

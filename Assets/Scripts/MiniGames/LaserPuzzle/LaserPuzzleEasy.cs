@@ -50,6 +50,8 @@ namespace MiniGame
 
         public MeshCollider PlaneBounds;
 
+        private float _timer;
+
         private void Awake()
         {
             _playerInput = FindObjectOfType<PlayerInput>();
@@ -61,6 +63,8 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            _timer = 0;
+
             InitializeTexture();
 
             StartCoroutine(RefreshLines());
@@ -134,7 +138,14 @@ namespace MiniGame
 
                     _ray = new Ray2D(_hit.point - _ray.direction * 0.01f, Vector2.Reflect(_ray.direction, _hit.normal));
 
-                    if (_hit.collider.CompareTag("Goal")) Hub.OnGameSucces();
+                    if (_hit.collider.CompareTag("Goal")) 
+                    {
+                        _timer += Time.deltaTime;
+                        if (_timer >= 5)
+                        {
+                            Hub.OnGameSucces();
+                        }
+                    } 
 
                     if (!_hit.collider.CompareTag("Mirror")) break;
                 }
