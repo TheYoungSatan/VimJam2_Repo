@@ -32,27 +32,33 @@ public class MinigameHub : MonoBehaviour
 
     [Header("Scene loading")]
     [SerializeField] private string _returnScene;
+    [SerializeField] private GameObject _screenSelectPanel;
+
 
     private Minigame _playedGame;
     private GameStates _currentState = GameStates.Running;
 
     void Start()
     {
-        if (!_testmode)
+        if (SceneManager.GetActiveScene().name.Equals("Yoni_MinigameTesting"))
         {
-            GameCollection collection = _gameCollections.Aggregate((p, n) => p.Chunk == _currentGameChunck ? p : n);
-            _currentMiniGame = collection.GetMinigame();
+            if (!_testmode)
+            {
+                GameCollection collection = _gameCollections.Aggregate((p, n) => p.Chunk == _currentGameChunck ? p : n);
+                _currentMiniGame = collection.GetMinigame();
+            }
+
+            InitializeGame();
         }
 
-        InitializeGame();
     }
 
-    public void SetGameChunk()
+    public void SetMinigame(Minigame minigame)
     {
-
+        _currentMiniGame = minigame;
     }
 
-    private void InitializeGame()
+    public void InitializeGame()
     {
         if (_currentMiniGame != null)
         {
@@ -72,15 +78,28 @@ public class MinigameHub : MonoBehaviour
         }
     }
 
+    private void ReturnToSelectionScreen()
+    {
+        var game = FindObjectOfType<Minigame>();
+        Destroy(game.gameObject);
+        _screenSelectPanel.SetActive(true);
+    }
+
     public void OnGameOver()
     {
         _currentState = GameStates.GameOver;
+
+        ReturnToSelectionScreen();
+
         Debug.Log("GameOver");
     }
 
     public void OnGameSucces()
     {
         _currentState = GameStates.GameSucces;
+
+        ReturnToSelectionScreen();
+
         Debug.Log("Succes");
     }
 

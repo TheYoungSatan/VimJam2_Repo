@@ -38,4 +38,9 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         panelToEnable.SetActive(true);
     }
 
+    public void LoadMiniGame(GameObject Minigame)
+    {
+        
+    }
+
 }
