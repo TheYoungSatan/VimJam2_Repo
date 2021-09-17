@@ -25,11 +25,11 @@
 					<IncludedMemoryFiles>
 						<File Id="32611736" Language="SFX">
 							<ShortName>Footsteps_Tile_1.wav</ShortName>
-							<Path>SFX\Footsteps_Tile_1_AC722690.wem</Path>
+							<Path>SFX\Footsteps_Tile_1_E8099886.wem</Path>
 						</File>
 						<File Id="71212125" Language="SFX">
 							<ShortName>Footsteps_Tile_5.wav</ShortName>
-							<Path>SFX\Footsteps_Tile_5_C4AA0BDE.wem</Path>
+							<Path>SFX\Footsteps_Tile_5_C51BD02C.wem</Path>
 						</File>
 						<File Id="281699847" Language="SFX">
 							<ShortName>Footsteps_5.wav</ShortName>
@@ -49,15 +49,15 @@
 						</File>
 						<File Id="390240556" Language="SFX">
 							<ShortName>Footsteps_Tile_3.wav</ShortName>
-							<Path>SFX\Footsteps_Tile_3_B0F4084E.wem</Path>
+							<Path>SFX\Footsteps_Tile_3_D9F91775.wem</Path>
 						</File>
 						<File Id="405000881" Language="SFX">
 							<ShortName>Footsteps_Tile_4.wav</ShortName>
-							<Path>SFX\Footsteps_Tile_4_9A72A562.wem</Path>
+							<Path>SFX\Footsteps_Tile_4_234A17D2.wem</Path>
 						</File>
 						<File Id="434923010" Language="SFX">
 							<ShortName>Footsteps_Tile_2.wav</ShortName>
-							<Path>SFX\Footsteps_Tile_2_A1C637B7.wem</Path>
+							<Path>SFX\Footsteps_Tile_2_19D6D22A.wem</Path>
 						</File>
 						<File Id="961390975" Language="SFX">
 							<ShortName>Footsteps_3.wav</ShortName>
@@ -157,7 +157,7 @@
 					<IncludedMemoryFiles>
 						<File Id="271686455" Language="SFX">
 							<ShortName>Sliding_Door_3.wav</ShortName>
-							<Path>SFX\Sliding_Door_3_B49C3510.wem</Path>
+							<Path>SFX\Sliding_Door_3_A0320685.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -217,7 +217,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\MiniGames\Victory" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2464383636" Name="Sine_Wave_Button_Click" ObjectPath="\Events\Default Work Unit\MiniGames\SineWaveGame\Sine_Wave_Button_Click" DurationType="OneShot" DurationMin="0.167044" DurationMax="0.210462">
+					<IncludedMemoryFiles>
+						<File Id="132796796" Language="SFX">
+							<ShortName>SineWave_ButtonClick_1.wav</ShortName>
+							<Path>SFX\SineWave_ButtonClick_1_10C4C929.wem</Path>
+						</File>
+						<File Id="313541418" Language="SFX">
+							<ShortName>SineWave_ButtonClick_2.wav</ShortName>
+							<Path>SFX\SineWave_ButtonClick_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\MiniGames\Victory" DurationType="OneShot" DurationMin="1.550896" DurationMax="1.550896">
+					<IncludedMemoryFiles>
+						<File Id="113311989" Language="SFX">
+							<ShortName>Victory_FanFare.wav</ShortName>
+							<Path>SFX\Victory_FanFare_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3840355556" Name="WhackAMole_BugDeath" ObjectPath="\Events\Default Work Unit\MiniGames\WhackAMole\WhackAMole_BugDeath" DurationType="OneShot" DurationMin="0.406464" DurationMax="0.475194">
 					<IncludedMemoryFiles>
 						<File Id="163129119" Language="SFX">
