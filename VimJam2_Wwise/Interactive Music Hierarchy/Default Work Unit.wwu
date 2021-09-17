@@ -109,7 +109,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>132.79658</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -551,6 +551,228 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<Folder Name="Snake" ID="{18521C90-EC8E-470E-80ED-07F50A5AA081}" ShortID="714595774">
+							<ChildrenList>
+								<MusicSegment Name="Snake_Turn" ID="{59ABC9FD-B444-49B2-BDE4-5E0390119C40}" ShortID="73584729">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Snake_Turn" ID="{A58272F6-FBD1-4AEC-9086-9E1EA843C3E7}" ShortID="722347683">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Snake_Turn" ID="{3851653E-DF88-4A88-ABF6-E59FC9565642}">
+													<Language>SFX</Language>
+													<AudioFile>Snake_Turn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="515470924"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{477E1AF3-6610-4151-8768-B7038A76C190}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{B16C7FB8-C16F-404B-A2B1-5201172DEFE5}">
+													<ClipList>
+														<MusicClip Name="Snake_Turn" ID="{00F0B981-19F7-42B7-B07D-B7FB61019319}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="264.145833333335"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Snake_Turn" ID="{3851653E-DF88-4A88-ABF6-E59FC9565642}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{D2203006-C135-4CFB-8D07-A3F8E48A438F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.26415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{C6F7999C-3030-4B23-9143-FD0031D85580}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.26415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{F696094E-1738-4335-922E-55423B3584D9}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.26415</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{0884F4EA-1978-4235-ADAA-172EDDD342C2}"/>
+										<MusicCue Name="Exit Cue" ID="{AC54595C-5301-423D-A257-FE1C7773A63B}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="259.713701431493"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicPlaylistContainer Name="Snake_Move" ID="{3F7E011D-607B-4599-8E57-D67F4AB1F415}" ShortID="412013563">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Snake_Move" ID="{53180660-684B-4F91-8EF7-FEB21F4DB13D}" ShortID="32761357">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="10028.9583333333"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Snake_Move" ID="{44549620-626D-484B-940A-ECCF374D0B11}" ShortID="354918957">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Snake_Move" ID="{DF5E9695-335B-4C0C-B9EE-237200948C55}">
+															<Language>SFX</Language>
+															<AudioFile>Snake_Move.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="949602480"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{861E7D60-877A-40F0-A1C6-761BE1899DD8}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{13404A58-6F93-45F3-BD5E-B808FB242859}">
+															<ClipList>
+																<MusicClip Name="Snake_Move" ID="{82452E31-DC8A-420E-A99F-26DBB7E661DA}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="10028.9583333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Snake_Move" ID="{DF5E9695-335B-4C0C-B9EE-237200948C55}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{26FF0991-360D-4E20-B212-CECA5AE6CAE0}"/>
+												<MusicCue Name="Exit Cue" ID="{1663876A-54CB-4BAA-87AA-350056DD6A17}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="10028.9583333333"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{244A1475-8AA9-478E-AA10-3F640E696D0C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{4AB9A0F6-492C-408D-BAF0-2026A73DC114}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<StingerList>
+										<MusicStinger Name="" ID="{69F44A4C-0212-43DF-BB38-1D574897A30D}">
+											<TriggerRef Name="Snake_Turn" ID="{BDFE859A-D691-4BA8-8EB6-CB8B43894A7A}" WorkUnitID="{26B95064-074F-4153-8035-199E905A3058}"/>
+											<SegmentRef Name="Snake_Turn" ID="{59ABC9FD-B444-49B2-BDE4-5E0390119C40}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</MusicStinger>
+									</StingerList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{F06C2626-F7D1-41E8-9E74-A48B5A14C82D}" ShortID="921680067">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
