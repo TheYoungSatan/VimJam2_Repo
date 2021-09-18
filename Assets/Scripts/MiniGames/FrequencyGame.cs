@@ -19,9 +19,9 @@ namespace MiniGame
 
         [Header("ReferenceWave")]
         [SerializeField, Range(0.2f, 2)]
-        private float _amplitude = 0.5f;
+        private float _amplitude;
         [SerializeField, Range(0.2f, 5)]
-        private float _waveLength = 2;
+        private float _waveLength;
 
         private float _amplitudeMod;
         private float _waveLengthMod;
@@ -34,18 +34,37 @@ namespace MiniGame
 
         public MeshCollider PlaneBounds;
 
+        private float _timer;
+        private float _maxTime;
+
         public override void RunGame()
         {
             InitializeTexture();
-            _amplitudeMod = Random.Range(0.2f, 2f);
-            _waveLengthMod = Random.Range(0.5f, 3f);
+
+            _amplitudeMod = (float)System.Math.Round(Random.Range(0.2f, 1.75f), 1);
+            _waveLengthMod = (float)System.Math.Round(Random.Range(0.5f, 3f), 1);
+
+            _amplitude = (float)System.Math.Round(Random.Range(0.2f, 1.75f), 1);
+            _waveLength = (float)System.Math.Round(Random.Range(0.5f, 3f), 1);
+
+            if (Difficulty == MinigameHub.Difficulty.Easy) _maxTime = 30f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _maxTime = 20f;
+            else if (Difficulty == MinigameHub.Difficulty.Hard) _maxTime = 12f;
         }
 
         public override void UpdateGame()
         {
+            _timer += Time.deltaTime;
             DrawTravellingSineWave(_startPosReference.position, _startPosModifyable.position, _amplitude, _waveLength, 2, Color.green, Color.red);
 
-            //DrawTravellingSineWave(_startPosModifyable.position, Random.Range(0.2f, 2f), Random.Range(0.2f, 5f), 2, Color.red);
+            Debug.Log(_amplitude + " " + _amplitudeMod);
+            Debug.Log(_waveLength + " " + _waveLengthMod);
+            if (System.Math.Round(_amplitudeMod,1) == _amplitude && System.Math.Round(_waveLengthMod,1) == _waveLength)
+            {
+                Hub.OnGameSucces();
+            }
+
+            if (_timer >= _maxTime) Hub.OnGameOver(); 
         }
 
         private void InitializeTexture()
@@ -114,25 +133,25 @@ namespace MiniGame
         public void IncreaseAmplitude()
         {
             _amplitudeMod += 0.1f;
-            AudioHub.PlaySound(AudioHub.SineWaveChange);
+            //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseAmplitude()
         {
             _amplitudeMod -= 0.1f;
-            AudioHub.PlaySound(AudioHub.SineWaveChange);
+            //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void IncreaseWaveLength()
         {
             _waveLengthMod += 0.1f;
-            AudioHub.PlaySound(AudioHub.SineWaveChange);
+            //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseWaveLength()
         {
             _waveLengthMod -= 0.1f;
-            AudioHub.PlaySound(AudioHub.SineWaveChange);
+            //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         void DrawSineWave(Vector3 startPoint, float amplitude, float wavelength)

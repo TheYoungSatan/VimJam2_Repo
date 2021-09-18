@@ -11,7 +11,7 @@ public class MinigameHub : MonoBehaviour
 
     private enum GameChunk { Programming, Art, Sound, Publish}
 
-    private enum Difficulty { Easy, Medium, Hard}
+    public enum Difficulty { Easy, Medium, Hard}
 
     [Serializable]
     private struct GameCollection
@@ -30,6 +30,9 @@ public class MinigameHub : MonoBehaviour
     [SerializeField] private GameChunk _currentGameChunck;
     [SerializeField] private bool _testmode = true;
     [SerializeField] private Minigame _currentMiniGame;
+
+    //public Difficulty Diffculty => _difficulty;
+    //private Difficulty _difficulty;
 
     [Header("Scene loading")]
     [SerializeField] private string _returnScene;
@@ -59,10 +62,16 @@ public class MinigameHub : MonoBehaviour
         _currentMiniGame = minigame;
     }
 
+    public void SetDifficulty(string difficulty)
+    {
+        _currentMiniGame.Difficulty = (Difficulty)Enum.Parse(typeof(Difficulty), difficulty);
+    }
+
     public void InitializeGame()
     {
         if (_currentMiniGame != null)
         {
+            _currentState = GameStates.Running;
             Minigame game = Instantiate(_currentMiniGame.gameObject).GetComponent<Minigame>();
             game.Hub = this;
             game.RunGame();
@@ -82,7 +91,8 @@ public class MinigameHub : MonoBehaviour
     private void ReturnToSelectionScreen()
     {
         var game = FindObjectOfType<Minigame>();
-        Destroy(game.gameObject);
+        if (game != null) Destroy(game.gameObject);
+
         _screenSelectPanel.SetActive(true);
     }
 
@@ -98,11 +108,10 @@ public class MinigameHub : MonoBehaviour
     public void OnGameSucces()
     {
         _currentState = GameStates.GameSucces;
-        AudioHub.PlaySound(AudioHub.MinigameSucces);
-
         ReturnToSelectionScreen();
-
         Debug.Log("Succes");
+
+        //AudioHub.PlaySound(AudioHub.MinigameSucces);
     }
 
     public void OnReturn()

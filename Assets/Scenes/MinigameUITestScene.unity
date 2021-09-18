@@ -7486,7 +7486,41 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 873918698}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873918700}
+        m_MethodName: OnButtonClickedPart1DisableCurrent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1738131103}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 764480977}
+        m_MethodName: SetMinigame
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3339322103211559063, guid: 3311b1e6f224d384baa187299f99d665,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: MiniGame.Minigame, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 764480977}
+        m_MethodName: InitializeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &873918698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8412,24 +8446,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 764480977}
-        m_MethodName: SetMinigame
+      - m_Target: {fileID: 1003774742}
+        m_MethodName: OnButtonClickedPart2EnableNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3020531998235136666, guid: 9ac68d72b7e22df4694af859a96137db,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: MiniGame.Minigame, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 764480977}
-        m_MethodName: InitializeGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1738131103}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -13325,7 +13347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6974348471659411921, guid: 836816dd3931a9c4c85046f2fec68603,
+  m_Sprite: {fileID: -6206101145317296291, guid: 836816dd3931a9c4c85046f2fec68603,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -17509,7 +17531,7 @@ MonoBehaviour:
         m_MethodName: OnButtonClickedPart2EnableNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1909648157}
+          m_ObjectArgument: {fileID: 1738131103}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -17535,7 +17557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6206101145317296291, guid: 836816dd3931a9c4c85046f2fec68603,
+  m_Sprite: {fileID: 6308042377158270500, guid: 836816dd3931a9c4c85046f2fec68603,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

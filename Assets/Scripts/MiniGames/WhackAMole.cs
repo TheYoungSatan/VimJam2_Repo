@@ -42,7 +42,9 @@ namespace MiniGame
         [SerializeField]
         private float _amountToWin = 30f;
         [SerializeField]
-        private float _maxTime = 30;
+        private float _maxTime = 20;
+        [SerializeField]
+        private Transform _parent;
 
         private float _timer;
         private float _currentCount;
@@ -67,6 +69,10 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            if (Difficulty == MinigameHub.Difficulty.Easy) _targetSize = 0.5f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _targetSize /= 2;
+            else if (Difficulty == MinigameHub.Difficulty.Hard) _targetSize /= 4;
+
             var pos = Camera.main.ScreenToWorldPoint(Centre.position);
             var offset = new Vector2(4.3f - _targetSize, 2.25f - _targetSize);
 
@@ -75,6 +81,7 @@ namespace MiniGame
 
             _currentCount = 0;
             _timer = 0;
+
             StartCoroutine(ConstantSpawnCircle());
         }
 
@@ -112,7 +119,7 @@ namespace MiniGame
 
         private void RemoveCircle(GameObject circleObj)
         {
-            AudioHub.PlaySound(AudioHub.BugDeath);
+            //AudioHub.PlaySound(AudioHub.BugDeath);  //gives errors
             Destroy(circleObj);
         }
 
@@ -128,7 +135,7 @@ namespace MiniGame
 
                 else 
                 {
-                    var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity);
+                    var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity, _parent);
                     target.transform.localScale = new Vector3(_targetSize, _targetSize, _targetSize);
                 }
             }
