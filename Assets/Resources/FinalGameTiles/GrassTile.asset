@@ -38,3 +38,4 @@ MonoBehaviour:
   Easy: {fileID: -7029922856297215017, guid: b67e9db293fe3824ab80681c97b77934, type: 3}
   Medium: {fileID: -9002202304548789696, guid: b67e9db293fe3824ab80681c97b77934, type: 3}
   Hard: {fileID: -7239084468998352893, guid: b67e9db293fe3824ab80681c97b77934, type: 3}
+  Failed: {fileID: 59605504190903888, guid: b67e9db293fe3824ab80681c97b77934, type: 3}

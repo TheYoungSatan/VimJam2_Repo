@@ -7,7 +7,7 @@ TextureImporter:
     second: Easy
   - first:
       213: 928186086133712455
-    second: TileMapV2_1
+    second: Player_Failed_Idle_0
   - first:
       213: -745636546238590174
     second: TileMapV2_2
@@ -19,7 +19,7 @@ TextureImporter:
     second: TileMapV2_0
   - first:
       213: 3204419389487603662
-    second: TileMapV2_1
+    second: Player_Failed_Idle_0
   - first:
       213: -746202295596184736
     second: TileMapV2_2
@@ -83,6 +83,12 @@ TextureImporter:
   - first:
       213: 8791806080412706017
     second: TileMapV2_22
+  - first:
+      213: 6527702090609223645
+    second: TileMapV2_23
+  - first:
+      213: 2467044721302668538
+    second: TileMapV2_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -595,6 +601,111 @@ TextureImporter:
       bones: []
       spriteID: 2b6be8f15a248ef70800000000000000
       internalID: 9216689914380203698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Failed_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 75
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746c57dd35491ec00800000000000000
+      internalID: 928186086133712455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapV2_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056f4f7e3e2c3d000800000000000000
+      internalID: 59605504190903888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapV2_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e46e159c05c20a70800000000000000
+      internalID: 8791806080412706017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapV2_23
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd76656577e079a50800000000000000
+      internalID: 6527702090609223645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapV2_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 75
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af48f326a14bc3220800000000000000
+      internalID: 2467044721302668538
       vertices: []
       indices: 
       edges: []
