@@ -1,34 +1,19 @@
 fileFormatVersion: 2
-guid: 3caf56534cabc3c47993885388e5affd
+guid: da8ccc1f3c15b2544a42a754f1e84007
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5102883074723987940
-    second: Bug sheet_0
+      213: -753869057829553482
+    second: Types of games_0
   - first:
-      213: -3162077894169016104
-    second: Bug sheet_1
+      213: -6891792834805372953
+    second: Types of games_1
   - first:
-      213: 3777995731626809719
-    second: Bug sheet_2
+      213: -6341905509798373234
+    second: Types of games_2
   - first:
-      213: -8420750335353407924
-    second: Bug sheet_3
-  - first:
-      213: -2332099221383516970
-    second: Bug sheet_4
-  - first:
-      213: -6317616433069170672
-    second: Bug sheet_5
-  - first:
-      213: 2976121664705018428
-    second: Bug sheet_6
-  - first:
-      213: 2040116148184072023
-    second: Bug sheet_7
-  - first:
-      213: -5414514816643169730
-    second: Bug sheet_8
+      213: 7086571457937680599
+    second: Types of games_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bug sheet_0
+      name: Types of games_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7
-        height: 7
+        width: 56
+        height: 37
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,167 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e1c647ce1511d640800000000000000
-      internalID: 5102883074723987940
+      spriteID: 6ba39e80618b985f0800000000000000
+      internalID: -753869057829553482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bug sheet_1
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d8c0fd98ea0e14d0800000000000000
-      internalID: -3162077894169016104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_2
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 779de8ae9132e6430800000000000000
-      internalID: 3777995731626809719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_3
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c46320f5f2c732b80800000000000000
-      internalID: -8420750335353407924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_4
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dc68783d18b2afd0800000000000000
-      internalID: -2332099221383516970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_5
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 010edb783515358a0800000000000000
-      internalID: -6317616433069170672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_6
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3a3619c2ee4d4920800000000000000
-      internalID: 2976121664705018428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_7
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 0
-        width: 7
-        height: 7
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75fbc09e3d2ff4c10800000000000000
-      internalID: 2040116148184072023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bug sheet_8
+      name: Types of games_1
       rect:
         serializedVersion: 2
         x: 56
         y: 0
-        width: 7
-        height: 7
+        width: 56
+        height: 37
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,8 +158,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3205ea2677cbd4b0800000000000000
-      internalID: -5414514816643169730
+      spriteID: 7e7e7d75eee6b50a0800000000000000
+      internalID: -6891792834805372953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Types of games_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 56
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8810692a860df7a0800000000000000
+      internalID: -6341905509798373234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Types of games_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 56
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d82cc9d13f885260800000000000000
+      internalID: 7086571457937680599
       vertices: []
       indices: 
       edges: []

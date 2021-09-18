@@ -31,6 +31,11 @@ public class ButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnButtonClickedPart1DisableCurrent(GameObject panelToDisable)
     {
+        if (_previewMiniGame != null) // cn't forget to disable this !!
+        {
+            _previewMiniGame.SetActive(false);
+        }
+
         panelToDisable.SetActive(false);
     }
     public void OnButtonClickedPart2EnableNew(GameObject panelToEnable)
