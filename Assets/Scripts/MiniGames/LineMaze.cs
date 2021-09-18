@@ -62,7 +62,7 @@ namespace MiniGame
         [SerializeField, Range(0.05f, 0.2f)]
         private float _lineThickness = 0.1f;
         [SerializeField, Range(0.02f, 0.2f)]
-        private float _lineSpeed = 0.1f;
+        private float _lineSpeed;
 
         [Header("Other Settings")]
         [SerializeField]
@@ -79,7 +79,6 @@ namespace MiniGame
         private float _timer;
         private string _inputDir;
 
-
         private Texture2D _texture;
         public int TextureWidth = 128;
         public int TextureHeight = 128;
@@ -90,6 +89,10 @@ namespace MiniGame
 
         public override void RunGame() 
         {
+            if (Difficulty == MinigameHub.Difficulty.Easy) _lineSpeed = 0.75f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _lineSpeed = 1f;
+            else if (Difficulty == MinigameHub.Difficulty.Hard) _lineSpeed = 1.5f;
+
             _startPoint.position = Camera.main.ScreenToWorldPoint(_startPoint.position);
 
             _playerInput = FindObjectOfType<PlayerInput>();

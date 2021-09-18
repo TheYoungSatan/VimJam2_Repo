@@ -46,15 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hub: {fileID: 0}
+  Difficulty: 0
   _dotObject: {fileID: 3053114213234156587, guid: 11aa041c38857a54a937ff921844f59d,
     type: 3}
   _spawnSpace: {fileID: 5804078249163027274}
   _dotAmount: 6
   _displayTime: 3
-  _screenSpaceReduction: 20
-  TextureWidth: 128
-  TextureHeight: 128
+  _screenSpaceReduction: 500
+  TextureWidth: 64
+  TextureHeight: 64
   PixelPlaneRenderer: {fileID: 5481596812672750761}
+  PlaneBounds: {fileID: 5481596812672750763}
 --- !u!120 &7727959342265798781
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4422730825372224121}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -73,7 +75,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e980bbbe93c717240996b1a8594c186d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -497,6 +499,12 @@ PrefabInstance:
 --- !u!4 &5481596812672750764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 760890217413262406, guid: c80b32113c0a6cb488fa9191d13aab14,
+    type: 3}
+  m_PrefabInstance: {fileID: 5088419817140611306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5481596812672750763 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 760890217413262401, guid: c80b32113c0a6cb488fa9191d13aab14,
     type: 3}
   m_PrefabInstance: {fileID: 5088419817140611306}
   m_PrefabAsset: {fileID: 0}

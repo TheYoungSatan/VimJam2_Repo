@@ -18,8 +18,8 @@ namespace MiniGame
 
         private bool _runGame;
         private int _current = 0;
-        private LineRenderer _line;
-        private List<Vector3> _lineSegments = new List<Vector3>();
+        //private LineRenderer _line;
+        //private List<Vector3> _lineSegments = new List<Vector3>();
         private List<Dot> _dotList = new List<Dot>();
 
         private Texture2D _texture;
@@ -27,6 +27,9 @@ namespace MiniGame
         public int TextureHeight = 128;
         public Renderer PixelPlaneRenderer;
         private Color[] _fillPixels;
+        public MeshCollider PlaneBounds;
+
+        //private Vector3 _mp;
 
         public override void RunGame()
         {
@@ -42,12 +45,12 @@ namespace MiniGame
                 d.OnClicked += CheckClicked;
             }
 
-            if (TryGetComponent(out LineRenderer line))
-                _line = line;
-            else
-                _line = gameObject.AddComponent<LineRenderer>();
+            //if (TryGetComponent(out LineRenderer line))
+                //_line = line;
+            //else
+                //_line = gameObject.AddComponent<LineRenderer>();
 
-            _line.enabled = false;
+            //_line.enabled = false;
 
             if (!FindObjectOfType<EventSystem>())
                 new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
@@ -76,9 +79,9 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
-            Vector3 mp = Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0));
-            mp.z = 0;
-            _line.SetPosition(_current, mp);
+            //_mp = Camera.main.ScreenToWorldPoint(new Vector3(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue(), 0));
+            //_mp.z = 0;
+            //_line.SetPosition(_current, _mp);
         }
 
         private void CheckClicked(Dot d)
@@ -90,23 +93,41 @@ namespace MiniGame
                 _current = d.Number;
                 Vector3 pos = Camera.main.ScreenToWorldPoint(d.Position);
                 pos.z = 0;
-                _lineSegments.Add(pos);
-                _line.enabled = true;
-                _line.positionCount = _lineSegments.Count + 1;
+
+                if (d.Number != 1)
+                {
+                    Vector3 postest = new Vector3(_dotList[_current - 2].Position.x, _dotList[_current - 2].Position.y);
+                    var endpos = _dotList[_current-1].Position;
+
+                    var widthPlane = PlaneBounds.bounds.size.x;
+                    var heightPlane = PlaneBounds.bounds.size.y;
+
+                    var startXCoord = (((widthPlane / 2) + postest.x) / widthPlane) * TextureHeight;
+                    var startYCoord = (((heightPlane / 2) - postest.y) / heightPlane) * TextureWidth;
+
+                    var endXCoord = (((widthPlane / 2) + endpos.x) / widthPlane) * TextureHeight;
+                    var endYCoord = (((heightPlane / 2) - endpos.y) / heightPlane) * TextureWidth;
+
+                    DrawLineAlgorithm((int)startYCoord, (int)startXCoord, (int)endYCoord, (int)endXCoord, Color.red);
+                }
+                    
+                //_lineSegments.Add(pos);
+                //_line.enabled = true;
+                //_line.positionCount = _lineSegments.Count + 1;
             }
             else
             {
                 Hub.OnGameOver();
-                _line.positionCount = _lineSegments.Count;
+                //_line.positionCount = _lineSegments.Count;
             }
 
             if (_current == _dotAmount)
             {
                 Hub.OnGameSucces();
-                _line.positionCount = _lineSegments.Count;
+                //_line.positionCount = _lineSegments.Count;
             }
 
-            _line.SetPositions(_lineSegments.ToArray());
+            //_line.SetPositions(_lineSegments.ToArray());
         }
 
         private Vector3 FindSpawnPoint()
@@ -114,7 +135,7 @@ namespace MiniGame
             _screenSpaceReduction = Mathf.Abs(_screenSpaceReduction);
             Vector3 screenPosition = new Vector3(
                 UnityEngine.Random.Range(_screenSpaceReduction, Screen.width - _screenSpaceReduction), 
-                UnityEngine.Random.Range(_screenSpaceReduction, Screen.height - _screenSpaceReduction), 
+                UnityEngine.Random.Range(_screenSpaceReduction/1.75f, Screen.height - _screenSpaceReduction/1.75f), 
                 0);
             return screenPosition;
         }

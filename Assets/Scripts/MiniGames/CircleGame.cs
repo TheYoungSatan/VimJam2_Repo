@@ -14,7 +14,7 @@ namespace MiniGame
         private float _circleRadius;
 
         [SerializeField]
-        private float _maxDist = 3f;
+        private float _maxDist;
         private CircleCollider2D[] _circles;
 
         private Texture2D _texture;
@@ -28,6 +28,10 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            if (Difficulty == MinigameHub.Difficulty.Easy) _maxDist = 3f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _maxDist = 2f;
+            else if (Difficulty == MinigameHub.Difficulty.Hard) _maxDist = 1.5f;
+
             _circles = FindObjectsOfType<CircleCollider2D>();
             InitializeTexture();
         }
