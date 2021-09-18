@@ -1,4 +1,5 @@
 ﻿using MiniGame;
+using Sound;
 using System;
 using System.Linq;
 using UnityEngine;
@@ -97,6 +98,7 @@ public class MinigameHub : MonoBehaviour
     public void OnGameSucces()
     {
         _currentState = GameStates.GameSucces;
+        AudioHub.PlaySound(AudioHub.MinigameSucces);
 
         ReturnToSelectionScreen();
 

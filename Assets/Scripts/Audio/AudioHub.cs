@@ -11,6 +11,12 @@ namespace Sound
         [SerializeField] private string footstep; public static string Footstep => hub.footstep;
         [SerializeField] private string buttonclick; public static string ButtonClick => hub.buttonclick;
         [SerializeField] private string backgroundMusic; public static string BackgroundMusic => hub.backgroundMusic;
+        [SerializeField] private string mirrorTurn; public static string MirrorTurn => hub.mirrorTurn;
+        [SerializeField] private string inputSounds; public static string InputSound => hub.inputSounds;
+        [SerializeField] private string bugDeath; public static string BugDeath => hub.bugDeath;
+        [SerializeField] private string hit; public static string Hit => hub.hit;
+        [SerializeField] private string sineWaveChange; public static string SineWaveChange => hub.sineWaveChange;
+        [SerializeField] private string minigameSucces; public static string MinigameSucces => hub.minigameSucces;
 
         private void Start()
         {

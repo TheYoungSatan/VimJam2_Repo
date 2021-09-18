@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using System;
+using Sound;
 
 namespace MiniGame
 {
@@ -38,6 +38,7 @@ namespace MiniGame
             if (int.TryParse(obj.ToString(), out int n) && _input.Length < _numberAmount)
             {
                 _input += n.ToString();
+                AudioHub.PlaySound(AudioHub.InputSound);
 
                 _inputText.text = _input;
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Sound;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -111,6 +112,7 @@ namespace MiniGame
 
         private void RemoveCircle(GameObject circleObj)
         {
+            AudioHub.PlaySound(AudioHub.BugDeath);
             Destroy(circleObj);
         }
 

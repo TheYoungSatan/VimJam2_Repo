@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Sound;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -113,21 +114,25 @@ namespace MiniGame
         public void IncreaseAmplitude()
         {
             _amplitudeMod += 0.1f;
+            AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseAmplitude()
         {
             _amplitudeMod -= 0.1f;
+            AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void IncreaseWaveLength()
         {
             _waveLengthMod += 0.1f;
+            AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseWaveLength()
         {
             _waveLengthMod -= 0.1f;
+            AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         void DrawSineWave(Vector3 startPoint, float amplitude, float wavelength)
