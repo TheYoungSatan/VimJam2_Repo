@@ -11,6 +11,7 @@
 						<ObjectRef Name="WhackAMole_Hit" ID="{F9FE9952-447A-41EF-ABCE-63AE83DB5027}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Computer" ID="{5C55F9E8-7E35-437C-B468-35953831C254}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Number_Type" ID="{50D3B4D5-BD3B-46D1-A3E6-F9E858C4A732}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Sine_Wave_Button_Click" ID="{89DB017B-D9AD-470C-9542-023DACCC88C4}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{5EC15645-AF13-4860-A1B9-C93654013015}" WorkUnitID="{821B73AC-B799-463A-8C14-D73EE188A767}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Bed" ID="{B33853C5-C43B-496C-B609-9A985CEBADC4}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Sink" ID="{9AA191F5-260A-4A1E-BB32-6AEEB50F326D}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>

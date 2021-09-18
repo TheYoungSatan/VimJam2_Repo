@@ -131,7 +131,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Victory" ID="{C109C7F7-D719-4C19-991C-1638481836DA}"/>
+						<Event Name="Victory" ID="{C109C7F7-D719-4C19-991C-1638481836DA}">
+							<ChildrenList>
+								<Action Name="" ID="{C5FB990E-1F0B-46CD-B4FD-53EEDEA4E90D}" ShortID="839459975">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Victory_FanFare" ID="{26D6F6D0-0D8E-4952-8049-5932A90FA578}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Folder Name="Snake" ID="{9F274922-E68C-466F-9B5D-AF3B0CB9A1C3}" ShortID="845146846"/>
 						<Folder Name="NumberMemoryGame" ID="{15B06B15-46D1-4991-8DA1-640B28D38B16}" ShortID="347040797">
 							<ChildrenList>
@@ -141,6 +151,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Number_Type" ID="{A469480F-D4DA-4EB2-9CEA-ED62EB5ADE46}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SineWaveGame" ID="{AA68CE9A-BE6A-46A2-A455-23929FC67454}" ShortID="765589703">
+							<ChildrenList>
+								<Event Name="Sine_Wave_Button_Click" ID="{89DB017B-D9AD-470C-9542-023DACCC88C4}">
+									<ChildrenList>
+										<Action Name="" ID="{ABE299C7-DEBF-439A-B9ED-8407A61C859E}" ShortID="732353351">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SineWaveButtonClick" ID="{C592453A-B1CC-4D5C-A27C-F576188C3B86}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -1669,6 +1669,46 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Victory" ID="{F883269C-B3CB-4FBA-8BC6-32B87507B390}" ShortID="595173268">
+							<ChildrenList>
+								<Sound Name="Victory_FanFare" ID="{26D6F6D0-0D8E-4952-8049-5932A90FA578}" ShortID="358837169">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1A3338F1-AFD4-4CAA-BF5A-B9886EDF9948}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Victory_FanFare" ID="{B2FBF837-08C0-4228-B8D6-9B02519C3F83}">
+											<Language>SFX</Language>
+											<AudioFile>Victory_FanFare.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="113311989"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Victory_FanFare" ID="{B2FBF837-08C0-4228-B8D6-9B02519C3F83}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
