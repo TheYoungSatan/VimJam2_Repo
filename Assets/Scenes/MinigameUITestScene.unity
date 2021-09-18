@@ -4101,7 +4101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7de31843b2e578c4c95eecf80206e000, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9448,7 +9448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b229bc98c7b2df84290baea326da4662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _previewMiniGame: {fileID: 0}
+  _previewMiniGame: {fileID: 979490488}
 --- !u!1 &1007975707
 GameObject:
   m_ObjectHideFlags: 0
@@ -10916,7 +10916,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9d0d00845926f144da7feeca6955aad5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12620,7 +12620,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 886388f657eef7949bad200424502776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14285,7 +14285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b229bc98c7b2df84290baea326da4662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _previewMiniGame: {fileID: 979490488}
+  _previewMiniGame: {fileID: 269699485}
 --- !u!114 &1589405455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16961,7 +16961,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 3bdbd15b7d727814da980f05eb2b01c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
