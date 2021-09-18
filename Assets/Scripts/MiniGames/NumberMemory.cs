@@ -11,8 +11,8 @@ namespace MiniGame
         [SerializeField] private Text _taskText;
         [SerializeField] private Text _inputText;
 
-        [SerializeField] private int _numberAmount = 5;
-        [SerializeField] private float _displayTime = 1f;
+        [SerializeField] private int _numberAmount;
+        [SerializeField] private float _displayTime;
 
         private string _task = "";
         private string _input = "";
@@ -21,6 +21,10 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            if (Difficulty == MinigameHub.Difficulty.Easy) { _numberAmount = 4; _displayTime = 2f; }
+            else if (Difficulty == MinigameHub.Difficulty.Medium) { _numberAmount = 6; _displayTime = 2f; } 
+            else if (Difficulty == MinigameHub.Difficulty.Hard) { _numberAmount = 8; _displayTime = 2.5f; }
+            
             for (int i = 0; i < _numberAmount; i++)
                 _task += UnityEngine.Random.Range(0, 10);
 
