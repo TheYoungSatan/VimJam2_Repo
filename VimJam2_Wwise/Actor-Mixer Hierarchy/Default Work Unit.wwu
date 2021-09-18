@@ -1069,13 +1069,46 @@
 											<ValueList>
 												<Value>20</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBBBBFC5-1DDA-4FEC-A245-5D3B84706E46}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{93272042-FDDA-4663-883B-61699FD69D95}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{8D3D2D2F-2081-4DC7-A213-19A27784AD7B}"/>
+													<Modifier Name="" ID="{8D3D2D2F-2081-4DC7-A213-19A27784AD7B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1088,6 +1121,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="LazerGame_Mirror_1" ID="{A55643A7-D826-41BE-BD9E-577C845C9E78}" ShortID="684965657">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -1110,6 +1150,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="LazerGame_Mirror_2" ID="{3E5F3EB7-DC0D-4A84-BF99-BD483C00385D}" ShortID="239192859">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -1132,6 +1179,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="LazerGame_Mirror_3" ID="{87B161CA-2AEF-43CA-8059-44CEA2FF6387}" ShortID="167986755">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -1151,6 +1205,72 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="LazerGame_Mirror_3" ID="{C199DDC5-D75D-46B7-B3BE-C5A2A79BB00E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LazerGame_Mirror_4" ID="{42D98020-3DBD-4D09-912F-24F77FEC7DE6}" ShortID="383587654">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_4" ID="{55EE2261-3FA3-4457-9E85-063D6D3CE11F}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335526798"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_4" ID="{55EE2261-3FA3-4457-9E85-063D6D3CE11F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LazerGame_Mirror_5" ID="{33A1E4A5-5DCA-44BA-BC7F-5408EF1C8276}" ShortID="456068336">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_5" ID="{18BAED0D-8957-4C7F-BB27-C4D48154D205}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="272883830"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_5" ID="{18BAED0D-8957-4C7F-BB27-C4D48154D205}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LazerGame_Mirror_6" ID="{06F9973E-B83F-4798-9BF7-7081B3409F83}" ShortID="647254446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LazerGame_Mirror_6" ID="{1253A261-353F-4516-B12F-3E9E31366F35}">
+													<Language>SFX</Language>
+													<AudioFile>LazerGame_Mirror_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="834304416"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LazerGame_Mirror_6" ID="{1253A261-353F-4516-B12F-3E9E31366F35}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1177,7 +1297,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1270,7 +1390,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1696,6 +1816,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Victory_FanFare" ID="{B2FBF837-08C0-4228-B8D6-9B02519C3F83}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00796693065068493"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.244319206621004"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Victory_FanFare.wav</AudioFile>
 											<MediaIDList>

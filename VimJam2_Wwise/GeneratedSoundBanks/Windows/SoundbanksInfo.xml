@@ -161,19 +161,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4059813333" Name="LazerGame_Mirror" ObjectPath="\Events\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror" DurationType="OneShot" DurationMin="0.250000" DurationMax="0.312500">
+				<Event Id="4059813333" Name="LazerGame_Mirror" ObjectPath="\Events\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror" DurationType="OneShot" DurationMin="0.235969" DurationMax="0.265572">
 					<IncludedMemoryFiles>
-						<File Id="226253619" Language="SFX">
-							<ShortName>LazerGame_Mirror_2.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_2_10C4C929.wem</Path>
+						<File Id="272883830" Language="SFX">
+							<ShortName>LazerGame_Mirror_5.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_5_10C4C929.wem</Path>
 						</File>
-						<File Id="488938900" Language="SFX">
-							<ShortName>LazerGame_Mirror_3.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_3_10C4C929.wem</Path>
+						<File Id="335526798" Language="SFX">
+							<ShortName>LazerGame_Mirror_4.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_4_10C4C929.wem</Path>
 						</File>
-						<File Id="779025014" Language="SFX">
-							<ShortName>LazerGame_Mirror_1.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_1_10C4C929.wem</Path>
+						<File Id="834304416" Language="SFX">
+							<ShortName>LazerGame_Mirror_6.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -233,7 +233,7 @@
 					<IncludedMemoryFiles>
 						<File Id="113311989" Language="SFX">
 							<ShortName>Victory_FanFare.wav</ShortName>
-							<Path>SFX\Victory_FanFare_10C4C929.wem</Path>
+							<Path>SFX\Victory_FanFare_FE0183EA.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
