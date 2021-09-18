@@ -74,6 +74,9 @@ TextureImporter:
   - first:
       213: -6005798833489568197
     second: BoundingBox_Corner
+  - first:
+      213: 9122394069759108627
+    second: ConnectTheDots_Dot
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -658,6 +661,27 @@ TextureImporter:
       bones: []
       spriteID: b3e1661f7cd17aca0800000000000000
       internalID: -6005798833489568197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConnectTheDots_Dot
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 14
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3162f1de211499e70800000000000000
+      internalID: 9122394069759108627
       vertices: []
       indices: 
       edges: []
