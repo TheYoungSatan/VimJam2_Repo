@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace MiniGame
 {
@@ -23,8 +24,8 @@ namespace MiniGame
         [SerializeField, Range(0.2f, 5)]
         private float _waveLength;
 
-        private float _amplitudeMod;
-        private float _waveLengthMod;
+        private float _amplitudeModvalue;
+        private float _waveLengthModvalue;
 
         private Texture2D _texture;
         public int TextureWidth = 128;
@@ -37,15 +38,24 @@ namespace MiniGame
         private float _timer;
         private float _maxTime;
 
+        [SerializeField]
+        private Image _screenImage;
+        [SerializeField]
+        private Sprite _light1;
+        [SerializeField]
+        private Sprite _light2;
+        [SerializeField]
+        private Sprite _light3;
+
         public override void RunGame()
         {
             InitializeTexture();
 
-            _amplitudeMod = (float)System.Math.Round(Random.Range(0.2f, 1.75f), 1);
-            _waveLengthMod = (float)System.Math.Round(Random.Range(0.5f, 3f), 1);
+            _amplitudeModvalue = (float)System.Math.Round(Random.Range(0.2f, 0.8f), 1);
+            _waveLengthModvalue = (float)System.Math.Round(Random.Range(1f, 2.5f), 1);
 
-            _amplitude = (float)System.Math.Round(Random.Range(0.2f, 1.75f), 1);
-            _waveLength = (float)System.Math.Round(Random.Range(0.5f, 3f), 1);
+            _amplitude = (float)System.Math.Round(Random.Range(0.2f, 0.8f), 1);
+            _waveLength = (float)System.Math.Round(Random.Range(1f, 2.5f), 1);
 
             if (Difficulty == MinigameHub.Difficulty.Easy) _maxTime = 30f;
             else if (Difficulty == MinigameHub.Difficulty.Medium) _maxTime = 20f;
@@ -57,9 +67,7 @@ namespace MiniGame
             _timer += Time.deltaTime;
             DrawTravellingSineWave(_startPosReference.position, _startPosModifyable.position, _amplitude, _waveLength, 2, Color.green, Color.red);
 
-            Debug.Log(_amplitude + " " + _amplitudeMod);
-            Debug.Log(_waveLength + " " + _waveLengthMod);
-            if (System.Math.Round(_amplitudeMod,1) == _amplitude && System.Math.Round(_waveLengthMod,1) == _waveLength)
+            if ((float)System.Math.Round(_amplitudeModvalue,1) == _amplitude && (float)System.Math.Round(_waveLengthModvalue,1) == _waveLength)
             {
                 Hub.OnGameSucces();
             }
@@ -110,14 +118,19 @@ namespace MiniGame
                 _texture.SetPixel((int)yCoordRef, (int)xCoordRef, colorRef);
             }
 
+            //here i clamp the values so you cant go outside the screen
+            var clampedAmplitude = Mathf.Clamp(_amplitudeModvalue, 0.2f, 0.8f);
+
+            var clampedWaveLength = Mathf.Clamp(_waveLengthModvalue, 1f, 2.5f);
+
             float xMod = 0f;
             float yMod;
-            float kMod = (float)(2 * Mathf.PI / System.Math.Round(_waveLengthMod, 1));
+            float kMod = (float)(2 * Mathf.PI / System.Math.Round(clampedWaveLength, 1));
             float wMod = kMod * waveSpeed;
             for (int i = 0; i < 80; i++)
             {
                 xMod += i * 0.001f;
-                yMod = (float)(System.Math.Round(_amplitudeMod, 1) * Mathf.Sin(kMod * xMod + wMod * Time.time));
+                yMod = (float)(System.Math.Round(clampedAmplitude, 1) * Mathf.Sin(kMod * xMod + wMod * Time.time));
 
                 var worldPosMod = new Vector3(xMod, yMod, 0) + startPointMod;
 
@@ -132,25 +145,28 @@ namespace MiniGame
 
         public void IncreaseAmplitude()
         {
-            _amplitudeMod += 0.1f;
+            _amplitudeModvalue += 0.1f;
+
+            _screenImage.sprite = _light1;
+            
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseAmplitude()
         {
-            _amplitudeMod -= 0.1f;
+            _amplitudeModvalue -= 0.1f;
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void IncreaseWaveLength()
         {
-            _waveLengthMod += 0.1f;
+            _waveLengthModvalue += 0.1f;
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseWaveLength()
         {
-            _waveLengthMod -= 0.1f;
+            _waveLengthModvalue -= 0.1f;
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
@@ -177,9 +193,10 @@ namespace MiniGame
             }
         }
 
+
         public override void CheckInput()
         {
-            
+            base.CheckInput();
         }
     }
 

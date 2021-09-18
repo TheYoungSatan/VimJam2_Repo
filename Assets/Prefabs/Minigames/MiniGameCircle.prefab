@@ -546,6 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hub: {fileID: 0}
+  Difficulty: 0
   _maxDist: 1.5
   TextureWidth: 64
   TextureHeight: 64
