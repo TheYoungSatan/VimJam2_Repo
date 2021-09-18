@@ -976,6 +976,12 @@ MonoBehaviour:
   TextureHeight: 64
   PixelPlaneRenderer: {fileID: 2048365338924614268}
   PlaneBounds: {fileID: 2048365338924614270}
+  _screenImage: {fileID: 5462405924350144087}
+  _light0: {fileID: 1698032110298221550, guid: fd2d19b1760678e4781649d99adc26f7, type: 3}
+  _light1: {fileID: 7414617417635098975, guid: fd2d19b1760678e4781649d99adc26f7, type: 3}
+  _light2: {fileID: -1251853539048661547, guid: fd2d19b1760678e4781649d99adc26f7,
+    type: 3}
+  _light3: {fileID: 4843144387376999109, guid: fd2d19b1760678e4781649d99adc26f7, type: 3}
 --- !u!120 &6319587837736694322
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ TagManager:
   - Unlock
   - StuckMirror
   - MovingBlock
+  - StartBox
+  - EndBox
   layers:
   - Default
   - TransparentFX

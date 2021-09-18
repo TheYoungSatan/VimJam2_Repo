@@ -41,6 +41,8 @@ namespace MiniGame
         [SerializeField]
         private Image _screenImage;
         [SerializeField]
+        private Sprite _light0;
+        [SerializeField]
         private Sprite _light1;
         [SerializeField]
         private Sprite _light2;
@@ -143,11 +145,23 @@ namespace MiniGame
             _texture.Apply();
         }
 
+        private void SwapSprites()
+        {
+            var currentAmpDifference = 0.8f - _amplitudeModvalue;
+            var currentWaveDifference = 2.5f - _waveLengthModvalue;
+            var avgDifference = (currentAmpDifference + currentWaveDifference) / 2.1f;
+
+            if (avgDifference <= 2.1f && avgDifference > 1.575f) _screenImage.sprite = _light0;
+            else if (avgDifference <= 1.575f && avgDifference > 1.05f) _screenImage.sprite = _light1;
+            else if (avgDifference <= 1.05f && avgDifference > 0.525f) _screenImage.sprite = _light2;
+            else if (avgDifference <= 0.525f && avgDifference >= 0f) _screenImage.sprite = _light3;
+        }
+
         public void IncreaseAmplitude()
         {
             _amplitudeModvalue += 0.1f;
 
-            _screenImage.sprite = _light1;
+            SwapSprites();
             
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
@@ -155,44 +169,26 @@ namespace MiniGame
         public void DecreaseAmplitude()
         {
             _amplitudeModvalue -= 0.1f;
+
+            SwapSprites();
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void IncreaseWaveLength()
         {
             _waveLengthModvalue += 0.1f;
+
+            SwapSprites();
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
 
         public void DecreaseWaveLength()
         {
             _waveLengthModvalue -= 0.1f;
+
+            SwapSprites();
             //AudioHub.PlaySound(AudioHub.SineWaveChange);
         }
-
-        void DrawSineWave(Vector3 startPoint, float amplitude, float wavelength)
-        {
-            float x = 0f;
-            float y;
-            float k = 2 * Mathf.PI / wavelength;
-            for (int i = 0; i < 140; i++)
-            {
-                x += i * 0.001f;
-                y = amplitude * Mathf.Sin(k * x);
-
-                var worldPos = new Vector3(x, y, 0) + startPoint;
-
-                var widthPlane = PlaneBounds.bounds.size.x;
-                var heightPlane = PlaneBounds.bounds.size.y;
-
-                var xCoord = (((widthPlane / 2) + worldPos.x) / widthPlane) * TextureHeight;
-                var yCoord = (((heightPlane / 2) - worldPos.y) / heightPlane) * TextureWidth;
-
-                _texture.SetPixel((int)yCoord, (int)xCoord, Color.red);
-                _texture.Apply();
-            }
-        }
-
 
         public override void CheckInput()
         {

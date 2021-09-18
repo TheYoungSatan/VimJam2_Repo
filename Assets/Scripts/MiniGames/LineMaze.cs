@@ -61,7 +61,6 @@ namespace MiniGame
         private float _stepValue = 0.1f;
         [SerializeField, Range(0.05f, 0.2f)]
         private float _lineThickness = 0.1f;
-        [SerializeField, Range(0.02f, 0.2f)]
         private float _lineSpeed;
 
         [Header("Other Settings")]
@@ -89,11 +88,9 @@ namespace MiniGame
 
         public override void RunGame() 
         {
-            if (Difficulty == MinigameHub.Difficulty.Easy) _lineSpeed = 0.75f;
-            else if (Difficulty == MinigameHub.Difficulty.Medium) _lineSpeed = 1f;
-            else if (Difficulty == MinigameHub.Difficulty.Hard) _lineSpeed = 1.5f;
-
-            _startPoint.position = Camera.main.ScreenToWorldPoint(_startPoint.position);
+            if (Difficulty == MinigameHub.Difficulty.Easy) _lineSpeed = 0.15f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _lineSpeed = 0.1f;
+            else if (Difficulty == MinigameHub.Difficulty.Hard) _lineSpeed = 0.05f;
 
             _playerInput = FindObjectOfType<PlayerInput>();
 

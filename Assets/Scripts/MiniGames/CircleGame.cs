@@ -24,12 +24,12 @@ namespace MiniGame
         private Color[] _fillPixels;
         public MeshCollider PlaneBounds;
 
-        private float _timer;
+        private bool _canStart;
 
         public override void RunGame()
         {
-            if (Difficulty == MinigameHub.Difficulty.Easy) _maxDist = 3f;
-            else if (Difficulty == MinigameHub.Difficulty.Medium) _maxDist = 2f;
+            if (Difficulty == MinigameHub.Difficulty.Easy) _maxDist = 2f;
+            else if (Difficulty == MinigameHub.Difficulty.Medium) _maxDist = 1.75f;
             else if (Difficulty == MinigameHub.Difficulty.Hard) _maxDist = 1.5f;
 
             _circles = FindObjectsOfType<CircleCollider2D>();
@@ -43,33 +43,55 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
-            _timer += Time.deltaTime;
             //gets the mousepos in a Vector2 for the circle and a float2 for the calculations on distance
             var scaledMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
             var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
             var float2MousePos = new float2(correctMousePos.x, correctMousePos.y);
 
-            //assigns the radius of the circle to the closests distance to a circle
-            _circleRadius = ClosestDistToCircle(float2MousePos) + 0.25f;
+            RaycastHit2D hit = Physics2D.Raycast(new Vector2(correctMousePos.x, correctMousePos.y), Vector2.zero, 0);
 
-            //normalize the radius so it can be used to display the color from green to red
-            var normalizedRadius = _circleRadius / _maxDist;
+            if (!_canStart)
+            {
+                if (hit)
+                {
+                    if (hit.collider.CompareTag("StartBox"))
+                    {
+                        _canStart = true;
+                    }
+                }
+            }
+            else
+            {
+                if (hit)
+                {
+                    if (hit.collider.CompareTag("EndBox"))
+                    {
+                        Hub.OnGameSucces();
+                    }
+                }
 
-            _texture.SetPixels(_fillPixels);
-            _texture.Apply();
+                //assigns the radius of the circle to the closests distance to a circle
+                _circleRadius = ClosestDistToCircle(float2MousePos) + 0.45f;
 
-            var widthPlane = PlaneBounds.bounds.size.x;
-            var heightPlane = PlaneBounds.bounds.size.y;
+                //normalize the radius so it can be used to display the color from green to red
+                var normalizedRadius = _circleRadius / _maxDist;
 
-            var xCoord = (((widthPlane / 2) + correctMousePos.x) / widthPlane) * TextureHeight;
-            var yCoord = (((heightPlane / 2) - correctMousePos.y) / heightPlane) * TextureWidth;
+                _texture.SetPixels(_fillPixels);
+                _texture.Apply();
 
-            var pixelRadius = (TextureWidth / widthPlane) * _circleRadius;
+                var widthPlane = PlaneBounds.bounds.size.x;
+                var heightPlane = PlaneBounds.bounds.size.y;
 
-            DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
+                var xCoord = (((widthPlane / 2) + correctMousePos.x) / widthPlane) * TextureHeight;
+                var yCoord = (((heightPlane / 2) - correctMousePos.y) / heightPlane) * TextureWidth;
 
-            //if the circle is too big, its game over
-            if (_circleRadius >= _maxDist  && _timer >= 3f) Hub.OnGameOver();
+                var pixelRadius = (TextureWidth / widthPlane) * _circleRadius;
+
+                DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
+
+                //if the circle is too big, its game over
+                if (_circleRadius >= _maxDist) Hub.OnGameOver();
+            }
         }
 
         private void InitializeTexture()
