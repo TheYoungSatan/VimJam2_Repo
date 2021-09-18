@@ -175,6 +175,32 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="FinalGame" ID="{4B408B5B-5344-4D25-87D4-CA056E8FFB59}" ShortID="1071240357">
+					<ChildrenList>
+						<Event Name="Lava_Death" ID="{D2D25332-2BAA-4AF5-B25F-F8C5741BA230}">
+							<ChildrenList>
+								<Action Name="" ID="{AC8AE13A-F618-4D34-A826-53D6FA7A8482}" ShortID="1014290705">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lava_Death" ID="{FC2845AE-8507-4CA2-8D7E-A3FFD75A7043}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Jump" ID="{5B6D2ABE-4E20-4CF9-AD6A-F3673A81D454}">
+							<ChildrenList>
+								<Action Name="" ID="{D7DF1BEE-AF0F-427B-AF05-902E10DA54CF}" ShortID="227227460">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{42C5FEFB-5F88-4CB0-88D0-227C9BF641E6}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
