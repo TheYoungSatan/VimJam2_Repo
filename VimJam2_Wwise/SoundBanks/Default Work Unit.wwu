@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="SoundBank" ID="{304D933E-2EDB-4AD4-8BC7-7C0622DF1F79}">
 					<ObjectInclusionList>
+						<ObjectRef Name="PipeGame_Click" ID="{7C351493-1818-40C3-BA32-60DDA07418E3}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Door" ID="{2471C7B5-1510-40E0-AF8D-91BA7DEC618E}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LazerGame_Mirror" ID="{6B7190CE-1790-418D-8FEC-09E54E7B0BD9}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WhackAMole_BugDeath" ID="{F73458C8-47A8-41D8-BFB5-D001A26B7EAC}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>

@@ -234,27 +234,43 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2033111166" Name="PipeGame_Click" ObjectPath="\Events\Default Work Unit\MiniGames\PipeGame\PipeGame_Click" DurationType="OneShot" DurationMin="0.119753" DurationMax="0.242656">
+					<IncludedMemoryFiles>
+						<File Id="226253619" Language="SFX">
+							<ShortName>LazerGame_Mirror_2.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_2_887AC3C1.wem</Path>
+						</File>
+						<File Id="488938900" Language="SFX">
+							<ShortName>LazerGame_Mirror_3.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_3_BCE6F7AC.wem</Path>
+						</File>
+						<File Id="779025014" Language="SFX">
+							<ShortName>LazerGame_Mirror_1.wav</ShortName>
+							<Path>SFX\LazerGame_Mirror_1_95C70D43.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1305133589" Name="Player_Jump" ObjectPath="\Events\Default Work Unit\FinalGame\Player_Jump" DurationType="OneShot" DurationMin="0.082605" DurationMax="0.214306">
 					<IncludedMemoryFiles>
 						<File Id="91133514" Language="SFX">
 							<ShortName>FinalGame_Jump_5.wav</ShortName>
-							<Path>SFX\FinalGame_Jump_5_5EBA2D4E.wem</Path>
+							<Path>SFX\FinalGame_Jump_5_7A9AB122.wem</Path>
 						</File>
 						<File Id="559354627" Language="SFX">
 							<ShortName>FinalGame_Jump_3.wav</ShortName>
-							<Path>SFX\FinalGame_Jump_3_1D18B42B.wem</Path>
+							<Path>SFX\FinalGame_Jump_3_A1202B1C.wem</Path>
 						</File>
 						<File Id="854588605" Language="SFX">
 							<ShortName>FinalGame_Jump_1.wav</ShortName>
-							<Path>SFX\FinalGame_Jump_1_9E040717.wem</Path>
+							<Path>SFX\FinalGame_Jump_1_56AEC98D.wem</Path>
 						</File>
 						<File Id="867265530" Language="SFX">
 							<ShortName>FinalGame_Jump_2.wav</ShortName>
-							<Path>SFX\FinalGame_Jump_2_3AE78468.wem</Path>
+							<Path>SFX\FinalGame_Jump_2_8B496B73.wem</Path>
 						</File>
 						<File Id="1028193775" Language="SFX">
 							<ShortName>FinalGame_Jump_4.wav</ShortName>
-							<Path>SFX\FinalGame_Jump_4_BCD63E1C.wem</Path>
+							<Path>SFX\FinalGame_Jump_4_619C230B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

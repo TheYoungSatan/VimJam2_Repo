@@ -173,6 +173,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="PipeGame" ID="{5E80941A-D9D4-4050-BDB6-CDDDDB92F3C0}" ShortID="319977729">
+							<ChildrenList>
+								<Event Name="PipeGame_Click" ID="{7C351493-1818-40C3-BA32-60DDA07418E3}">
+									<ChildrenList>
+										<Action Name="" ID="{B4D8024B-2AB6-4B6D-BCB2-E025A21885C4}" ShortID="106307730">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PipeGame_Click" ID="{6654F870-20E4-4675-BB04-EBBEC3240718}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FinalGame" ID="{4B408B5B-5344-4D25-87D4-CA056E8FFB59}" ShortID="1071240357">
