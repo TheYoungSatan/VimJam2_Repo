@@ -47,3 +47,9 @@ MonoBehaviour:
   footstep: Footstep
   buttonclick: ButtonClick
   backgroundMusic: Music
+  mirrorTurn: LazerGame_Mirror
+  inputSounds: Number_Type
+  bugDeath: WhackAMole_BugDeath
+  hit: WhackAMole_Hit
+  sineWaveChange: Sine_Wave_Button_Click
+  minigameSucces: Victory

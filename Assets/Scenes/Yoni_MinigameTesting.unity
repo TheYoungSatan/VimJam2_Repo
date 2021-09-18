@@ -363,7 +363,11 @@ MonoBehaviour:
     - {fileID: 6422956187262860365, guid: ebdcbe5ff8d3cf84b94831252bcc0c91, type: 3}
   _currentGameChunck: 0
   _testmode: 1
+<<<<<<< refs/remotes/origin/main
   _currentMiniGame: {fileID: 7367757098291703351, guid: af89f021a544e284287794b48a75fc43,
+=======
+  _currentMiniGame: {fileID: 8740153193562817639, guid: 0dfc288481f6cf24ea0c9434bd040132,
+>>>>>>> Changeable tilemap based on succession
     type: 3}
   _returnScene: BureauScene
   _screenSelectPanel: {fileID: 0}
