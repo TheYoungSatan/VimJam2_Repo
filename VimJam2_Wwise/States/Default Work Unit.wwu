@@ -8,6 +8,7 @@
 						<State Name="None" ID="{E4F11521-7357-4FCA-A4E3-B48A52979042}"/>
 						<State Name="LivingRoom" ID="{AB9889A3-96EB-4C14-A3D7-905A5E529330}"/>
 						<State Name="Store" ID="{38B139D1-D3A9-4429-8869-049B347403E4}"/>
+						<State Name="MiniGame" ID="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

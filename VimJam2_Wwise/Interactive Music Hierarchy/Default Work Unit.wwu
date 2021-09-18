@@ -773,6 +773,238 @@
 								</MusicPlaylistContainer>
 							</ChildrenList>
 						</Folder>
+						<MusicPlaylistContainer Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" ShortID="45104385">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="MiniGame_Music_1" ID="{B043548A-D52D-4A07-AD3F-6886421EAC81}" ShortID="27637184">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="52955.6663436204"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MiniGame_Music_1" ID="{A6A92955-F684-4110-BA04-6F843C760583}" ShortID="179465780">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MiniGame_Music_1" ID="{356A35F4-2E67-47D0-91C1-5F999438CFCB}">
+													<Language>SFX</Language>
+													<AudioFile>MiniGame_Music_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="477187883"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{EF6AEAC4-3C7C-48C7-804D-EF8F91D6E285}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{15CC118C-CEE7-481C-AD64-1E66EA77F23D}">
+													<ClipList>
+														<MusicClip Name="MiniGame_Music_1" ID="{CAB5524F-F3FA-4EEE-99A3-3BC2E68A46B1}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="9030.53223748308"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="13669.2806764442"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="13.4918485158951"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="108.894022523482"/>
+																<Property Name="PlayAt" Type="Real64" Value="-9030.53223748308"/>
+															</PropertyList>
+															<AudioSourceRef Name="MiniGame_Music_1" ID="{356A35F4-2E67-47D0-91C1-5F999438CFCB}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{1B28E2B0-8823-4937-93A5-8EE0D1F214B5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>9.03053</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>13.66928</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{8D172763-8994-4250-B14C-BDC28055FA23}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>9.03053</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>13.66928</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{5898BEFB-F539-46ED-AA2C-4D1F2F17D49C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>9.03053</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>13.66928</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+														<MusicClip Name="MiniGame_Music_1" ID="{12E82DF6-2CE0-4D4A-A47B-4167FB0E872B}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="4530.21559428752"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9046.50515971457"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="94.0863483295342"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="55.9044063221736"/>
+																<Property Name="PlayAt" Type="Real64" Value="-47.110960868411"/>
+															</PropertyList>
+															<AudioSourceRef Name="MiniGame_Music_1" ID="{356A35F4-2E67-47D0-91C1-5F999438CFCB}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{49C3F75A-0551-4D17-99EB-4031FC709987}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>4.53022</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.04651</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{8D752FAB-A6FF-4D7A-BF33-F0C2EDF6DBE7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>4.53022</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.04651</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{693FC42B-8A87-4A8C-BF7F-99CB15E91D44}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>4.53022</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.04651</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{104C3C01-DCF3-4F09-9385-7DC2E6371A0B}"/>
+										<MusicCue Name="Exit Cue" ID="{7D28C5C1-0463-48FF-9C3C-484D880AF2F4}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8995.18239887518"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{BE5708CA-C2FF-4AAD-852A-E3E5EC47B72B}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{3BA27959-1306-4E4F-82D7-AC0ED90C4228}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{39728B09-244C-4D85-9356-C64D1EF03FBF}" ShortID="664408605">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{DBB2ED5D-39DD-44F5-8C7F-BEA436929AA8}" ShortID="366066704">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MiniGame_Music_1" ID="{B043548A-D52D-4A07-AD3F-6886421EAC81}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -781,6 +1013,10 @@
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="MiniGame" ID="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}"/>
+								<CustomState Name="" ID="{1FBD868F-59B6-4B1C-A150-E4F54D595C68}" ShortID="245408746"/>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Store" ID="{38B139D1-D3A9-4429-8869-049B347403E4}"/>
 								<CustomState Name="" ID="{7FEA7EDC-10AD-44A1-982A-C696F14EA765}" ShortID="815848355"/>
@@ -850,7 +1086,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="LivingRoom" ID="{559D7D35-2219-437C-B0C3-A57C3F5B75AF}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
@@ -868,6 +1104,82 @@
 										</SourceFadeOut>
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{72E04643-2E47-477F-B684-0AB4C11B7517}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-0.3"/>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{6A3278D1-9935-49B6-850B-E05DD9ECB9B3}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{5D528D29-5403-44A0-99A5-4A47C0296312}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{AF13D045-4497-410D-9806-B8B1B77BD4DA}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-0.3"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{B68A9223-4237-42A5-A8E4-A090D8772745}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{6FCA2B2B-038F-4422-A072-1D628B9F43DE}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.3"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{B7D9742E-9656-4251-B08B-37DDF9D0A670}">
 												<PropertyList>
 													<Property Name="FadeOffset" Type="Real64" Value="-0.3"/>
 													<Property Name="FadeTime" Type="Real64" Value="1"/>
@@ -906,6 +1218,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="MiniGame" ID="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

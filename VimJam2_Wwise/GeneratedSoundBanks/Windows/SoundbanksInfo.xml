@@ -179,6 +179,10 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="477187883" Language="SFX">
+							<ShortName>MiniGame_Music_1.wav</ShortName>
+							<Path>SFX\MiniGame_Music_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="905931715" Language="SFX">
 							<ShortName>Store_Music.wav</ShortName>
 							<Path>SFX\Store_Music_D79FB2B7.wem</Path>
@@ -197,6 +201,11 @@
 						<SwitchContainer SwitchValue="{38B139D1-D3A9-4429-8869-049B347403E4}">
 							<Media>
 								<File Id="905931715"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}">
+							<Media>
+								<File Id="477187883"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -233,7 +242,7 @@
 					<IncludedMemoryFiles>
 						<File Id="113311989" Language="SFX">
 							<ShortName>Victory_FanFare.wav</ShortName>
-							<Path>SFX\Victory_FanFare_FE0183EA.wem</Path>
+							<Path>SFX\Victory_FanFare_4C8D9A09.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -276,6 +285,7 @@
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\None"/>
 						<State Id="28587383" Name="LivingRoom" ObjectPath="\States\Default Work Unit\Music\LivingRoom"/>
 						<State Id="1686739432" Name="Store" ObjectPath="\States\Default Work Unit\Music\Store"/>
+						<State Id="3310578182" Name="MiniGame" ObjectPath="\States\Default Work Unit\Music\MiniGame"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
