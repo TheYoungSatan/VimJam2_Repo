@@ -74,10 +74,10 @@ namespace MiniGame
             else if (Difficulty == MinigameHub.Difficulty.Hard) _targetSize /= 4;
 
             var pos = Camera.main.ScreenToWorldPoint(Centre.position);
-            var offset = new Vector2(4.3f - _targetSize, 2.25f - _targetSize);
+            var offset = new Vector2(4.3f - _targetSize, 1.4f - _targetSize);   
 
             _screenEdgesX = new Vector2(pos.x - offset.x, pos.x + offset.x);
-            _screenEdgesY = new Vector2(pos.y + offset.y, pos.y - offset.y);
+            _screenEdgesY = new Vector2(pos.y + offset.y, pos.y - offset.y - 0.5f);
 
             _currentCount = 0;
             _timer = 0;
