@@ -82,6 +82,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Interact_PickupFood" ID="{68A9A623-BC1A-47C1-9331-22234ABE64F2}">
+							<ChildrenList>
+								<Action Name="" ID="{B9E0EBFE-5066-43A0-9309-18D84858A8B3}" ShortID="630108287">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_PickupFood" ID="{6DC96041-AD77-4F1B-A6D5-C77AABE88851}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">

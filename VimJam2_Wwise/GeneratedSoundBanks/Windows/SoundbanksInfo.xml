@@ -173,6 +173,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2566531806" Name="Interact_PickupFood" ObjectPath="\Events\Default Work Unit\Interact\Interact_PickupFood" DurationType="OneShot" DurationMin="0.176976" DurationMax="0.198649">
+					<IncludedMemoryFiles>
+						<File Id="236883325" Language="SFX">
+							<ShortName>Grab_Food_3.wav</ShortName>
+							<Path>SFX\Grab_Food_3_10C4C929.wem</Path>
+						</File>
+						<File Id="609878804" Language="SFX">
+							<ShortName>Grab_Food_2.wav</ShortName>
+							<Path>SFX\Grab_Food_2_10C4C929.wem</Path>
+						</File>
+						<File Id="879240265" Language="SFX">
+							<ShortName>Grab_Food_1.wav</ShortName>
+							<Path>SFX\Grab_Food_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3789687639" Name="Interact_Sink" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sink" DurationType="OneShot" DurationMin="1.672968" DurationMax="1.783654">
 					<IncludedMemoryFiles>
 						<File Id="705320496" Language="SFX">
@@ -219,13 +235,25 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="477187883" Language="SFX">
-							<ShortName>MiniGame_Music_1.wav</ShortName>
-							<Path>SFX\MiniGame_Music_1_D79FB2B7.wem</Path>
+						<File Id="75059573" Language="SFX">
+							<ShortName>mountain-trials.wav</ShortName>
+							<Path>SFX\mountain-trials_D79FB2B7.wem</Path>
 						</File>
-						<File Id="905931715" Language="SFX">
-							<ShortName>Store_Music.wav</ShortName>
-							<Path>SFX\Store_Music_D79FB2B7.wem</Path>
+						<File Id="381685439" Language="SFX">
+							<ShortName>running.wav</ShortName>
+							<Path>SFX\running_D79FB2B7.wem</Path>
+						</File>
+						<File Id="442387256" Language="SFX">
+							<ShortName>joshua-mclean_celebrate.wav</ShortName>
+							<Path>SFX\joshua-mclean_celebrate_D79FB2B7.wem</Path>
+						</File>
+						<File Id="660108573" Language="SFX">
+							<ShortName>melody-meadow_2.wav</ShortName>
+							<Path>SFX\melody-meadow_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="735444103" Language="SFX">
+							<ShortName>so-long-syndrome.wav</ShortName>
+							<Path>SFX\so-long-syndrome_D79FB2B7.wem</Path>
 						</File>
 						<File Id="908482993" Language="SFX">
 							<ShortName>Living_Room.wav</ShortName>
@@ -240,12 +268,19 @@
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{38B139D1-D3A9-4429-8869-049B347403E4}">
 							<Media>
-								<File Id="905931715"/>
+								<File Id="442387256"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}">
 							<Media>
-								<File Id="477187883"/>
+								<File Id="381685439"/>
+								<File Id="660108573"/>
+								<File Id="75059573"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}">
+							<Media>
+								<File Id="735444103"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -366,6 +401,7 @@
 						<State Id="28587383" Name="LivingRoom" ObjectPath="\States\Default Work Unit\Music\LivingRoom"/>
 						<State Id="1686739432" Name="Store" ObjectPath="\States\Default Work Unit\Music\Store"/>
 						<State Id="3310578182" Name="MiniGame" ObjectPath="\States\Default Work Unit\Music\MiniGame"/>
+						<State Id="1087642749" Name="FinalGame" ObjectPath="\States\Default Work Unit\Music\FinalGame"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

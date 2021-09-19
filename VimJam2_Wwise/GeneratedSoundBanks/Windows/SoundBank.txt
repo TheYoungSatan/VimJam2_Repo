@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1931805945	Interact_Fridge			\Default Work Unit\Interact\Interact_Fridge	
 	2033111166	PipeGame_Click			\Default Work Unit\MiniGames\PipeGame\PipeGame_Click	
 	2464383636	Sine_Wave_Button_Click			\Default Work Unit\MiniGames\SineWaveGame\Sine_Wave_Button_Click	
+	2566531806	Interact_PickupFood			\Default Work Unit\Interact\Interact_PickupFood	
 	2716678721	Victory			\Default Work Unit\MiniGames\Victory	
 	3468829444	Interact_SlidingDoor			\Default Work Unit\Interact\Interact_SlidingDoor	
 	3481096201	Number_Type			\Default Work Unit\MiniGames\NumberMemoryGame\Number_Type	
@@ -33,6 +34,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	28587383	LivingRoom	Music			
 	748895195	None	Music			
+	1087642749	FinalGame	Music			
 	1686739432	Store	Music			
 	3310578182	MiniGame	Music			
 
@@ -40,6 +42,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32611736	Footsteps_Tile_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_1_E8099886.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_1		24660
 	49479373	Interact_Bed_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Bed_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Bed\Interact_Bed_1		240064
 	71212125	Footsteps_Tile_5	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_5_C51BD02C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_5		24660
+	75059573	mountain-trials	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\mountain-trials_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\MiniGame_Music\mountain-trials\mountain-trials		7408864
 	91133514	FinalGame_Jump_5	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\FinalGame_Jump_5_7A9AB122.wem		\Actor-Mixer Hierarchy\Default Work Unit\Final Game\Jump\FinalGame_Jump_5		20568
 	107999699	Memory_Type_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Memory_Type_1_A59DC10B.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\NumberMemory\Number_Type\Memory_Type_1		32860
 	113311989	Victory_FanFare	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Victory_FanFare_4C8D9A09.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\Victory\Victory_FanFare		297836
@@ -48,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	163129119	WhackAMole_Bug_Death_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\WhackAMole_Bug_Death_3_E2C4F217.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\WhackAMole\WhackAMole_BugDeath\WhackAMole_Bug_Death_3		86180
 	171871245	Connect_The_Dots_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Connect_The_Dots_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\ConnectTheDots\ConnectTheDots\Connect_The_Dots_3		24064
 	226253619	PipeGame_Click_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\LazerGame_Mirror_2_41C0FB16.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\PipeGame\PipeGame_Click\PipeGame_Click_2		25872
+	236883325	Grab_Food_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Grab_Food_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_PickupFood\Grab_Food_3		36064
 	249965108	Fridge_Open_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_2		228064
 	261048632	Fridge_Open_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_3		192064
 	271686455	Sliding_Door_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Sliding_Door_3_A0320685.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sliding_Door\Sliding_Door_3		303272
@@ -60,10 +64,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	313541418	SineWave_ButtonClick_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\SineWave_ButtonClick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\SineWaveGame\SineWaveButtonClick\SineWave_ButtonClick_2		36064
 	335526798	LazerGame_Mirror_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\LazerGame_Mirror_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror\LazerGame_Mirror_4		48064
 	355135522	Connect_The_Dots_5	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Connect_The_Dots_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\ConnectTheDots\ConnectTheDots\Connect_The_Dots_5		24064
+	381685439	running	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\running_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\MiniGame_Music\running\running		8467344
 	390240556	Footsteps_Tile_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_3_D9F91775.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_3		24784
 	405000881	Footsteps_Tile_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_4_234A17D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_4		20980
 	434923010	Footsteps_Tile_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_2_19D6D22A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_2		24352
-	477187883	MiniGame_Music_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\MiniGame_Music_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\MiniGame_Music\MiniGame_Music_1\MiniGame_Music_1		7812064
+	442387256	joshua-mclean_celebrate	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\joshua-mclean_celebrate_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\Store_Container\joshua-mclean_celebrate\joshua-mclean_celebrate		18816128
 	481425321	Fridge_Open_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Fridge_Open_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Fridge\Fridge_Open_1		204064
 	488938900	PipeGame_Click_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\LazerGame_Mirror_3_623E1DAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\PipeGame\PipeGame_Click\PipeGame_Click_3		36804
 	498871758	Interact_Computer_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Computer_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Computer\Interact_Computer_2		84064
@@ -71,11 +76,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	543386112	WhackAMole_Hit_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\WhackAMole_Hit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit\WhackAMole_Hit_2		84064
 	559354627	FinalGame_Jump_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\FinalGame_Jump_3_A1202B1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Final Game\Jump\FinalGame_Jump_3		24476
 	574718469	WhackAMole_Hit_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\WhackAMole_Hit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit\WhackAMole_Hit_3		72064
+	609878804	Grab_Food_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Grab_Food_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_PickupFood\Grab_Food_2		36064
 	655711591	WhackAMole_Hit_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\WhackAMole_Hit_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit\WhackAMole_Hit_1		72064
+	660108573	melody-meadow_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\melody-meadow_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\MiniGame_Music\MelodyMedow_2\melody-meadow_2		10584064
 	697221225	Memory_Type_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Memory_Type_3_F1557754.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\NumberMemory\Number_Type\Memory_Type_3		33352
 	699951758	Memory_Type_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Memory_Type_2_6B37E86E.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\NumberMemory\Number_Type\Memory_Type_2		42084
 	705320496	Sink_On_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Sink_On_1_21137E4E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Sink_On_1		330688
 	713318652	Lava_Death	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Lava_Death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Final Game\Lava_Death		1308064
+	735444103	so-long-syndrome	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\so-long-syndrome_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\FinalGame\So Long Syndrome\so-long-syndrome		10667484
 	742497892	WhackAMole_Bug_Death_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\WhackAMole_Bug_Death_2_BB1AD8D8.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\WhackAMole\WhackAMole_BugDeath\WhackAMole_Bug_Death_2		85336
 	751632361	Buy_Food	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Buy_Food_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Buy_Food		48928
 	756041237	Connect_The_Dots_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Connect_The_Dots_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\ConnectTheDots\ConnectTheDots\Connect_The_Dots_4		24064
@@ -86,7 +94,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	843802253	Door_Open_House_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Door_Open_House_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Door\Door_Open_House_2		156064
 	854588605	FinalGame_Jump_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\FinalGame_Jump_1_56AEC98D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Final Game\Jump\FinalGame_Jump_1		36720
 	867265530	FinalGame_Jump_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\FinalGame_Jump_2_8B496B73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Final Game\Jump\FinalGame_Jump_2		25232
-	905931715	Store_Music	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Store_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\Store_Container\Store_Music\Store_Music		27039808
+	879240265	Grab_Food_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Grab_Food_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_PickupFood\Grab_Food_1		36064
 	908482993	Living_Room	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Living_Room_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_Container\LivingRoom_Container\LivingRoom\Living_Room		28615744
 	940383650	Sink_On_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Sink_On_2_C1BA0EE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sink\Sink_On_2		332776
 	961390975	Footsteps_3	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_3_F45D0578.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_3		73276
