@@ -93,6 +93,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="MainMenu_ButtonClick" ID="{5515A4B8-3868-4644-92F4-7A1576155A39}">
+							<ChildrenList>
+								<Action Name="" ID="{874612A7-DA00-4EFB-BFD4-D6DA5A1590E5}" ShortID="684870026">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ConnectTheDots" ID="{77D85881-DDEA-4CAC-9F61-4E74DE66C3E2}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">

@@ -26,7 +26,7 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4242192524" Name="Connect_The_Dots" ObjectPath="\Events\Default Work Unit\MiniGames\ConnectTheDots\Connect_The_Dots" DurationType="OneShot" DurationMin="0.117984" DurationMax="0.132433">
+				<Event Id="4242192524" Name="Connect_The_Dots" ObjectPath="\Events\Default Work Unit\MiniGames\ConnectTheDots\Connect_The_Dots" DurationType="OneShot" DurationMin="0.111362" DurationMax="0.140308">
 					<IncludedMemoryFiles>
 						<File Id="135011751" Language="SFX">
 							<ShortName>Connect_The_Dots_2.wav</ShortName>
@@ -227,6 +227,30 @@
 						<File Id="834304416" Language="SFX">
 							<ShortName>LazerGame_Mirror_6.wav</ShortName>
 							<Path>SFX\LazerGame_Mirror_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2978301462" Name="MainMenu_ButtonClick" ObjectPath="\Events\Default Work Unit\Interact\MainMenu_ButtonClick" DurationType="OneShot" DurationMin="0.111362" DurationMax="0.140308">
+					<IncludedMemoryFiles>
+						<File Id="135011751" Language="SFX">
+							<ShortName>Connect_The_Dots_2.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_2_10C4C929.wem</Path>
+						</File>
+						<File Id="171871245" Language="SFX">
+							<ShortName>Connect_The_Dots_3.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_3_10C4C929.wem</Path>
+						</File>
+						<File Id="355135522" Language="SFX">
+							<ShortName>Connect_The_Dots_5.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_5_10C4C929.wem</Path>
+						</File>
+						<File Id="756041237" Language="SFX">
+							<ShortName>Connect_The_Dots_4.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1019118819" Language="SFX">
+							<ShortName>Connect_The_Dots_1.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

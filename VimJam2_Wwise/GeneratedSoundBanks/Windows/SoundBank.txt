@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2464383636	Sine_Wave_Button_Click			\Default Work Unit\MiniGames\SineWaveGame\Sine_Wave_Button_Click	
 	2566531806	Interact_PickupFood			\Default Work Unit\Interact\Interact_PickupFood	
 	2716678721	Victory			\Default Work Unit\MiniGames\Victory	
+	2978301462	MainMenu_ButtonClick			\Default Work Unit\Interact\MainMenu_ButtonClick	
 	3468829444	Interact_SlidingDoor			\Default Work Unit\Interact\Interact_SlidingDoor	
 	3481096201	Number_Type			\Default Work Unit\MiniGames\NumberMemoryGame\Number_Type	
 	3657908075	WhackAMole_Hit			\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit	
