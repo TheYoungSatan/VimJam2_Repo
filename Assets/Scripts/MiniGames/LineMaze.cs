@@ -18,7 +18,7 @@ namespace MiniGame
         #region Input
         public void UpInput(InputAction.CallbackContext context)
         {
-            if (context.performed && !_inputDir.Equals(Directions.Down)) //this is so you dont go the opposite direction of what you were going towards
+            if (context.performed && !_inputDir.Equals(Directions.Down) && _line != null) //this is so you dont go the opposite direction of what you were going towards
             {
                 _line.positionCount += 1;
                 _line.SetPosition(_line.positionCount - 1, _line.GetPosition(_line.positionCount - 2));
@@ -27,7 +27,7 @@ namespace MiniGame
         }
         public void DownInput(InputAction.CallbackContext context)
         {
-            if (context.performed && !_inputDir.Equals(Directions.Up))
+            if (context.performed && !_inputDir.Equals(Directions.Up) && _line != null)
             {
                 _line.positionCount += 1;
                 _line.SetPosition(_line.positionCount - 1, _line.GetPosition(_line.positionCount - 2));
@@ -36,7 +36,7 @@ namespace MiniGame
         }
         public void LeftInput(InputAction.CallbackContext context)
         {
-            if (context.performed && !_inputDir.Equals(Directions.Right))
+            if (context.performed && !_inputDir.Equals(Directions.Right) && _line != null)
             {
                 _line.positionCount += 1;
                 _line.SetPosition(_line.positionCount - 1, _line.GetPosition(_line.positionCount - 2));
@@ -45,7 +45,7 @@ namespace MiniGame
         }
         public void RightInput(InputAction.CallbackContext context)
         {
-            if (context.performed && !_inputDir.Equals(Directions.Left))
+            if (context.performed && !_inputDir.Equals(Directions.Left) && _line != null)
             {
                 _line.positionCount += 1;
                 _line.SetPosition(_line.positionCount - 1, _line.GetPosition(_line.positionCount - 2));

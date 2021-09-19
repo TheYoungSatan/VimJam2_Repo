@@ -19,7 +19,7 @@ namespace MiniGame
                 var correctMousePos = new Vector3(scaledMousePos.x, scaledMousePos.y, 0);
 
                 RaycastHit2D hit = Physics2D.Raycast(new Vector2(correctMousePos.x, correctMousePos.y), Vector2.zero, 0);
-                if (hit)
+                if (hit && _targetsLeft != null)
                 {
                     if (hit.collider.CompareTag("Target"))
                     {
