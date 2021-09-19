@@ -1057,6 +1057,28 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Buy_Food" ID="{3D663331-5AFE-45FA-B28B-BD943705087B}" ShortID="758963924">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Buy_Food" ID="{57A673E7-A592-46DC-BF5C-73C875903C48}">
+									<Language>SFX</Language>
+									<AudioFile>Buy_Food.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="751632361"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Buy_Food" ID="{57A673E7-A592-46DC-BF5C-73C875903C48}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MiniGames" ID="{B011F6E6-2721-4305-B391-BC67CA334F97}" ShortID="1042574510">
@@ -1861,6 +1883,157 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="LazerGame_Mirror_1" ID="{DFD5F648-E4FE-45CA-B40E-6D489FDD4140}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ConnectTheDots" ID="{66306632-BA4D-40A6-8C34-49CD7CAE059E}" ShortID="768961612">
+							<ChildrenList>
+								<RandomSequenceContainer Name="ConnectTheDots" ID="{77D85881-DDEA-4CAC-9F61-4E74DE66C3E2}" ShortID="523554899">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F9959FB7-FE28-4239-A229-FC031FD0B22C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Connect_The_Dots_1" ID="{5DD20A2F-F278-4039-A1AE-C39100AA4F2F}" ShortID="253840674">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Connect_The_Dots_1" ID="{1629721D-371A-4C3B-9DEF-CCD319D61CA6}">
+													<Language>SFX</Language>
+													<AudioFile>Connect_The_Dots_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019118819"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Connect_The_Dots_1" ID="{1629721D-371A-4C3B-9DEF-CCD319D61CA6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Connect_The_Dots_2" ID="{5E5DD1DB-384C-4C45-9D0F-2E77F554DE8E}" ShortID="826990803">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Connect_The_Dots_2" ID="{7F7D1998-AD85-4928-B621-F560D4495855}">
+													<Language>SFX</Language>
+													<AudioFile>Connect_The_Dots_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="135011751"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Connect_The_Dots_2" ID="{7F7D1998-AD85-4928-B621-F560D4495855}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Connect_The_Dots_3" ID="{500A7DDC-E53D-45DB-8B83-787CDD3E7591}" ShortID="278033525">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Connect_The_Dots_3" ID="{65BB6BEF-6853-4AC5-9811-616D6648699D}">
+													<Language>SFX</Language>
+													<AudioFile>Connect_The_Dots_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="171871245"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Connect_The_Dots_3" ID="{65BB6BEF-6853-4AC5-9811-616D6648699D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Connect_The_Dots_4" ID="{121649E3-1C3E-4B2C-B6A3-BD67440C4101}" ShortID="115873357">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Connect_The_Dots_4" ID="{956037D5-D736-48E5-9CA6-9D4CD59E9498}">
+													<Language>SFX</Language>
+													<AudioFile>Connect_The_Dots_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="756041237"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Connect_The_Dots_4" ID="{956037D5-D736-48E5-9CA6-9D4CD59E9498}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Connect_The_Dots_5" ID="{F0F70CE1-E6D5-4F18-BA86-2323903720BF}" ShortID="449623909">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Connect_The_Dots_5" ID="{5C54F511-95E4-4473-BE0D-C04F3CBE4871}">
+													<Language>SFX</Language>
+													<AudioFile>Connect_The_Dots_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="355135522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Connect_The_Dots_5" ID="{5C54F511-95E4-4473-BE0D-C04F3CBE4871}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

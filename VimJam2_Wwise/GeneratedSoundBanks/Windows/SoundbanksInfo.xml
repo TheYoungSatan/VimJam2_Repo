@@ -21,6 +21,30 @@
 			<ShortName>SoundBank</ShortName>
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4242192524" Name="Connect_The_Dots" ObjectPath="\Events\Default Work Unit\MiniGames\ConnectTheDots\Connect_The_Dots" DurationType="OneShot" DurationMin="0.117984" DurationMax="0.132433">
+					<IncludedMemoryFiles>
+						<File Id="135011751" Language="SFX">
+							<ShortName>Connect_The_Dots_2.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_2_10C4C929.wem</Path>
+						</File>
+						<File Id="171871245" Language="SFX">
+							<ShortName>Connect_The_Dots_3.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_3_10C4C929.wem</Path>
+						</File>
+						<File Id="355135522" Language="SFX">
+							<ShortName>Connect_The_Dots_5.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_5_10C4C929.wem</Path>
+						</File>
+						<File Id="756041237" Language="SFX">
+							<ShortName>Connect_The_Dots_4.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1019118819" Language="SFX">
+							<ShortName>Connect_The_Dots_1.wav</ShortName>
+							<Path>SFX\Connect_The_Dots_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footsteps\Footstep" DurationType="OneShot" DurationMin="0.105841" DurationMax="0.469928">
 					<IncludedMemoryFiles>
 						<File Id="32611736" Language="SFX">
@@ -94,6 +118,14 @@
 						<File Id="760634124" Language="SFX">
 							<ShortName>Interact_Bed_2.wav</ShortName>
 							<Path>SFX\Interact_Bed_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="851167962" Name="Interact_BuyFood" ObjectPath="\Events\Default Work Unit\Interact\Interact_BuyFood" DurationType="OneShot" DurationMin="0.254500" DurationMax="0.254500">
+					<IncludedMemoryFiles>
+						<File Id="751632361" Language="SFX">
+							<ShortName>Buy_Food.wav</ShortName>
+							<Path>SFX\Buy_Food_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -238,15 +270,15 @@
 					<IncludedMemoryFiles>
 						<File Id="226253619" Language="SFX">
 							<ShortName>LazerGame_Mirror_2.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_2_887AC3C1.wem</Path>
+							<Path>SFX\LazerGame_Mirror_2_41C0FB16.wem</Path>
 						</File>
 						<File Id="488938900" Language="SFX">
 							<ShortName>LazerGame_Mirror_3.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_3_BCE6F7AC.wem</Path>
+							<Path>SFX\LazerGame_Mirror_3_623E1DAF.wem</Path>
 						</File>
 						<File Id="779025014" Language="SFX">
 							<ShortName>LazerGame_Mirror_1.wav</ShortName>
-							<Path>SFX\LazerGame_Mirror_1_95C70D43.wem</Path>
+							<Path>SFX\LazerGame_Mirror_1_C63C219A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

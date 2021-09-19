@@ -71,6 +71,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Interact_BuyFood" ID="{B08BC336-EE38-47CB-91BD-C6124B5A5192}">
+							<ChildrenList>
+								<Action Name="" ID="{BEAA0153-B303-4420-8219-32A3D71AB9A6}" ShortID="521185421">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Buy_Food" ID="{3D663331-5AFE-45FA-B28B-BD943705087B}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">
@@ -181,6 +192,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="PipeGame_Click" ID="{6654F870-20E4-4675-BB04-EBBEC3240718}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ConnectTheDots" ID="{4181710A-A301-4998-9B07-F5AFE181CD99}" ShortID="181321382">
+							<ChildrenList>
+								<Event Name="Connect_The_Dots" ID="{E8E44B5C-DBDB-43FC-9DAD-CF5E1843F072}">
+									<ChildrenList>
+										<Action Name="" ID="{8FBF5A40-FEDC-4FEA-A1B7-A6CDB5091477}" ShortID="1034227827">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ConnectTheDots" ID="{77D85881-DDEA-4CAC-9F61-4E74DE66C3E2}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
