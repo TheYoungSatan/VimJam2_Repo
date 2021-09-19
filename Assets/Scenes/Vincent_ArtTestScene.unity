@@ -2146,7 +2146,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Volume
+  m_Text: 'No options at this moment,
+
+    please contact the manager.'
 --- !u!222 &631226930
 CanvasRenderer:
   m_ObjectHideFlags: 0
