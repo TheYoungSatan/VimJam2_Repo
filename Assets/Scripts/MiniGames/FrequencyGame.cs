@@ -48,6 +48,8 @@ namespace MiniGame
         private Sprite _light2;
         [SerializeField]
         private Sprite _light3;
+        [SerializeField]
+        private Text _timeLeft;
 
         public override void RunGame()
         {
@@ -67,6 +69,9 @@ namespace MiniGame
         public override void UpdateGame()
         {
             _timer += Time.deltaTime;
+
+            _timeLeft.text = "00:" + Mathf.Round(_maxTime - _timer).ToString();
+
             DrawTravellingSineWave(_startPosReference.position, _startPosModifyable.position, _amplitude, _waveLength, 2, Color.green, Color.red);
 
             if ((float)System.Math.Round(_amplitudeModvalue,1) == _amplitude && (float)System.Math.Round(_waveLengthModvalue,1) == _waveLength)

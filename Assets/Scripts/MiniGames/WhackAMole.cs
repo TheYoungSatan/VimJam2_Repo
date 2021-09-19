@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace MiniGame
 {
@@ -25,6 +26,8 @@ namespace MiniGame
                         _currentCount++;
                         RemoveCircle(hit.collider.gameObject);
                         SpawnCircle();
+
+                        _targetsLeft.text = (int.Parse(_targetsLeft.text) - 1).ToString(); 
                     }
                 }
             }
@@ -45,6 +48,10 @@ namespace MiniGame
         private float _maxTime = 20;
         [SerializeField]
         private Transform _parent;
+        [SerializeField]
+        private Text _targetsLeft;
+        [SerializeField]
+        private Text _timeLeft;
 
         private float _timer;
         private float _currentCount;
@@ -73,6 +80,8 @@ namespace MiniGame
             else if (Difficulty == MinigameHub.Difficulty.Medium) _targetSize /= 2;
             else if (Difficulty == MinigameHub.Difficulty.Hard) _targetSize /= 4;
 
+            _targetsLeft.text = _amountToWin.ToString();
+
             var pos = Camera.main.ScreenToWorldPoint(Centre.position);
             var offset = new Vector2(4.3f - _targetSize, 1.4f - _targetSize);   
 
@@ -88,6 +97,8 @@ namespace MiniGame
         public override void UpdateGame()
         {
             _timer += Time.deltaTime;
+
+            _timeLeft.text = "00:" + Mathf.Round(_maxTime - _timer).ToString();
 
             if (_timer >= _maxTime) Hub.OnGameOver();
 
@@ -111,7 +122,7 @@ namespace MiniGame
                         break;
                     }
 
-                    var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity);
+                    var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity, _parent);
                     target.transform.localScale = new Vector3(_targetSize, _targetSize, _targetSize);
                 }
             }
