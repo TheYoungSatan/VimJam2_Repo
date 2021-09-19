@@ -243,6 +243,10 @@
 							<ShortName>running.wav</ShortName>
 							<Path>SFX\running_D79FB2B7.wem</Path>
 						</File>
+						<File Id="388192419" Language="SFX">
+							<ShortName>grade-one.wav</ShortName>
+							<Path>SFX\grade-one_D79FB2B7.wem</Path>
+						</File>
 						<File Id="442387256" Language="SFX">
 							<ShortName>joshua-mclean_celebrate.wav</ShortName>
 							<Path>SFX\joshua-mclean_celebrate_D79FB2B7.wem</Path>
@@ -281,6 +285,11 @@
 						<SwitchContainer SwitchValue="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}">
 							<Media>
 								<File Id="735444103"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{07865223-DFEE-4F92-833A-2B563F1F554D}">
+							<Media>
+								<File Id="388192419"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -398,10 +407,11 @@
 				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\None"/>
-						<State Id="28587383" Name="LivingRoom" ObjectPath="\States\Default Work Unit\Music\LivingRoom"/>
-						<State Id="1686739432" Name="Store" ObjectPath="\States\Default Work Unit\Music\Store"/>
-						<State Id="3310578182" Name="MiniGame" ObjectPath="\States\Default Work Unit\Music\MiniGame"/>
-						<State Id="1087642749" Name="FinalGame" ObjectPath="\States\Default Work Unit\Music\FinalGame"/>
+						<State Id="1564060831" Name="Music_LivingRoom" ObjectPath="\States\Default Work Unit\Music\Music_LivingRoom"/>
+						<State Id="3591285600" Name="Music_Store" ObjectPath="\States\Default Work Unit\Music\Music_Store"/>
+						<State Id="1263909134" Name="Music_MiniGame" ObjectPath="\States\Default Work Unit\Music\Music_MiniGame"/>
+						<State Id="1484596709" Name="Music_FinalGame" ObjectPath="\States\Default Work Unit\Music\Music_FinalGame"/>
+						<State Id="599938019" Name="Music_MainMenu" ObjectPath="\States\Default Work Unit\Music\Music_MainMenu"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
