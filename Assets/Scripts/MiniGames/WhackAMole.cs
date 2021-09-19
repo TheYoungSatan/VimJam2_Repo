@@ -76,7 +76,7 @@ namespace MiniGame
 
         public override void RunGame()
         {
-            if (Difficulty == MinigameHub.Difficulty.Easy) _targetSize = 0.5f;
+            if (Difficulty == MinigameHub.Difficulty.Easy) _targetSize = 1f;
             else if (Difficulty == MinigameHub.Difficulty.Medium) _targetSize /= 2;
             else if (Difficulty == MinigameHub.Difficulty.Hard) _targetSize /= 4;
 
