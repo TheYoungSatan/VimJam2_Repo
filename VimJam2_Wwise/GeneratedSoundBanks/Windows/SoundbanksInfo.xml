@@ -201,19 +201,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3468829444" Name="Interact_SlidingDoor" ObjectPath="\Events\Default Work Unit\Interact\Interact_SlidingDoor" DurationType="OneShot" DurationMin="1.464955" DurationMax="1.464955">
+				<Event Id="3468829444" Name="Interact_SlidingDoor" ObjectPath="\Events\Default Work Unit\Interact\Interact_SlidingDoor" DurationType="OneShot" DurationMin="1.448128" DurationMax="1.448128">
 					<IncludedMemoryFiles>
 						<File Id="271686455" Language="SFX">
 							<ShortName>Sliding_Door_3.wav</ShortName>
 							<Path>SFX\Sliding_Door_3_A0320685.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="587881672" Name="Lava_Death" ObjectPath="\Events\Default Work Unit\FinalGame\Lava_Death" DurationType="OneShot" DurationMin="6.812500" DurationMax="6.812500">
-					<IncludedMemoryFiles>
-						<File Id="713318652" Language="SFX">
-							<ShortName>Lava_Death.wav</ShortName>
-							<Path>SFX\Lava_Death_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -255,6 +247,10 @@
 							<ShortName>melody-meadow_2.wav</ShortName>
 							<Path>SFX\melody-meadow_2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="713318652" Language="SFX">
+							<ShortName>Lava_Death.wav</ShortName>
+							<Path>SFX\Lava_Death_D79FB2B7.wem</Path>
+						</File>
 						<File Id="735444103" Language="SFX">
 							<ShortName>so-long-syndrome.wav</ShortName>
 							<Path>SFX\so-long-syndrome_D79FB2B7.wem</Path>
@@ -265,32 +261,61 @@
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{AB9889A3-96EB-4C14-A3D7-905A5E529330}">
-							<Media>
-								<File Id="908482993"/>
-							</Media>
+						<SwitchContainer SwitchValue="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}">
+							<Children>
+								<SwitchContainer SwitchValue="{AB9889A3-96EB-4C14-A3D7-905A5E529330}">
+									<Media>
+										<File Id="908482993"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{38B139D1-D3A9-4429-8869-049B347403E4}">
-							<Media>
-								<File Id="442387256"/>
-							</Media>
+						<SwitchContainer SwitchValue="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}">
+							<Children>
+								<SwitchContainer SwitchValue="{38B139D1-D3A9-4429-8869-049B347403E4}">
+									<Media>
+										<File Id="442387256"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}">
-							<Media>
-								<File Id="381685439"/>
-								<File Id="660108573"/>
-								<File Id="75059573"/>
-							</Media>
+						<SwitchContainer SwitchValue="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}">
+							<Children>
+								<SwitchContainer SwitchValue="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}">
+									<Media>
+										<File Id="381685439"/>
+										<File Id="660108573"/>
+										<File Id="75059573"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}">
-							<Media>
-								<File Id="735444103"/>
-							</Media>
+						<SwitchContainer SwitchValue="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}">
+							<Children>
+								<SwitchContainer SwitchValue="{07865223-DFEE-4F92-833A-2B563F1F554D}">
+									<Media>
+										<File Id="388192419"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{07865223-DFEE-4F92-833A-2B563F1F554D}">
-							<Media>
-								<File Id="388192419"/>
-							</Media>
+						<SwitchContainer SwitchValue="{4CE07C94-47D8-49E0-B324-69634D49E379}">
+							<Children>
+								<SwitchContainer SwitchValue="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}">
+									<Media>
+										<File Id="735444103"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0071D939-F7AB-4571-A293-56B6AE279A69}">
+							<Children>
+								<SwitchContainer SwitchValue="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}">
+									<Media>
+										<File Id="713318652"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -362,6 +387,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1906373220" Name="Snake_Death" ObjectPath="\Events\Default Work Unit\MiniGames\Snake\Snake_Death" DurationType="OneShot" DurationMin="0.264146" DurationMax="0.264146">
+					<IncludedMemoryFiles>
+						<File Id="151977708" Language="SFX">
+							<ShortName>Snake_Turn.wav</ShortName>
+							<Path>SFX\Snake_Turn_8F8C1F4D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\MiniGames\Victory" DurationType="OneShot" DurationMin="1.550896" DurationMax="1.550896">
 					<IncludedMemoryFiles>
 						<File Id="113311989" Language="SFX">
@@ -404,6 +437,13 @@
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
+				<StateGroup Id="444815956" Name="PlayerLife" ObjectPath="\States\Default Work Unit\PlayerLife">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerLife\None"/>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\PlayerLife\Alive"/>
+						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerLife\Dead"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\None"/>

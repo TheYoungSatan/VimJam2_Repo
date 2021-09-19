@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" ShortID="264909457">
+						<MusicPlaylistContainer Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" ShortID="264909457">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -181,7 +181,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" ShortID="652094454">
+						<MusicPlaylistContainer Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" ShortID="652094454">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -347,7 +347,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" ShortID="45104385">
+						<MusicPlaylistContainer Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" ShortID="45104385">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -672,7 +672,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" ShortID="671850094">
+						<MusicPlaylistContainer Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" ShortID="671850094">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -840,7 +840,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" ShortID="275779246">
+						<MusicPlaylistContainer Name="Music_MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" ShortID="275779246">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1008,6 +1008,169 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Music_Death" ID="{0AE8A5D1-0864-4F2B-B04A-7BD6254A96F7}" ShortID="616326360">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Lava_Death" ID="{1C6AC47F-397C-44AA-9FEC-D064ECFC03CB}" ShortID="12600977">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="6930.91768916155"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Lava_Death" ID="{07EE51F5-FCC6-424C-BDE5-DD19B19FE5DD}" ShortID="988852368">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lava_Death" ID="{2153BC40-76DF-4C48-8204-74ACFD2E54C1}">
+													<Language>SFX</Language>
+													<AudioFile>Lava_Death.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="713318652"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{6884B2D7-101D-486D-95D3-BD2DC528591B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{C7D0C8A3-7DDE-4F26-8089-D11C303CFC46}">
+													<ClipList>
+														<MusicClip Name="Lava_Death" ID="{1D228C16-828B-4739-90BA-9FA09556F653}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6812.5"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="27.8629856850716"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="243.801124744376"/>
+															</PropertyList>
+															<AudioSourceRef Name="Lava_Death" ID="{2153BC40-76DF-4C48-8204-74ACFD2E54C1}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{912CA48B-DF8C-437A-A573-1280501EA72C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6.8125</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{A342E91F-AF25-4C68-A3B9-0C6251532269}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6.8125</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{25EDB3F8-6A8F-41E5-8241-0E2B2C491A0D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6.8125</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{5E385343-D085-45CE-AC9A-584D3C6683B4}"/>
+										<MusicCue Name="Exit Cue" ID="{003D04AF-27AF-4D61-B913-DF4D875DCA0F}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="6812.5"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{D00AC85C-4A2C-4D86-B02C-7E06D05D7D84}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{01AE49B3-9B3C-46C9-A8DD-F27E83AB0A18}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{7B0FC22D-1A7F-4391-B0A3-353E6E204E36}" ShortID="843907351">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{04E01999-D876-4F4D-A807-5200DB000E58}" ShortID="987136131">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Lava_Death" ID="{1C6AC47F-397C-44AA-9FEC-D064ECFC03CB}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -1059,10 +1222,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1097,10 +1260,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1135,10 +1298,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1173,10 +1336,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1211,10 +1374,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1249,10 +1412,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1287,10 +1450,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1325,10 +1488,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1363,10 +1526,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1401,10 +1564,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+											<ObjectRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -1427,60 +1590,123 @@
 										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{1ED1A56E-08AB-4682-88C1-BBCC9908AB3D}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Music_Death" ID="{0AE8A5D1-0864-4F2B-B04A-7BD6254A96F7}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{BC7ADFF0-6870-4C8E-8F4D-267CBA2DAC81}">
+												<PropertyList>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{BF443EC3-0C9F-4D38-A607-F86F86A6E2DC}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Music_Death" ID="{0AE8A5D1-0864-4F2B-B04A-7BD6254A96F7}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{81E93698-2FE9-4A01-8BA1-9FAF358B3BA6}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
+						<ArgumentRef Name="PlayerLife" ID="{94893DD1-330D-4410-853A-2386D258E626}"/>
 						<ArgumentRef Name="Music" ID="{83998DE9-52F2-44DF-A408-9BAC80F7F2FD}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Music" ID="{83998DE9-52F2-44DF-A408-9BAC80F7F2FD}"/>
-							</Path>
-							<AudioNodeInfo>
-								<NoObject Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
+								<PathElementRef Name="None" ID="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}"/>
 								<PathElementRef Name="Music_LivingRoom" ID="{AB9889A3-96EB-4C14-A3D7-905A5E529330}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="LivingRoom_Container" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+								<AudioNodeRef Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="None" ID="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}"/>
 								<PathElementRef Name="Music_Store" ID="{38B139D1-D3A9-4429-8869-049B347403E4}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Store_Container" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+								<AudioNodeRef Name="Music_Store" ID="{9417A221-616E-46F5-88A8-9996D79775E0}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
 							<Path>
+								<PathElementRef Name="None" ID="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}"/>
 								<PathElementRef Name="Music_MiniGame" ID="{6B6FA865-D5AC-4245-A478-EEE1F8EF14E0}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="MiniGame_Music" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+								<AudioNodeRef Name="Music_MiniGame" ID="{AEB75DA2-47D8-419D-A105-615D2B061DDE}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Music_FinalGame" ID="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
+								<PathElementRef Name="None" ID="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}"/>
 								<PathElementRef Name="Music_MainMenu" ID="{07865223-DFEE-4F92-833A-2B563F1F554D}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+								<AudioNodeRef Name="Music_MainMenu" ID="{D8121CC1-A8D5-4586-AE5A-3FEDCA2549E1}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Alive" ID="{4CE07C94-47D8-49E0-B324-69634D49E379}"/>
+								<PathElementRef Name="Music_FinalGame" ID="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music_FinalGame" ID="{4786642C-C41E-451C-8084-59A8592D5410}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Dead" ID="{0071D939-F7AB-4571-A293-56B6AE279A69}"/>
+								<PathElementRef Name="Music_FinalGame" ID="{0A36302A-28EF-4E93-897E-FAAA1F1941E1}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music_Death" ID="{0AE8A5D1-0864-4F2B-B04A-7BD6254A96F7}" WorkUnitID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

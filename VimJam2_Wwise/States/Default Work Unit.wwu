@@ -13,6 +13,13 @@
 						<State Name="Music_MainMenu" ID="{07865223-DFEE-4F92-833A-2B563F1F554D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="PlayerLife" ID="{94893DD1-330D-4410-853A-2386D258E626}">
+					<ChildrenList>
+						<State Name="None" ID="{D1761DDC-900D-4D01-9AC9-51B07B9FF83F}"/>
+						<State Name="Alive" ID="{4CE07C94-47D8-49E0-B324-69634D49E379}"/>
+						<State Name="Dead" ID="{0071D939-F7AB-4571-A293-56B6AE279A69}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

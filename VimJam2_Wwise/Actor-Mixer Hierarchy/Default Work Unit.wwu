@@ -923,7 +923,7 @@
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>130</Value>
+										<Value>150</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1541,7 +1541,14 @@
 						</Folder>
 						<Folder Name="Snake" ID="{DF3B9976-4AF2-40D6-84A4-AB2D3140A8DC}" ShortID="447318620">
 							<ChildrenList>
-								<SwitchContainer Name="SnakeSwitch" ID="{F723EC37-7F04-46ED-AFF1-00FD0C279A0D}" ShortID="310361493">
+								<Sound Name="Snake_Death" ID="{7636B31C-890F-4A9A-9448-6C5119D16978}" ShortID="362417975">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -1551,72 +1558,22 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Snake_Move" ID="{D3CE63A2-8AF5-4C90-8EF7-C86E5856C322}" ShortID="707275004">
+										<AudioFileSource Name="Snake_Turn" ID="{33CC47C3-8334-4E09-B105-DC1CBC0EC672}">
 											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.216201555365297"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Snake_Move" ID="{C7E004BF-6BB6-4B07-BD70-D95817DD3609}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0320450895775062"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0400563619718817"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.18425926507066"/>
-														<Property Name="TrimEnd" Type="Real64" Value="9.87674415784018"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Snake_Move.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="12060379"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Snake_Move" ID="{C7E004BF-6BB6-4B07-BD70-D95817DD3609}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Snake_Turn" ID="{7636B31C-890F-4A9A-9448-6C5119D16978}" ShortID="362417975">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Snake_Turn" ID="{33CC47C3-8334-4E09-B105-DC1CBC0EC672}">
-													<Language>SFX</Language>
-													<AudioFile>Snake_Turn.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="151977708"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Snake_Turn" ID="{33CC47C3-8334-4E09-B105-DC1CBC0EC672}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+											<Language>SFX</Language>
+											<AudioFile>Snake_Turn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="151977708"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Snake_Turn" ID="{7636B31C-890F-4A9A-9448-6C5119D16978}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Snake_Move" ID="{D3CE63A2-8AF5-4C90-8EF7-C86E5856C322}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-									</GroupingInfo>
-								</SwitchContainer>
+									<ActiveSourceList>
+										<ActiveSource Name="Snake_Turn" ID="{33CC47C3-8334-4E09-B105-DC1CBC0EC672}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="NumberMemory" ID="{13EC4276-7ACE-4EDD-8949-F2BFE7994A06}" ShortID="106732248">
@@ -1838,7 +1795,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2160,7 +2117,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2310,40 +2267,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<Sound Name="Lava_Death" ID="{FC2845AE-8507-4CA2-8D7E-A3FFD75A7043}" ShortID="537059960">
-							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Lava_Death" ID="{97DB014C-B572-4C84-B964-8FF04AC27F18}">
-									<Language>SFX</Language>
-									<AudioFile>Lava_Death.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="713318652"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Lava_Death" ID="{97DB014C-B572-4C84-B964-8FF04AC27F18}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

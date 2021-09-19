@@ -1,9 +1,17 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
 	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
-	28587383	LivingRoom	Music			
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2044049779	Dead	PlayerLife			
+	599938019	Music_MainMenu	Music			
 	748895195	None	Music			
+	1263909134	Music_MiniGame	Music			
+	1484596709	Music_FinalGame	Music			
+	1564060831	Music_LivingRoom	Music			
+	3591285600	Music_Store	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

@@ -164,7 +164,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Folder Name="Snake" ID="{9F274922-E68C-466F-9B5D-AF3B0CB9A1C3}" ShortID="845146846"/>
+						<Folder Name="Snake" ID="{9F274922-E68C-466F-9B5D-AF3B0CB9A1C3}" ShortID="845146846">
+							<ChildrenList>
+								<Event Name="Snake_Death" ID="{0816329C-1763-4150-987C-0F4697053EF9}">
+									<ChildrenList>
+										<Action Name="" ID="{CDD092DC-187A-42C7-95AF-1A4154F44535}" ShortID="578471934">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Snake_Death" ID="{7636B31C-890F-4A9A-9448-6C5119D16978}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 						<Folder Name="NumberMemoryGame" ID="{15B06B15-46D1-4991-8DA1-640B28D38B16}" ShortID="347040797">
 							<ChildrenList>
 								<Event Name="Number_Type" ID="{50D3B4D5-BD3B-46D1-A3E6-F9E858C4A732}">
@@ -229,17 +243,6 @@
 				</Folder>
 				<Folder Name="FinalGame" ID="{4B408B5B-5344-4D25-87D4-CA056E8FFB59}" ShortID="1071240357">
 					<ChildrenList>
-						<Event Name="Lava_Death" ID="{D2D25332-2BAA-4AF5-B25F-F8C5741BA230}">
-							<ChildrenList>
-								<Action Name="" ID="{AC8AE13A-F618-4D34-A826-53D6FA7A8482}" ShortID="1014290705">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Lava_Death" ID="{FC2845AE-8507-4CA2-8D7E-A3FFD75A7043}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Player_Jump" ID="{5B6D2ABE-4E20-4CF9-AD6A-F3673A81D454}">
 							<ChildrenList>
 								<Action Name="" ID="{D7DF1BEE-AF0F-427B-AF05-902E10DA54CF}" ShortID="227227460">
