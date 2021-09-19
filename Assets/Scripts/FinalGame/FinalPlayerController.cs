@@ -74,33 +74,20 @@ namespace FinalGame
             transform.position += new Vector3(_inputDirections.x * Time.deltaTime * _movementSpeed, 0, 0);
             _animator.SetFloat("InputX", Mathf.Abs(_inputDirections.x));
 
-            if (_jump)
+            switch (GameChanger.instance.MovementCompletionLevel)
             {
-                switch (GameChanger.instance.MovementCompletionLevel)
-                {
-                    case CompletionLevel.Easy:
-                        _rigid.gravityScale = 1;
-                        _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-                        _jump = false;
-                        break;
-                    case CompletionLevel.Medium:
-                        _jump = false;
-                        _rigid.gravityScale = 0;
-                        _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-                        break;
-                    case CompletionLevel.Hard:
-                        _jump = false;
-                        _rigid.gravityScale = 1;
-                        _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-                        break;
-                    case CompletionLevel.Failed:
-                        _rigid.gravityScale = 1;
-                        _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-                        _jump = false;
-                        break;
-                }
-                _animator.SetBool("IsJumping", true);
-                StartCoroutine(WaitForSecond(.25f));
+                case CompletionLevel.Easy:
+                    EasyMovement();
+                    break;
+                case CompletionLevel.Medium:
+                    MediumMovement();
+                    break;
+                case CompletionLevel.Hard:
+                    HardMovement();
+                    break;
+                case CompletionLevel.Failed:
+                    FailedMovement();
+                    break;
             }
 
             switch (GameChanger.instance.PlayerVisualCompletionLevel)
@@ -115,65 +102,102 @@ namespace FinalGame
                         _renderer.flipX = false;
                     break;
             }
+        }
 
-            CheckGround();
-            PlayerGravity();
+        private void FailedMovement()
+        {
+            if (_jump)
+            {
+                _rigid.gravityScale = 1;
+                _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                _jump = false;
+
+                _animator.SetBool("IsJumping", true);
+                StartCoroutine(WaitForSecond(.25f));
+            }
+
+            Vector2 failedcheckPos = transform.position;
+            failedcheckPos.y -= _checkDistance;
+            _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, _checkDistance, _groundLayer);
+        }
+
+        private void HardMovement()
+        {
+            if (_jump)
+            {
+                _rigid.gravityScale = 1;
+                _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                _jump = false;
+
+                _animator.SetBool("IsJumping", true);
+                StartCoroutine(WaitForSecond(.25f));
+            }
+
+            if (_rigid.velocity.y < 0 && !_isGrounded)
+                _rigid.gravityScale = 5f;
+            else
+                _rigid.gravityScale = 1;
+
+            Vector2 checkPos = transform.position;
+            float distanceCheck = _checkDistance;
+            checkPos.y += distanceCheck - .05f;
+            var hardColls = Physics2D.OverlapCircleAll(checkPos, _checkDistance, _groundLayer);
+            _isGrounded = hardColls.Length > 0;
 
             if (_checkGround)
             {
                 if (_isGrounded)
                 {
-                    _checkGround = false;
                     _animator.SetTrigger("OnLanding");
                     _animator.SetBool("IsJumping", false);
-                    _animator.ResetTrigger("OnLanding");
+                    _checkGround = false;
                 }
             }
         }
 
-        private void PlayerGravity()
+        private void MediumMovement()
         {
-            switch (GameChanger.instance.MovementCompletionLevel)
+            if (_jump)
             {
-                case CompletionLevel.Medium:
-                    if (!_isGrounded)
-                        _rigid.gravityScale += Time.deltaTime * 2f;
-                    else
-                        _rigid.gravityScale = 1;
-                    break;
-                case CompletionLevel.Hard:
-                    if (_rigid.velocity.y < 0 && !_isGrounded)
-                        _rigid.gravityScale = 5f;
-                    else
-                        _rigid.gravityScale = 1;
-                    break;
+                _rigid.gravityScale = 0;
+                _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                _jump = false;
+
+                _animator.SetBool("IsJumping", true);
+                StartCoroutine(WaitForSecond(.25f));
+            }
+
+            if (!_isGrounded)
+                _rigid.gravityScale += Time.deltaTime * 2f;
+            else
+                _rigid.gravityScale = 1;
+
+            var mediumColls = Physics2D.OverlapCircleAll(transform.position, _checkDistance, _groundLayer);
+            _isGrounded = mediumColls.Length > 0;
+
+            if (_checkGround)
+            {
+                if (_isGrounded)
+                {
+                    _animator.SetBool("IsJumping", false);
+                    _checkGround = false;
+                }
             }
         }
 
-        private void CheckGround()
+        private void EasyMovement()
         {
-            switch (GameChanger.instance.MovementCompletionLevel)
+            if (_jump)
             {
-                case CompletionLevel.Easy:
-                    _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, _checkDistance, _groundLayer);
-                    break;
-                case CompletionLevel.Medium:
-                    var mediumColls = Physics2D.OverlapCircleAll(transform.position, _checkDistance, _groundLayer);
-                    _isGrounded = mediumColls.Length > 0;
-                    break;
-                case CompletionLevel.Hard:
-                    Vector2 checkPos = transform.position;
-                    float distanceCheck = _checkDistance;
-                    checkPos.y += distanceCheck - .05f;
-                    var hardColls = Physics2D.OverlapCircleAll(checkPos, _checkDistance, _groundLayer);
-                    _isGrounded = hardColls.Length > 0;
-                    break;
-                case CompletionLevel.Failed:
-                    Vector2 failedcheckPos = transform.position;
-                    failedcheckPos.y -= _checkDistance;
-                    _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, _checkDistance, _groundLayer);
-                    break;
+                _rigid.gravityScale = 1;
+                _rigid.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+                _jump = false;
+
+                _animator.SetBool("IsJumping", true);
+                StartCoroutine(WaitForSecond(.25f));
             }
+
+            _isGrounded = Physics2D.Raycast(transform.position, Vector2.down, _checkDistance, _groundLayer);
         }
 
         private IEnumerator WaitForSecond(float time)

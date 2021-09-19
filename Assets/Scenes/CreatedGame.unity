@@ -723,9 +723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnvironmentCompletionLevel: 1
-  PlayerVisualCompletionLevel: 1
-  MovementCompletionLevel: 0
-  AnimationCompletionLevel: 1
+  PlayerVisualCompletionLevel: 3
+  MovementCompletionLevel: 3
 --- !u!1 &1380262969
 GameObject:
   m_ObjectHideFlags: 0
