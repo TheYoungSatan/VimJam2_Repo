@@ -53,3 +53,7 @@ MonoBehaviour:
   hit: WhackAMole_Hit
   sineWaveChange: Sine_Wave_Button_Click
   minigameSucces: Victory
+  connectTheDots: Connect_The_Dots
+  pipeClick: PipeGame_Click
+  lavaDeath: Lava_Death
+  playerJump: Player_Jump

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sound;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -21,6 +22,7 @@ namespace MiniGame
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            AudioHub.PlaySound(AudioHub.ConnectTheDots);
             OnClicked?.Invoke(this);
         }
     }

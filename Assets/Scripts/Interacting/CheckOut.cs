@@ -30,7 +30,7 @@ namespace Interacting
             GameInfo.ChangeFoodPiecesAmount(affordable);
             GameInfo.ChangeUnpayedFoodPiecesAmount(-GameInfo.UnpayedFood);
 
-            AudioHub.PlaySound(AudioHub.Interact + "_checkOut");
+            AudioHub.PlaySound(AudioHub.Interact + "_BuyFood");
         }
 
         private int CheckAffordable()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sound;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -22,6 +23,9 @@ namespace MiniGame.ConnectPipe
             Vector3 currentRotation = transform.rotation.eulerAngles;
             currentRotation.z -= 90;
             transform.rotation = Quaternion.Euler(currentRotation);
+
+            if(!HasEndPoint && !HasStartPoint)
+                AudioHub.PlaySound(AudioHub.PipeClick);
 
             OnPipeRotated?.Invoke();
         }

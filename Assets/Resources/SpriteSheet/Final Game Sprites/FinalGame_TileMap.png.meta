@@ -189,7 +189,7 @@ TextureImporter:
       name: TileMapV2_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 58
         width: 8
         height: 8
@@ -210,7 +210,7 @@ TextureImporter:
       name: TileMapV2_2
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 58
         width: 8
         height: 8
@@ -231,7 +231,7 @@ TextureImporter:
       name: TileMapV2_3
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 50
         width: 8
         height: 8
@@ -273,7 +273,7 @@ TextureImporter:
       name: TileMapV2_5
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 50
         width: 8
         height: 8
@@ -315,7 +315,7 @@ TextureImporter:
       name: TileMapV2_7
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 41
         width: 8
         height: 8
@@ -336,7 +336,7 @@ TextureImporter:
       name: TileMapV2_8
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 33
         width: 8
         height: 8
@@ -378,7 +378,7 @@ TextureImporter:
       name: TileMapV2_10
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 33
         width: 8
         height: 8
@@ -399,7 +399,7 @@ TextureImporter:
       name: TileMapV2_11
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 25
         width: 8
         height: 8
@@ -441,7 +441,7 @@ TextureImporter:
       name: TileMapV2_14
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 16
         width: 8
         height: 8
@@ -483,7 +483,7 @@ TextureImporter:
       name: TileMapV2_16
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 16
         width: 8
         height: 8
@@ -504,7 +504,7 @@ TextureImporter:
       name: TileMapV2_17
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 8
         width: 8
         height: 8
@@ -546,7 +546,7 @@ TextureImporter:
       name: TileMapV2_19
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 8
         width: 8
         height: 8
@@ -567,7 +567,7 @@ TextureImporter:
       name: TileMapV2_20
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 8
         height: 8
@@ -609,7 +609,7 @@ TextureImporter:
       name: Player_Failed_Idle_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 75
         width: 8
         height: 8
@@ -630,12 +630,12 @@ TextureImporter:
       name: TileMapV2_13
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 67
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,7 +656,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -672,12 +672,12 @@ TextureImporter:
       name: TileMapV2_23
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 67
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,12 +693,12 @@ TextureImporter:
       name: TileMapV2_24
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 75
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
