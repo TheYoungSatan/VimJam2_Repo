@@ -17,12 +17,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Reflect Acoustic Textures\Textures\Concrete	
+	988953028	SFXVolume			\Default Work Unit\Volume\SFXVolume	
 	1755085759	Wood_Deep			\Factory Reflect Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
 	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
+	2346531308	MusicVolume			\Default Work Unit\Volume\MusicVolume	
 	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
+	2918011349	MasterVolume			\Default Work Unit\Volume\MasterVolume	
 	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
 	3195498748	Cork_Tiles			\Factory Reflect Acoustic Textures\Textures\Cork_Tiles	
 	3670307564	Drywall			\Factory Reflect Acoustic Textures\Textures\Drywall	
@@ -30,8 +33,10 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
