@@ -420,7 +420,7 @@
 					<IncludedMemoryFiles>
 						<File Id="151977708" Language="SFX">
 							<ShortName>Snake_Turn.wav</ShortName>
-							<Path>SFX\Snake_Turn_8F8C1F4D.wem</Path>
+							<Path>SFX\Snake_Turn_0E08C0EF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

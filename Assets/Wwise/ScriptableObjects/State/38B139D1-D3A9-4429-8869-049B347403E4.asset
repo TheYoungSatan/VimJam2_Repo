@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d7002a07ed7a24b92dc3a1e325a53d, type: 3}
   m_Name: 38B139D1-D3A9-4429-8869-049B347403E4
   m_EditorClassIdentifier: 
-  objectName: Store
-  id: 1686739432
+  objectName: Music_Store
+  id: 3591285600
   guid: 38B139D1-D3A9-4429-8869-049B347403E4
   WwiseStateGroupReference: {fileID: 11400000, guid: f71238d419046aa4db8a8b6a89fd0b6f,
     type: 2}
