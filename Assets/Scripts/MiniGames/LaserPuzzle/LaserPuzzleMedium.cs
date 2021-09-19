@@ -21,7 +21,8 @@ namespace MiniGame
                     if (hit.collider.CompareTag("Mirror"))
                     {
                         hit.collider.gameObject.transform.Rotate(0, 0, 90);
-                        hit.collider.transform.parent.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                        var sprite = hit.collider.transform.parent.gameObject.GetComponent<SpriteRenderer>();
+                        sprite.flipX = !sprite.flipX;
                     }
                 }
             }
@@ -149,7 +150,7 @@ namespace MiniGame
                     if (_hit.collider.CompareTag("Goal"))
                     {
                         _timer += Time.deltaTime;
-                        if (_timer >= 5)
+                        if (_timer >= 4)
                         {
                             Hub.OnGameSucces();
                         }

@@ -21,6 +21,8 @@ namespace MiniGame
                     if (hit.collider.CompareTag("Mirror"))
                     {
                         hit.collider.gameObject.transform.Rotate(0, 0, 90);
+                        var sprite = hit.collider.transform.parent.gameObject.GetComponent<SpriteRenderer>();
+                        sprite.flipX = !sprite.flipX;
                     }
                 }
             }
@@ -36,7 +38,7 @@ namespace MiniGame
         private List<GameObject> _lasers;
 
         [SerializeField]
-        private GameObject _movingBlock;
+        private List<GameObject> _movingBlocks;
         [SerializeField]
         private List<Transform> _movingBlockStarts;
         private Ray2D _ray;
@@ -73,7 +75,7 @@ namespace MiniGame
 
             for (int i = 0; i < 3; i++)
             {
-                var blockObj = Instantiate(_movingBlock, _movingBlockStarts[i]);
+                var blockObj = Instantiate(_movingBlocks[i], _movingBlockStarts[i]);
                 _blockScripts.Add(blockObj.GetComponent<MovingBlock>());
                 _blockScripts[i].CanMove = true;
             }
@@ -103,10 +105,10 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
-            LaserCasting(_lasers[0], _lineRenderers[0], Color.red);
+            LaserCasting(_lasers[0], _lineRenderers[0], Color.Lerp(Color.red, Color.yellow, 0.5f));
             LaserCastingWithBlock(_lasers[1], _lineRenderers[1], _blockScripts[0], Color.green);
             LaserCastingWithBlock(_lasers[2], _lineRenderers[2], _blockScripts[1], Color.blue);
-            LaserCastingWithBlock(_lasers[3], _lineRenderers[3], _blockScripts[2], Color.black);
+            LaserCastingWithBlock(_lasers[3], _lineRenderers[3], _blockScripts[2], Color.yellow);
         }
 
         private IEnumerator RefreshLines()
