@@ -21,6 +21,7 @@ namespace MiniGame
                     if (hit.collider.CompareTag("Mirror"))
                     {
                         hit.collider.gameObject.transform.Rotate(0, 0, 90);
+                        hit.collider.transform.parent.gameObject.GetComponent<SpriteRenderer>().flipX = true;
                     }
                 }
             }
@@ -97,7 +98,7 @@ namespace MiniGame
 
         public override void UpdateGame()
         {
-            LaserCasting(_lasers[0], _lineRenderers[0], Color.red);
+            LaserCasting(_lasers[0], _lineRenderers[0], Color.Lerp(Color.red, Color.yellow, 0.5f));
             LaserCasting(_lasers[1], _lineRenderers[1], Color.green);
         }
 
@@ -108,7 +109,7 @@ namespace MiniGame
                 _texture.SetPixels(_fillPixels);
                 _texture.Apply();
 
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.3f);
             }
         }
 
