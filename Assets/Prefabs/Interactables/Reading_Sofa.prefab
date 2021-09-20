@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca825fa01951aca4e88fd68c553517ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioName: 
+  _audioName: _Sofa
   _sceneToLoad: MainMenu
   _loadMainScene: 0
   _showInfoPanel: 1
