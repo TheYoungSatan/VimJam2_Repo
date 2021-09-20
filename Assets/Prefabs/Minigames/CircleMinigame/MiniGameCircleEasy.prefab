@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hub: {fileID: 0}
   Difficulty: 0
-  _maxDist: 1.5
+  _maxDist: 0.5
   TextureWidth: 64
   TextureHeight: 64
   PixelPlaneRenderer: {fileID: 1114022944219178306}

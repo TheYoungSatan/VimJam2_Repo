@@ -45,7 +45,7 @@ public class MinigameHub : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name.Equals("Yoni_MinigameTesting"))
+        if (SceneManager.GetActiveScene().name.Equals("MingameSelectionScreen"))
         {
             if (!_testmode)
             {

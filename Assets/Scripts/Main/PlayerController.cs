@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        GUI.SetActive(true);
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }

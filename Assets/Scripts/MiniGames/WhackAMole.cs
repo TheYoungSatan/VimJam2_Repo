@@ -41,7 +41,7 @@ namespace MiniGame
         [SerializeField]
         private float _spawnInterval = 1;
         [SerializeField]
-        private float _targetSize = 0.5f;
+        private float _targetSize = 10f;
         [SerializeField]
         private float _amountToWin = 30f;
         [SerializeField]
@@ -52,6 +52,8 @@ namespace MiniGame
         private Text _targetsLeft;
         [SerializeField]
         private Text _timeLeft;
+        [SerializeField]
+        private RectTransform _targetCanvas;
 
         private float _timer;
         private float _currentCount;
@@ -76,17 +78,11 @@ namespace MiniGame
 
         public override void RunGame()
         {
-            if (Difficulty == MinigameHub.Difficulty.Easy) _targetSize = 1f;
-            else if (Difficulty == MinigameHub.Difficulty.Medium) _targetSize /= 2;
-            else if (Difficulty == MinigameHub.Difficulty.Hard) _targetSize /= 4;
+            if (Difficulty == MinigameHub.Difficulty.Easy) { _targetSize = 1f; _amountToWin = 20; }
+            else if (Difficulty == MinigameHub.Difficulty.Medium) { _targetSize /= 2; _amountToWin = 25; }
+            else if (Difficulty == MinigameHub.Difficulty.Hard) { _targetSize /= 4; _amountToWin = 30; }
 
             _targetsLeft.text = _amountToWin.ToString();
-
-            var pos = Camera.main.ScreenToWorldPoint(Centre.position);
-            var offset = new Vector2(4.3f - _targetSize, 1.4f - _targetSize);   
-
-            _screenEdgesX = new Vector2(pos.x - offset.x, pos.x + offset.x);
-            _screenEdgesY = new Vector2(pos.y + offset.y, pos.y - offset.y - 0.5f);
 
             _currentCount = 0;
             _timer = 0;
@@ -98,7 +94,7 @@ namespace MiniGame
         {
             _timer += Time.deltaTime;
 
-            _timeLeft.text = "00:" + Mathf.Round(_maxTime - _timer).ToString();
+            _timeLeft.text = "00:" + Mathf.Round(_maxTime - _timer).ToString("00");
 
             if (_timer >= _maxTime) Hub.OnGameOver(Difficulty);
 
@@ -115,7 +111,9 @@ namespace MiniGame
 
                 if (_circles.Length < 4)
                 {
-                    var randomPos = new Vector3(Random.Range(_screenEdgesX.x, _screenEdgesX.y), Random.Range(_screenEdgesY.x, _screenEdgesY.y), 0);
+                    Vector3[] screenedges = new Vector3[4];
+                    _targetCanvas.GetWorldCorners(screenedges);
+                    var randomPos = new Vector3(UnityEngine.Random.Range(screenedges[0].x, screenedges[2].x), UnityEngine.Random.Range(screenedges[0].y, screenedges[2].y), 0);
 
                     if (Physics2D.Raycast(new Vector2(randomPos.x, randomPos.y), Vector2.zero, 0))
                     {
@@ -123,6 +121,7 @@ namespace MiniGame
                     }
 
                     var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity, _parent);
+                    target.transform.parent = _targetCanvas;
                     target.transform.localScale = new Vector3(_targetSize, _targetSize, _targetSize);
                 }
             }
@@ -130,8 +129,9 @@ namespace MiniGame
 
         private void RemoveCircle(GameObject circleObj)
         {
-            //AudioHub.PlaySound(AudioHub.BugDeath);  //gives errors
-            Destroy(circleObj);
+            circleObj.GetComponent<Animator>().SetTrigger("BugDeath");
+            AudioHub.PlaySound(AudioHub.BugDeath);  //gives errors
+            Destroy(circleObj, .4f);
         }
 
         private void SpawnCircle() 
@@ -140,13 +140,16 @@ namespace MiniGame
 
             if (_circles.Length < 4)
             {
-                var randomPos = new Vector3(Random.Range(_screenEdgesX.x, _screenEdgesX.y), Random.Range(_screenEdgesY.x, _screenEdgesY.y), 0);
+                Vector3[] screenedges = new Vector3[4];
+                _targetCanvas.GetWorldCorners(screenedges);
+                var randomPos = new Vector3(UnityEngine.Random.Range(screenedges[0].x, screenedges[2].x), UnityEngine.Random.Range(screenedges[0].y, screenedges[2].y), 0);
 
                 if (Physics2D.Raycast(new Vector2(randomPos.x, randomPos.y), Vector2.zero, 0)) return;
 
                 else 
                 {
                     var target = Instantiate(_circlePrefab, randomPos, Quaternion.identity, _parent);
+                    target.transform.parent = _targetCanvas;
                     target.transform.localScale = new Vector3(_targetSize, _targetSize, _targetSize);
                 }
             }

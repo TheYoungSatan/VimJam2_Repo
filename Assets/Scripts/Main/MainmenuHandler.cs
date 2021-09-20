@@ -8,6 +8,7 @@ public class MainmenuHandler : MonoBehaviour
     private void Start()
     {
         GameInfo.ResetInfo();
+        GUI.SetActive(false);
     }
 
     public void PlaySound()

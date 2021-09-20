@@ -77,6 +77,8 @@ public class GUI : MonoBehaviour
         UpdateGUI();
     }
 
+    public static void SetActive(bool val) => instance.gameObject.SetActive(val);
+
     private void Update()
     {
         UpdateGUI();

@@ -16,9 +16,9 @@ namespace MiniGame.ConnectPipe
         [SerializeField] private float _checkArea;
         [SerializeField] private bool _isStartPoint;
         [SerializeField] private bool _isEndPoint;
+        [SerializeField] private RectTransform _transform;
 
         private bool _alreadyChecked = false;
-        private RectTransform _transform;
 
         public void Initialize()
         {

@@ -69,7 +69,6 @@ public class GameInfo : MonoBehaviour
     public static void SetTime(int time)
     {
         int timepast = (24 - CurrentTime) + time;
-        AddTime(timepast);
         instance.playerInfo.SetValuesBasedOnTime(timepast);
         instance.playerInfo.ResetAwaketime();
     }

@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39ffe9fe1a4c9840985653d426f6a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0, z: 0}
   Pipe: {fileID: 0}
   _checkArea: 5
   _isStartPoint: 0
   _isEndPoint: 0
+  _transform: {fileID: 4627488097072750938}

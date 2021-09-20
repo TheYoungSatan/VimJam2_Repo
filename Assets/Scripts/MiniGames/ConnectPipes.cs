@@ -22,6 +22,7 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            Points.Clear();
             _pipes = FindObjectsOfType<Pipe>();
             _timer.text = _time.ToString();
             routine = StartCoroutine(CheckTime());
