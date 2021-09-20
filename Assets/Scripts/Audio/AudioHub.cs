@@ -24,7 +24,7 @@ namespace Sound
         [SerializeField] private string playerLife; public static string PlayerLife => hub.playerLife;
         [SerializeField] private string snakeDeath; public static string SnakeDeath => hub.snakeDeath;
 
-        private void Start()
+        private void Awake()
         {
             hub = this;
         }

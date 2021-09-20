@@ -12,12 +12,17 @@ public class MainmenuHandler : MonoBehaviour
 
     private void Start()
     {
-        _master.value = .75f;
-        _music.value = 1f;
-        _sfx.value = 1f;
-        ChangeVolume();
+        //_master.value = .75f;
+        //_music.value = 1f;
+        //_sfx.value = 1f;
+        //ChangeVolume();
         GameInfo.ResetInfo();
-        GUI.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if(GUI.IsActive)
+            GUI.SetActive(false);
     }
 
     public void PlaySound()

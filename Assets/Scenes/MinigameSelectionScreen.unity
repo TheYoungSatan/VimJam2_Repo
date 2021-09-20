@@ -5727,7 +5727,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Smash 30 bugs as fast as possible! Beware of the time limit!
+  m_Text: Smash bugs as fast as possible! Beware of the time limit!
 --- !u!222 &544381048
 CanvasRenderer:
   m_ObjectHideFlags: 0

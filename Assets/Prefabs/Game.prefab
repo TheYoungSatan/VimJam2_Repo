@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3208749495055631855}
   - component: {fileID: 1943425419034487069}
   - component: {fileID: 5852666130848907273}
+  - component: {fileID: 275192655}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -60,9 +61,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LivingRoomPlayerPos: {x: 0, y: 0, z: 0}
-  _hungerPerHour: 2
-  _thurstPerHour: 2
+  _hungerPerHour: 5
+  _thurstPerHour: 5
   _wakeupTime: 8
+--- !u!114 &275192655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4394558531359482268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6c1975071e12d4882121f98c1e3748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _state: Music_MainMenu
+  _playerLiveState: None
+  _footstepState: LivingRoom
 --- !u!1001 &1907540562726401912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -129,6 +145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545300693270714315, guid: 5e9b23cf53aff0d428b59463299adac6,
+        type: 3}
+      propertyPath: playerLife
+      value: 'PlayerLife '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9b23cf53aff0d428b59463299adac6, type: 3}
