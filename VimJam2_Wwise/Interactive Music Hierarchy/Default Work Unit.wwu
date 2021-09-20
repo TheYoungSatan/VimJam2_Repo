@@ -4,66 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{B47CEFDD-8AEA-4A31-AF91-0B81C1175015}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music_Switch_Container" ID="{8F2E4C01-1145-4C18-A048-B446348C9982}" ShortID="1041178490">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{6CEF9D03-2E24-46B3-85A2-3029EAD1DC93}" ShortID="317256647">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="MusicVolume" ID="{3BB56069-37E6-4426-9370-E0AC769D3D63}" WorkUnitID="{337AC8DF-EBBF-46FA-A1B9-C759B87B9ED6}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{B46E9D6F-63FB-4972-8544-88EC9FBA64FC}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-								<RTPC Name="" ID="{72AD1B1B-AFA6-4572-A4B4-CE138C475E5A}" ShortID="717000473">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="MasterVolume" ID="{62E775A7-72FD-47E6-BA18-FED4192BADFA}" WorkUnitID="{337AC8DF-EBBF-46FA-A1B9-C759B87B9ED6}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{119361BD-0C68-4E20-A7CA-CC5F73BED5EC}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+							<ObjectRef Name="Music" ID="{00AC6A94-6F32-43F1-820F-A79B2E6AB44B}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -45,11 +45,6 @@ State	ID	Name	State Group			Notes
 	1564060831	Music_LivingRoom	Music			
 	3591285600	Music_Store	Music			
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	988953028	SFXVolume			\Default Work Unit\Volume\SFXVolume	
-	2346531308	MusicVolume			\Default Work Unit\Volume\MusicVolume	
-	2918011349	MasterVolume			\Default Work Unit\Volume\MasterVolume	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32611736	Footsteps_Tile_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_Tile_1_E8099886.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_Kitchen\Footsteps_Tile_1		24660
 	49479373	Interact_Bed_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Bed_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Bed\Interact_Bed_1		240064

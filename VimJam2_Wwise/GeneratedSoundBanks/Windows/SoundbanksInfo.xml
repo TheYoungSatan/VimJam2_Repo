@@ -473,11 +473,6 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SFXVolume"/>
-				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
-				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MasterVolume"/>
-			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="444815956" Name="PlayerLife" ObjectPath="\States\Default Work Unit\PlayerLife">
 					<States>
