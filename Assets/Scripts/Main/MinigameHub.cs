@@ -1,6 +1,7 @@
 ﻿using MiniGame;
 using Sound;
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -88,30 +89,55 @@ public class MinigameHub : MonoBehaviour
         }
     }
 
-    private void ReturnToSelectionScreen()
+    private IEnumerator ReturnToSelectionScreen()
     {
+        yield return new WaitForSeconds(.25f);
         var game = FindObjectOfType<Minigame>();
         if (game != null) Destroy(game.gameObject);
 
         _screenSelectPanel.SetActive(true);
     }
 
-    public void OnGameOver()
+    public void OnGameOver(Difficulty difficulty)
     {
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                GameInfo.ChangePouchMoneyAmount(1);
+                break;
+            case Difficulty.Medium:
+                GameInfo.ChangePouchMoneyAmount(2);
+                break;
+            case Difficulty.Hard:
+                GameInfo.ChangePouchMoneyAmount(3);
+                break;
+        }
+
         _currentState = GameStates.GameOver;
-
-        ReturnToSelectionScreen();
-
-        Debug.Log("GameOver");
+        GameInfo.AddTime(3);
+        StartCoroutine(ReturnToSelectionScreen());
     }
 
-    public void OnGameSucces()
+    public void OnGameSucces(Difficulty difficulty)
     {
-        _currentState = GameStates.GameSucces;
-        ReturnToSelectionScreen();
-        Debug.Log("Succes");
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                GameInfo.ChangePouchMoneyAmount(2);
+                break;
+            case Difficulty.Medium:
+                GameInfo.ChangePouchMoneyAmount(4);
+                break;
+            case Difficulty.Hard:
+                GameInfo.ChangePouchMoneyAmount(6);
+                break;
+        }
 
-        //AudioHub.PlaySound(AudioHub.MinigameSucces);
+        _currentState = GameStates.GameSucces;
+        GameInfo.AddTime(3);
+        StartCoroutine(ReturnToSelectionScreen());
+
+        AudioHub.PlaySound(AudioHub.MinigameSucces);
     }
 
     public void OnReturn()

@@ -97,9 +97,6 @@ public class PlayerController : MonoBehaviour
     {
         _rigid = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BureauScene"))
-            _rigid.transform.position = _info.LivingRoomPlayerPos != Vector3.zero ? _info.LivingRoomPlayerPos : _rigid.transform.position;
     }
 
     private IEnumerator InputDelay()
@@ -111,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckValues()
     {
-        _animator.SetBool("IsSleepy", _info.AwakeTime > 15);
+        _animator.SetBool("IsSleepy", _info.AwakeTime >= 20);
     }
 
     private void Update()

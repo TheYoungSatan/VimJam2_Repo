@@ -1,20 +1,30 @@
 ﻿using MiniGame.ConnectPipe;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace MiniGame
 {
     public class ConnectPipes : Minigame
     {
+        [SerializeField] private Text _timer;
+        [SerializeField] private int _time = 30;
+
         public static List<PipePoint> Points = new List<PipePoint>();
         private Pipe[] _pipes;
 
         private Pipe _startPipe;
         private Pipe _endPipe;
 
+        private Coroutine routine;
+
         public override void RunGame()
         {
             _pipes = FindObjectsOfType<Pipe>();
+            _timer.text = _time.ToString();
+            routine = StartCoroutine(CheckTime());
 
             foreach (var p in _pipes)
             {
@@ -32,7 +42,8 @@ namespace MiniGame
 
         private void EndReached()
         {
-            Hub.OnGameSucces();
+            StopCoroutine(routine);
+            Hub.OnGameSucces(Difficulty);
         }
 
         private void CheckPath()
@@ -42,6 +53,16 @@ namespace MiniGame
                 p.ResetValues();
             }
             _startPipe.CheckConnection();
+        }
+
+        private IEnumerator CheckTime()
+        {
+            for (int i = _time; i > 0; i--)
+            {
+                yield return new WaitForSeconds(1f);
+                _timer.text = i.ToString();
+            }
+            Hub.OnGameOver(Difficulty);
         }
     }
 }

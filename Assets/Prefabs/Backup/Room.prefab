@@ -853,7 +853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6c1975071e12d4882121f98c1e3748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: LivingRoom
+  _state: Music_LivingRoom
+  _playerLiveState: None
   _footstepState: LivingRoom
 --- !u!1 &490794711479437676
 GameObject:

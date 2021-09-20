@@ -66,7 +66,7 @@ namespace MiniGame
                 {
                     if (hit.collider.CompareTag("EndBox"))
                     {
-                        Hub.OnGameSucces();
+                        Hub.OnGameSucces(Difficulty);
                     }
                 }
 
@@ -90,7 +90,7 @@ namespace MiniGame
                 DrawPixelCircle((int)yCoord, (int)xCoord, (int)pixelRadius, normalizedRadius);
 
                 //if the circle is too big, its game over
-                if (_circleRadius >= _maxDist) Hub.OnGameOver();
+                if (_circleRadius >= _maxDist) Hub.OnGameOver(Difficulty);
             }
         }
 

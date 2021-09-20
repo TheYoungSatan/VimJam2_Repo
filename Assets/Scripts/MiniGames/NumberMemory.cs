@@ -48,13 +48,13 @@ namespace MiniGame
 
                 if (_input != _task.Substring(0, _input.Length))
                 {
-                    Hub.OnGameOver();
+                    Hub.OnGameOver(Difficulty);
                     _runGame = false;
                     _taskText.text = _task;
                 }
                 else if (_input.Length == _task.Length && _input == _task)
                 {
-                    Hub.OnGameSucces();
+                    Hub.OnGameSucces(Difficulty);
                     _taskText.text = _task;
                 }
             }

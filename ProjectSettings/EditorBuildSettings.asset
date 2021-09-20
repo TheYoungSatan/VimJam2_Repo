@@ -6,18 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Yoni_MinigameTesting.unity
-    guid: 98fa125b18c9203449d440a733339b1a
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9b6b8759c1c48794cb122e14518c780e
   - enabled: 1
     path: Assets/Scenes/BureauScene.unity
     guid: 9cb45278756fed64189d46f47375ec4a
   - enabled: 1
     path: Assets/Scenes/StoreScene.unity
     guid: 4dc089545b0cbab46b2f9c432c46e369
+  - enabled: 1
+    path: Assets/Scenes/MinigameSelectionScreen.unity
+    guid: a29a40dc1a2863148a37d58a3a2c5033
+  - enabled: 1
+    path: Assets/Scenes/MiniGameScene.unity
+    guid: 98fa125b18c9203449d440a733339b1a
+  - enabled: 1
+    path: Assets/Scenes/CreatedGame.unity
+    guid: 2e7113ad8ddb0034c90b77d53bf94339
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/MinigameUITestScene.unity
-    guid: a29a40dc1a2863148a37d58a3a2c5033
   m_configObjects: {}

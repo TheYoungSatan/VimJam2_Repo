@@ -100,9 +100,9 @@ namespace MiniGame
 
             _timeLeft.text = "00:" + Mathf.Round(_maxTime - _timer).ToString();
 
-            if (_timer >= _maxTime) Hub.OnGameOver();
+            if (_timer >= _maxTime) Hub.OnGameOver(Difficulty);
 
-            if (_currentCount == _amountToWin) Hub.OnGameSucces();
+            if (_currentCount == _amountToWin) Hub.OnGameSucces(Difficulty);
         }
 
         private IEnumerator ConstantSpawnCircle()

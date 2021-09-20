@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Sound;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -153,8 +154,12 @@ namespace MiniGame
                 var hit = Physics2D.Raycast(_line.GetPosition(_line.positionCount - 1), directionvalue, _stepValue, _borderMask);
                 if (hit)
                 {
-                    if (hit.collider.CompareTag("Goal")) Hub.OnGameSucces();
-                    else Hub.OnGameOver();
+                    if (hit.collider.CompareTag("Goal")) Hub.OnGameSucces(Difficulty);
+                    else
+                    {
+                        AudioHub.PlaySound(AudioHub.SnakeDeath);
+                        Hub.OnGameOver(Difficulty);
+                    }
                 }
                 else
                 {

@@ -46,9 +46,6 @@ namespace MiniGame.ConnectPipe
                 }
             }
 
-            if (point != null)
-                Debug.Log($"Connection made: {Pipe.name} and {point.Pipe.name}");
-
             _alreadyChecked = true;
             point?.SendCheckConnection();
         }

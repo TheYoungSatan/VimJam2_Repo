@@ -7023,7 +7023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6c1975071e12d4882121f98c1e3748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: Store
+  _state: Music_Store
+  _playerLiveState: None
   _footstepState: Kitchen
 --- !u!1 &7928674962853052449
 GameObject:

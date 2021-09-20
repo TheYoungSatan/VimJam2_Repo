@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioName: _Computer
-  _sceneToLoad: MiniGameUITestScene
+  _sceneToLoad: MinigameSelectionScreen
   _loadMainScene: 0
   _showInfoPanel: 1
   _text: Computer Work on game

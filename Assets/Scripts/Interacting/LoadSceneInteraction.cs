@@ -47,10 +47,11 @@ namespace Interacting
 
         IEnumerator LoadScene()
         {
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(_sceneToLoad);
+            SceneTransition transition = FindObjectOfType<SceneTransition>();
+            transition.FadeOut();
+            yield return new WaitForSeconds(.5f);
 
-            while (!asyncLoad.isDone)
-                yield return null;
+            SceneManager.LoadScene(_sceneToLoad);
         }
     }
 }

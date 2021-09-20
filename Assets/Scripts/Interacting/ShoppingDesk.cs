@@ -33,6 +33,7 @@ namespace Interacting
                     _shopBox.sprite = _sprites[r];
                     GameInfo.ChangeUnpayedFoodPiecesAmount(-1);
                     _hasFood = true;
+                    AudioHub.PlaySound(AudioHub.Interact + "_PickUpFood");
                 }
                 return; 
             }
@@ -43,7 +44,7 @@ namespace Interacting
             GameInfo.ChangeUnpayedFoodPiecesAmount(1);
             _hasFood = false;
             _shopBox.sprite = _sprites[0];
-            AudioHub.PlaySound(AudioHub.Interact + "_shoppingDesk");
+            AudioHub.PlaySound(AudioHub.Interact + "_PickUpFood");
         }
 
         public string InfoText()

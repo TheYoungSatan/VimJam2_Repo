@@ -1,8 +1,10 @@
 ﻿using Interacting;
+using Sound;
 using System;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GUI : MonoBehaviour
@@ -61,18 +63,18 @@ public class GUI : MonoBehaviour
     [SerializeField] private VisualGUI[] _visualGUI;
     [SerializeField] private RectTransform _interactButton;
     [SerializeField] private InfoPanel _infoPanel;
-    [SerializeField] private SceneTransition transition;
+    [SerializeField] private GameOverPanel gameOverPanel;
 
-    private PlayerInfo _playerinfo;
+    private PlayerInfo playerinfo;
     private PlayerController _player = null;
 
     private void Start()
     {
         instance = this;
-        _playerinfo = FindObjectOfType<PlayerInfo>();
-        _playerinfo.OnUpdateValues += UpdateGUI;
+        playerinfo = FindObjectOfType<PlayerInfo>();
+        playerinfo.OnUpdateValues += UpdateGUI;
+        gameOverPanel.SetActive(false);
         UpdateGUI();
-        FadeOut();
     }
 
     private void Update()
@@ -81,8 +83,9 @@ public class GUI : MonoBehaviour
         if (_player == null)
         {
             _player = FindObjectOfType<PlayerController>();
-            if (_guiPanel.activeSelf)
-                _guiPanel.SetActive(false);
+            SetInfoObjects(null, null);
+            //if (_guiPanel.activeSelf)
+            //    _guiPanel.SetActive(false);
         }
         else
         {
@@ -101,13 +104,13 @@ public class GUI : MonoBehaviour
             switch (visual.Stat)
             {
                 case Stat.Energy:
-                    visual.UpdateVisuals(_playerinfo.AwakeTime);
+                    visual.UpdateVisuals(playerinfo.AwakeTime);
                     break;
                 case Stat.Hunger:
-                    visual.UpdateVisuals(_playerinfo.HungerPercentage);
+                    visual.UpdateVisuals(playerinfo.HungerPercentage);
                     break;
                 case Stat.Thurst:
-                    visual.UpdateVisuals(_playerinfo.ThurstPercentage);
+                    visual.UpdateVisuals(playerinfo.ThurstPercentage);
                     break;
                 case Stat.Money:
                     visual.UpdateVisuals(GameInfo.PouchMoney);
@@ -159,6 +162,25 @@ public class GUI : MonoBehaviour
             _infoPanel.SetActive(false);
     }
 
-    public static void FadeIn() => instance.transition.FadeIn();
-    public static void FadeOut() => instance.transition.FadeOut();
+    public static void OnGameOver()
+    {
+        instance.gameOverPanel.SetText(instance.playerinfo);
+        instance.gameOverPanel.SetActive();
+    }
+
+    public void LoadMainMenu(string scenename)
+    {
+        StartCoroutine(LoadMain(scenename));
+    }
+
+    IEnumerator LoadMain(string sceneToLoad)
+    {
+        SceneTransition transition = FindObjectOfType<SceneTransition>();
+        transition.FadeOut();
+        yield return new WaitForSeconds(.5f);
+        AudioHub.SetState(AudioHub.PlayerLife, "None");
+        AudioHub.SetState(AudioHub.BackgroundMusic, "MainMenu");
+        gameOverPanel.SetActive(false);
+        SceneManager.LoadScene(sceneToLoad);
+    }
 }

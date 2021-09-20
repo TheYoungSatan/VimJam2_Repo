@@ -45,10 +45,23 @@ public class PlayerInfo : MonoBehaviour
         OnUpdateValues?.Invoke();
     }
 
+    public void Reset()
+    {
+        AwakeTime = 0;
+        HungerPercentage = 0;
+        ThurstPercentage = 0;
+        OnUpdateValues?.Invoke();
+    }
+
     public void AddAwakeTime(int addAwaketime = 0)
     {
         AwakeTime += addAwaketime;
         SetValuesBasedOnTime(addAwaketime);
+
+        if (AwakeTime >= 30 || ThurstPercentage >= 100 || HungerPercentage >= 100)
+        {
+            GameInfo.OnGameOver();
+        }
     }
 
     public void SetValuesBasedOnTime(int time)

@@ -76,10 +76,10 @@ namespace MiniGame
 
             if ((float)System.Math.Round(_amplitudeModvalue,1) == _amplitude && (float)System.Math.Round(_waveLengthModvalue,1) == _waveLength)
             {
-                Hub.OnGameSucces();
+                Hub.OnGameSucces(Difficulty);
             }
 
-            if (_timer >= _maxTime) Hub.OnGameOver(); 
+            if (_timer >= _maxTime) Hub.OnGameOver(Difficulty); 
         }
 
         private void InitializeTexture()

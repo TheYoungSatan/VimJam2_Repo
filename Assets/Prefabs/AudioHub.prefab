@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interact: Interact
   footstep: Footstep
-  buttonclick: ButtonClick
+  buttonclick: MainMenu_ButtonClick
   backgroundMusic: Music
   mirrorTurn: LazerGame_Mirror
   inputSounds: Number_Type
@@ -57,3 +57,5 @@ MonoBehaviour:
   pipeClick: PipeGame_Click
   lavaDeath: Lava_Death
   playerJump: Player_Jump
+  playerLife: PlayerLife
+  snakeDeath: Snake_Death

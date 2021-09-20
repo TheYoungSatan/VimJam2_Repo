@@ -33,10 +33,15 @@ namespace MiniGame
 
         public override void RunGame()
         {
+            if (Difficulty == MinigameHub.Difficulty.Easy) { _dotAmount = 4; _displayTime = 2f; }
+            else if (Difficulty == MinigameHub.Difficulty.Medium) { _dotAmount = 6; _displayTime = 2f; }
+            else if (Difficulty == MinigameHub.Difficulty.Hard) { _dotAmount = 8; _displayTime = 2.5f; }
+
             for (int i = 1; i <= _dotAmount; i++)
             {
                 Dot d = Instantiate(_dotObject.gameObject, FindSpawnPoint(), Quaternion.identity).GetComponent<Dot>();
                 d.transform.SetParent(_spawnSpace.transform);
+                d.transform.localScale = Vector3.one;
                 d.Number = i;
                 d.SetText();
 
@@ -108,7 +113,7 @@ namespace MiniGame
                     var endXCoord = (((widthPlane / 2) + endpos.x) / widthPlane) * TextureHeight;
                     var endYCoord = (((heightPlane / 2) - endpos.y) / heightPlane) * TextureWidth;
 
-                    DrawLineAlgorithm((int)startYCoord, (int)startXCoord, (int)endYCoord, (int)endXCoord, Color.red);
+                    DrawLineAlgorithm((int)startYCoord, (int)startXCoord, (int)endYCoord, (int)endXCoord, Color.white);
                 }
                     
                 //_lineSegments.Add(pos);
@@ -117,13 +122,13 @@ namespace MiniGame
             }
             else
             {
-                Hub.OnGameOver();
+                Hub.OnGameOver(Difficulty);
                 //_line.positionCount = _lineSegments.Count;
             }
 
             if (_current == _dotAmount)
             {
-                Hub.OnGameSucces();
+                Hub.OnGameSucces(Difficulty);
                 //_line.positionCount = _lineSegments.Count;
             }
 
@@ -133,11 +138,29 @@ namespace MiniGame
         private Vector3 FindSpawnPoint()
         {
             _screenSpaceReduction = Mathf.Abs(_screenSpaceReduction);
-            Vector3 screenPosition = new Vector3(
-                UnityEngine.Random.Range(_screenSpaceReduction, Screen.width - _screenSpaceReduction), 
-                UnityEngine.Random.Range(_screenSpaceReduction/1.75f, Screen.height - _screenSpaceReduction/1.75f), 
-                0);
+            Vector3 screenPosition = CheckPossiblePosition();
+
             return screenPosition;
+        }
+
+        private Vector3 CheckPossiblePosition()
+        {
+            bool val = false;
+            Vector3[] worldCorners = new Vector3[4];
+            _spawnSpace.GetWorldCorners(worldCorners);
+
+            Vector3 returnVal = new Vector3(UnityEngine.Random.Range(worldCorners[0].x, worldCorners[2].x), UnityEngine.Random.Range(worldCorners[0].y, worldCorners[2].y), 0);
+
+            for(int i = 0; i < _dotList.Count;)
+            {
+                Rect scanArea = new Rect(_dotList[i].Position.x, _dotList[i].Position.y, 1, 1);
+                if (scanArea.Contains(returnVal))
+                    returnVal = new Vector3(UnityEngine.Random.Range(worldCorners[0].x, worldCorners[2].x), UnityEngine.Random.Range(worldCorners[0].y, worldCorners[2].y), 0);
+                else
+                    i++;
+            }
+
+            return returnVal;
         }
 
         IEnumerator DelayTime()

@@ -152,7 +152,7 @@ namespace MiniGame
                         _timer += Time.deltaTime;
                         if (_timer >= 4)
                         {
-                            Hub.OnGameSucces();
+                            Hub.OnGameSucces(Difficulty);
                         }
                     }
 

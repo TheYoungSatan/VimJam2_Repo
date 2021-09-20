@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sound;
+using System;
 using UnityEngine;
 
 public class GameInfo : MonoBehaviour
@@ -25,6 +26,17 @@ public class GameInfo : MonoBehaviour
             Destroy(this.gameObject);
 
         DontDestroyOnLoad(this.gameObject);
+
+        ResetInfo();
+    }
+
+    public static void ResetInfo()
+    {
+        FoodPieces = 0;
+        UnpayedFood = 0;
+        PouchMoney = 0;
+        CurrentTime = 8;
+        instance.playerInfo.Reset();
     }
 
     private void Update()
@@ -60,5 +72,11 @@ public class GameInfo : MonoBehaviour
         AddTime(timepast);
         instance.playerInfo.SetValuesBasedOnTime(timepast);
         instance.playerInfo.ResetAwaketime();
+    }
+
+    public static void OnGameOver()
+    {
+        AudioHub.SetState(AudioHub.PlayerLife, "Dead");
+        GUI.OnGameOver();
     }
 }

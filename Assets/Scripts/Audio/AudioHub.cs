@@ -21,6 +21,8 @@ namespace Sound
         [SerializeField] private string pipeClick; public static string PipeClick => hub.pipeClick;
         [SerializeField] private string lavaDeath; public static string LavaDeath => hub.lavaDeath;
         [SerializeField] private string playerJump; public static string PlayerJump => hub.playerJump;
+        [SerializeField] private string playerLife; public static string PlayerLife => hub.playerLife;
+        [SerializeField] private string snakeDeath; public static string SnakeDeath => hub.snakeDeath;
 
         private void Start()
         {

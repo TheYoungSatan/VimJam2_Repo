@@ -60,8 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LivingRoomPlayerPos: {x: 0, y: 0, z: 0}
-  _hungerPerHour: 5
-  _thurstPerHour: 8
+  _hungerPerHour: 2
+  _thurstPerHour: 2
   _wakeupTime: 8
 --- !u!1001 &1907540562726401912
 PrefabInstance:

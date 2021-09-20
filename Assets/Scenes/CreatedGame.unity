@@ -602,22 +602,22 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 3
-    m_Data: {fileID: 7953143543549025843, guid: b67e9db293fe3824ab80681c97b77934,
+    m_Data: {fileID: 9216689914380203698, guid: b67e9db293fe3824ab80681c97b77934,
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 15
-    m_Data: {fileID: -7029922856297215017, guid: b67e9db293fe3824ab80681c97b77934,
+    m_Data: {fileID: -7239084468998352893, guid: b67e9db293fe3824ab80681c97b77934,
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 17
-    m_Data: {fileID: 1013154382903881609, guid: b67e9db293fe3824ab80681c97b77934,
+    m_Data: {fileID: -8322445257057973130, guid: b67e9db293fe3824ab80681c97b77934,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -745636546238590174, guid: b67e9db293fe3824ab80681c97b77934,
+    m_Data: {fileID: -5511764107965163359, guid: b67e9db293fe3824ab80681c97b77934,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 36
@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 1270166039}
   - component: {fileID: 1270166038}
   - component: {fileID: 1270166040}
+  - component: {fileID: 1270166041}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -722,9 +723,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb80debe027bb454481408743a563d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnvironmentCompletionLevel: 1
+  EnvironmentCompletionLevel: 3
   PlayerVisualCompletionLevel: 3
   MovementCompletionLevel: 3
+--- !u!114 &1270166041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270166037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6c1975071e12d4882121f98c1e3748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _state: Music_FinalGame
+  _playerLiveState: None
+  _footstepState: LivingRoom
 --- !u!1 &1380262969
 GameObject:
   m_ObjectHideFlags: 0
