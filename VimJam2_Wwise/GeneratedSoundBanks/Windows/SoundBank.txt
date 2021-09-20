@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2566531806	Interact_PickupFood			\Default Work Unit\Interact\Interact_PickupFood	
 	2716678721	Victory			\Default Work Unit\MiniGames\Victory	
 	2978301462	MainMenu_ButtonClick			\Default Work Unit\Interact\MainMenu_ButtonClick	
+	3386038923	Interact_Sofa			\Default Work Unit\Interact\Interact_Sofa	
 	3468829444	Interact_SlidingDoor			\Default Work Unit\Interact\Interact_SlidingDoor	
 	3481096201	Number_Type			\Default Work Unit\MiniGames\NumberMemoryGame\Number_Type	
 	3657908075	WhackAMole_Hit			\Default Work Unit\MiniGames\WhackAMole\WhackAMole_Hit	
@@ -73,6 +74,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	294254975	Door_Open_House_1	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Door_Open_House_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Door\Door_Open_House_1		205984
 	297054626	Footsteps_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_4_34A7C94E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_4		87720
 	300277308	Footsteps_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Footsteps_2_92634899.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps_Switch\Footsteps_LivingRoom\Footsteps_2		59364
+	312023967	Interact_Sofa	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Interact_Sofa_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Interact_Sofa		168064
 	313541418	SineWave_ButtonClick_2	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\SineWave_ButtonClick_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\SineWaveGame\SineWaveButtonClick\SineWave_ButtonClick_2		36064
 	335526798	LazerGame_Mirror_4	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\LazerGame_Mirror_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror\LazerGame_Mirror_4		48064
 	355135522	Connect_The_Dots_5	E:\Unity\Unity Projects\VimJam2_Repo\VimJam2_Wwise\.cache\Windows\SFX\Connect_The_Dots_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MiniGames\ConnectTheDots\ConnectTheDots\Connect_The_Dots_5		24064

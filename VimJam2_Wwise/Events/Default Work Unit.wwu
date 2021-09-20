@@ -104,6 +104,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Interact_Sofa" ID="{ABA68386-BDF5-439F-8136-ABA3C4C07F10}">
+							<ChildrenList>
+								<Action Name="" ID="{B2161DEB-6451-4F76-A64A-5BA8252C77DD}" ShortID="293666071">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Interact_Sofa" ID="{F593AB7D-CC1F-4915-83C0-278A974EAEBB}" WorkUnitID="{FA544B66-4FA1-44C8-BE69-ABC618777864}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9ADC679D-DB0D-436D-A6D1-50D8FCC1F48A}" ShortID="788082994">

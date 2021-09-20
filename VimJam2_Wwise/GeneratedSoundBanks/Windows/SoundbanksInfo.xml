@@ -214,6 +214,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3386038923" Name="Interact_Sofa" ObjectPath="\Events\Default Work Unit\Interact\Interact_Sofa" DurationType="OneShot" DurationMin="0.875000" DurationMax="0.875000">
+					<IncludedMemoryFiles>
+						<File Id="312023967" Language="SFX">
+							<ShortName>Interact_Sofa.wav</ShortName>
+							<Path>SFX\Interact_Sofa_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4059813333" Name="LazerGame_Mirror" ObjectPath="\Events\Default Work Unit\MiniGames\LazerGame\LazerGame_Mirror" DurationType="OneShot" DurationMin="0.235969" DurationMax="0.265572">
 					<IncludedMemoryFiles>
 						<File Id="272883830" Language="SFX">

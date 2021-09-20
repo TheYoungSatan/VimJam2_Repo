@@ -292,7 +292,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -488,9 +488,6 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{0949E772-E72B-4D97-91A6-3738A75C9D7B}" ShortID="452470144">
 											<ReferenceList>
@@ -553,6 +550,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Interact_Bed_1" ID="{328CD8B2-D2D4-43BE-815C-B9DEAA48AFCF}" ShortID="973897459">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -575,6 +579,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Interact_Bed_2" ID="{DA4AD574-0240-4FA7-9083-EFF17842E09C}" ShortID="381571483">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -615,7 +626,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-1</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{6E7C1A95-699A-41D0-8786-8E1D065FFB3D}" ShortID="970524752">
@@ -809,9 +820,6 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{1F7A7CBC-9500-4EF0-8179-E7D311EDF477}" ShortID="2283945">
 											<ReferenceList>
@@ -1636,6 +1644,35 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Interact_Sofa" ID="{F593AB7D-CC1F-4915-83C0-278A974EAEBB}" ShortID="20648532">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6790F4F-D12C-45B3-98CA-B2235CF8250F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Interact_Sofa" ID="{201E9812-6CBE-415B-A822-CB02EBC21731}">
+									<Language>SFX</Language>
+									<AudioFile>Interact_Sofa.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="312023967"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Interact_Sofa" ID="{201E9812-6CBE-415B-A822-CB02EBC21731}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MiniGames" ID="{B011F6E6-2721-4305-B391-BC67CA334F97}" ShortID="1042574510">

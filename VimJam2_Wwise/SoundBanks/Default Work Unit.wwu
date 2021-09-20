@@ -12,6 +12,7 @@
 						<ObjectRef Name="WhackAMole_BugDeath" ID="{F73458C8-47A8-41D8-BFB5-D001A26B7EAC}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WhackAMole_Hit" ID="{F9FE9952-447A-41EF-ABCE-63AE83DB5027}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interact_Computer" ID="{5C55F9E8-7E35-437C-B468-35953831C254}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Interact_Sofa" ID="{ABA68386-BDF5-439F-8136-ABA3C4C07F10}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Connect_The_Dots" ID="{E8E44B5C-DBDB-43FC-9DAD-CF5E1843F072}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MainMenu_ButtonClick" ID="{5515A4B8-3868-4644-92F4-7A1576155A39}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Number_Type" ID="{50D3B4D5-BD3B-46D1-A3E6-F9E858C4A732}" WorkUnitID="{B3F30A97-6FC6-4A9E-A128-463389058E35}" Origin="Manual" Filter="7"/>

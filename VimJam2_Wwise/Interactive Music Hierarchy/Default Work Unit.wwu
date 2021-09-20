@@ -68,6 +68,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Music_LivingRoom" ID="{518D1F56-A4D7-47CE-B1EB-EFC7B42EFB52}" ShortID="264909457">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D7F0BA9F-62F9-4971-A619-CF8AF34A6486}"/>
@@ -80,11 +87,6 @@
 								<MusicSegment Name="LivingRoom" ID="{559D7D35-2219-437C-B0C3-A57C3F5B75AF}" ShortID="311112238">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="146556.922763474"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-11</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -250,7 +252,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="106666.666666667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -421,11 +423,6 @@
 								<MusicSegment Name="running" ID="{29031AAC-DBCD-4A6D-BD4C-78FB85FA9AFD}" ShortID="624691756">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="48000"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -488,11 +485,6 @@
 								<MusicSegment Name="MelodyMedow_2" ID="{F37EE187-3A5C-4E22-B762-05FB80337D6F}" ShortID="9832958">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="61710.4654998317"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -617,7 +609,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="42000"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -730,7 +722,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -898,7 +890,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-13</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
