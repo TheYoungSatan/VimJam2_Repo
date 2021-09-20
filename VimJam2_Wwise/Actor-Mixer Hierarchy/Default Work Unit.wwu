@@ -941,7 +941,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-7</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{8DE41F1C-9737-4466-B1C0-0BDF47FC2611}" ShortID="254377436">
@@ -1099,7 +1099,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-4</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{E60D2B41-1FD9-41D9-9618-55F0451616F8}" ShortID="147244294">
@@ -1412,6 +1412,9 @@
 						<Sound Name="Buy_Food" ID="{3D663331-5AFE-45FA-B28B-BD943705087B}" ShortID="758963924">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{1BB41A60-6613-4CD3-845B-31AF9FDE0F4C}" ShortID="487488997">
 											<ReferenceList>
@@ -1686,7 +1689,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{54411E40-6203-4EDF-8E88-7E359D3AB90C}" ShortID="846652755">
@@ -2427,7 +2430,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{84D0930D-0F87-485D-8CC2-4EC31D182B63}" ShortID="858713159">
@@ -2652,7 +2655,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{E4833F21-9D73-4F1C-B4A8-26F8CC4C0EAA}" ShortID="959778728">
