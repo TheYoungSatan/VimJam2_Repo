@@ -45,8 +45,11 @@ public class PlayerController : MonoBehaviour
     {
         _input = context.ReadValue<Vector2>();
 
-        if (_input.x < 0) _model.flipX = true;
-        else if (_input.x > 0) _model.flipX = false;
+        if (_model != null)
+        {
+            if (_input.x < 0) _model.flipX = true;
+            else if (_input.x > 0) _model.flipX = false;
+        }
     }
 
     public void Interact(InputAction.CallbackContext context)

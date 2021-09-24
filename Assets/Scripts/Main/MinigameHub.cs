@@ -32,12 +32,13 @@ public class MinigameHub : MonoBehaviour
     [SerializeField] private bool _testmode = true;
     [SerializeField] private Minigame _currentMiniGame;
 
-    //public Difficulty Diffculty => _difficulty;
-    //private Difficulty _difficulty;
-
     [Header("Scene loading")]
     [SerializeField] private string _returnScene;
     [SerializeField] private GameObject _screenSelectPanel;
+    [SerializeField] private GameObject _winScreen;
+    [SerializeField] private GameObject _loseScreen;
+    [SerializeField] private float ScreenSwapDelay = 2f;
+    
 
 
     private Minigame _playedGame;
@@ -91,10 +92,12 @@ public class MinigameHub : MonoBehaviour
 
     private IEnumerator ReturnToSelectionScreen()
     {
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(ScreenSwapDelay);
         var game = FindObjectOfType<Minigame>();
         if (game != null) Destroy(game.gameObject);
 
+        _loseScreen.SetActive(false);
+        _winScreen.SetActive(false);
         _screenSelectPanel.SetActive(true);
     }
 
@@ -113,6 +116,7 @@ public class MinigameHub : MonoBehaviour
                 break;
         }
 
+        _loseScreen.SetActive(true);
         _currentState = GameStates.GameOver;
         GameInfo.AddTime(3);
         StartCoroutine(ReturnToSelectionScreen());
@@ -133,6 +137,7 @@ public class MinigameHub : MonoBehaviour
                 break;
         }
 
+        _winScreen.SetActive(true);
         _currentState = GameStates.GameSucces;
         GameInfo.AddTime(3);
         StartCoroutine(ReturnToSelectionScreen());

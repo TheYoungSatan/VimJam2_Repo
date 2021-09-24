@@ -60,7 +60,11 @@ public class GameInfo : MonoBehaviour
 
     public static void AddTime(int time)
     {
-        instance.playerInfo.AddAwakeTime(time);
+        if (instance != null)
+        {
+            instance.playerInfo.AddAwakeTime(time);
+        }
+        
         CurrentTime += time;
         if (CurrentTime > 24) 
             CurrentTime = CurrentTime - 24;
